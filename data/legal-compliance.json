@@ -1,22 +1,8 @@
 [
   {
-    "id": "legalize-nl",
-    "name": "legalize-nl",
-    "description_en": "Keeps the full, consolidated Dutch legislation as one Markdown file per law, updated on every real amendment.",
-    "services": [
-      "wetten-overheid"
-    ],
-    "type": "script",
-    "origin": "community",
-    "status": "live",
-    "publisher": "legalize-dev",
-    "source_url": "https://github.com/legalize-dev/legalize-nl",
-    "last_checked": "2026-07-19"
-  },
-  {
     "id": "dutch-law-mcp",
-    "name": "Dutch-law MCP",
-    "description_en": "Lets an AI assistant search wetten.overheid.nl statutes and provisions, with a paid gateway adding Rechtspraak rulings and Kamerstukken.",
+    "name": "Ansvar Gateway (Dutch law)",
+    "description_en": "Lets an AI assistant search Dutch legislation and Rechtspraak rulings through Ansvar's hosted OAuth gateway, each result citing its source (also spans EU and other jurisdictions).",
     "services": [
       "wetten-overheid",
       "rechtspraak"
@@ -25,35 +11,7 @@
     "origin": "commercial",
     "status": "live",
     "publisher": "Ansvar Systems",
-    "source_url": "https://github.com/Ansvar-Systems/Dutch-law-mcp",
-    "last_checked": "2026-07-19"
-  },
-  {
-    "id": "rechtspraak-js",
-    "name": "rechtspraak-js",
-    "description_en": "Sanitizes and normalizes Dutch court-judgment data from Rechtspraak.nl's official open-data feed.",
-    "services": [
-      "rechtspraak"
-    ],
-    "type": "script",
-    "origin": "community",
-    "status": "live",
-    "publisher": "cacfd3a",
-    "source_url": "https://github.com/cacfd3a/rechtspraak-js",
-    "last_checked": "2026-07-19"
-  },
-  {
-    "id": "bsn-validator",
-    "name": "BSN validator",
-    "description_en": "Validates and generates Dutch BSN (Burgerservicenummer) values.",
-    "services": [
-      "bsn"
-    ],
-    "type": "script",
-    "origin": "community",
-    "status": "live",
-    "publisher": "Cuteminded",
-    "source_url": "https://github.com/Cuteminded/bsn-validator",
+    "source_url": "https://ansvar.eu/docs/quickstart",
     "last_checked": "2026-07-19"
   },
   {
@@ -97,6 +55,77 @@
     "status": "live",
     "publisher": "Ansvar Systems",
     "source_url": "https://github.com/Ansvar-Systems/dutch-energy-regulation-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "rechtspraak-solr-mcp",
+    "name": "rechtspraak-solr-mcp-server",
+    "description_en": "Lets an AI assistant full-text search Dutch case law in Solr, with query expansion, legal synonyms, and citation analysis.",
+    "services": [
+      "rechtspraak"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "axyr",
+    "source_url": "https://github.com/axyr/rechtspraak-solr-mcp-server",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "nl-eli-mcp",
+    "name": "nl-eli-mcp",
+    "description_en": "Lets an AI assistant retrieve versioned Dutch legislation (BWB) and Rechtspraak rulings, keyless.",
+    "services": [
+      "wetten-overheid",
+      "rechtspraak"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "matematicsolutions",
+    "source_url": "https://github.com/matematicsolutions/nl-eli-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "ictrecht-skill",
+    "name": "ICTRecht skill",
+    "description_en": "A Dutch IT-law firm's methodology as a skill — privacy-officer, compliance, and IE-recht role profiles with DPIA and AI Act assessment structures.",
+    "services": [
+      "wetten-overheid"
+    ],
+    "type": "skill",
+    "origin": "commercial",
+    "status": "live",
+    "publisher": "ICTRecht",
+    "source_url": "https://www.ictrecht.nl/ictrecht-skill-voor-claude",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "aangifte-ib-skill",
+    "name": "aangifte-ib-skill",
+    "description_en": "A skill that prepares a sourced Dutch personal income-tax return with an adaptive interview and review dossier.",
+    "services": [
+      "belastingdienst"
+    ],
+    "type": "skill",
+    "origin": "community",
+    "status": "live",
+    "publisher": "mischacoster",
+    "source_url": "https://github.com/mischacoster/aangifte-ib-skill",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "rechtspraak-mcp",
+    "name": "rechtspraak-mcp",
+    "description_en": "Lets an AI assistant search Rechtspraak open data and resolve legal citations via LiDO across six tools.",
+    "services": [
+      "rechtspraak"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "PrudAI",
+    "source_url": "https://github.com/Prudai/rechtspraak-mcp",
     "last_checked": "2026-07-19"
   }
 ]

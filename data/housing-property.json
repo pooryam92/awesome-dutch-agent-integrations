@@ -1,19 +1,5 @@
 [
   {
-    "id": "bag-parser",
-    "name": "BAG_parser",
-    "description_en": "Converts the full Dutch address register (BAG) into a local, queryable SQLite database.",
-    "services": [
-      "bag"
-    ],
-    "type": "script",
-    "origin": "community",
-    "status": "live",
-    "publisher": "digitaldutch",
-    "source_url": "https://github.com/digitaldutch/BAG_parser",
-    "last_checked": "2026-07-19"
-  },
-  {
     "id": "makelaar-mcp",
     "name": "makelaar-mcp",
     "description_en": "Lets an AI assistant search Funda listings and run NHG, NIBUD, mortgage, and closing-cost calculations.",
@@ -53,6 +39,20 @@
     "status": "live",
     "publisher": "Woonstad Rotterdam",
     "source_url": "https://github.com/woonstadrotterdam/mcp-monumenten",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "pyfunda",
+    "name": "pyfunda",
+    "description_en": "Lets a script or agent query Funda home listings, prices, and price history via its mobile API.",
+    "services": [
+      "funda"
+    ],
+    "type": "script",
+    "origin": "community",
+    "status": "live",
+    "publisher": "0xMH",
+    "source_url": "https://github.com/0xMH/pyfunda",
     "last_checked": "2026-07-19"
   }
 ]

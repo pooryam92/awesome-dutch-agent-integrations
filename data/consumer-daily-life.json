@@ -41,5 +41,19 @@
     "publisher": "ivo-toby",
     "source_url": "https://github.com/ivo-toby/mcp-picnic",
     "last_checked": "2026-07-19"
+  },
+  {
+    "id": "buienradar-mcp",
+    "name": "buienradar-mcp-server",
+    "description_en": "Lets an AI assistant pull Buienradar rain nowcasts and Dutch weather data.",
+    "services": [
+      "buienradar"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "wpnbos",
+    "source_url": "https://github.com/wpnbos/buienradar-mcp-server",
+    "last_checked": "2026-07-19"
   }
 ]

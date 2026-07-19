@@ -1,5 +1,19 @@
 [
   {
+    "id": "adyen-mcp",
+    "name": "Adyen MCP",
+    "description_en": "Lets an AI assistant drive Adyen's Checkout and Management APIs — payments, configuration, and account setup.",
+    "services": [
+      "adyen"
+    ],
+    "type": "mcp",
+    "origin": "official",
+    "status": "preview",
+    "publisher": "Adyen",
+    "source_url": "https://github.com/Adyen/adyen-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
     "id": "bunq-partner-mcp",
     "name": "bunq Partner MCP",
     "description_en": "Lets an AI assistant drive the bunq Partner API — onboarding, KYC, accounts, payments, cards, and compliance.",
@@ -137,6 +151,34 @@
     "status": "live",
     "publisher": "Nick Aldewereld",
     "source_url": "https://github.com/NickAldewereld/wefact-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "exactmcp-nl",
+    "name": "exactmcp.nl",
+    "description_en": "Lets an AI assistant run Exact Online warehouse, serial/batch, purchase, production, and inventory workflows via a certified hosted MCP.",
+    "services": [
+      "exact-online"
+    ],
+    "type": "mcp",
+    "origin": "commercial",
+    "status": "live",
+    "publisher": "exactmcp.nl",
+    "source_url": "https://exactmcp.nl/",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "ledger-botje",
+    "name": "Ledger Botje",
+    "description_en": "Lets an AI assistant manage Exact Online invoices, orders, inventory, and deliveries via a hosted MCP.",
+    "services": [
+      "exact-online"
+    ],
+    "type": "mcp",
+    "origin": "commercial",
+    "status": "live",
+    "publisher": "Ledger Botje",
+    "source_url": "https://ledgerbotje.nl/",
     "last_checked": "2026-07-19"
   }
 ]

@@ -155,5 +155,89 @@
     "publisher": "developer-overheid-nl",
     "source_url": "https://github.com/developer-overheid-nl/skills-standaarden",
     "last_checked": "2026-07-19"
+  },
+  {
+    "id": "kvk-mcp",
+    "name": "kvk-mcp",
+    "description_en": "Lets an AI assistant query the KVK Handelsregister for Dutch company profiles and search across 10 tools.",
+    "services": [
+      "kvk"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "BartWaardenburg",
+    "source_url": "https://github.com/BartWaardenburg/kvk-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "skills-developer-overheid-nl",
+    "name": "skills-developer-overheid-nl",
+    "description_en": "Eight skills applying Dutch government developer guidance — APIs, DigiD/eHerkenning, open source, FSC/Haven, data, and NL Design System.",
+    "services": [
+      "logius"
+    ],
+    "type": "plugin",
+    "origin": "official",
+    "status": "live",
+    "publisher": "developer-overheid-nl",
+    "source_url": "https://github.com/developer-overheid-nl/skills-developer-overheid-nl",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "skills-geo",
+    "name": "skills-geo",
+    "description_en": "Skills for Geonovum geo-standards — OGC API, NEN 3610, INSPIRE, and 3D geo-information.",
+    "services": [
+      "geonovum"
+    ],
+    "type": "plugin",
+    "origin": "official",
+    "status": "live",
+    "publisher": "developer-overheid-nl",
+    "source_url": "https://github.com/developer-overheid-nl/skills-geo",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "skills-internet",
+    "name": "skills-internet",
+    "description_en": "Skills for internet.nl standards — IPv6, DNSSEC, TLS, DMARC/DKIM/SPF, and DANE.",
+    "services": [
+      "internet-nl"
+    ],
+    "type": "plugin",
+    "origin": "official",
+    "status": "live",
+    "publisher": "developer-overheid-nl",
+    "source_url": "https://github.com/developer-overheid-nl/skills-internet",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "skills-open-source-repo",
+    "name": "skills-open-source-repo",
+    "description_en": "Skills that generate publiccode.yml and repository-governance docs for Dutch government open-source projects.",
+    "services": [
+      "rijksoverheid"
+    ],
+    "type": "plugin",
+    "origin": "official",
+    "status": "live",
+    "publisher": "developer-overheid-nl",
+    "source_url": "https://github.com/developer-overheid-nl/skills-open-source-repo",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "zad-actions",
+    "name": "zad-actions",
+    "description_en": "Five skills for the ZAD platform covering Dutch-government deployment, release, and workflow tasks.",
+    "services": [
+      "rijksoverheid"
+    ],
+    "type": "plugin",
+    "origin": "official",
+    "status": "live",
+    "publisher": "RijksICTGilde",
+    "source_url": "https://github.com/RijksICTGilde/zad-actions",
+    "last_checked": "2026-07-19"
   }
 ]
