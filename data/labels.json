@@ -2,8 +2,7 @@
   "type": {
     "mcp": { "en": "MCP", "color": "3b5998" },
     "skill": { "en": "Skill", "color": "6c3fc9" },
-    "plugin": { "en": "Plugin", "color": "9e5b0a" },
-    "managed": { "en": "Managed", "color": "a15226" }
+    "plugin": { "en": "Plugin", "color": "9e5b0a" }
   },
   "origin": {
     "official": { "en": "Official", "color": "5a32a3" },

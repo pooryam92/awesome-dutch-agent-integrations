@@ -180,5 +180,19 @@
     "publisher": "Ledger Botje",
     "source_url": "https://ledgerbotje.nl/",
     "last_checked": "2026-07-19"
+  },
+  {
+    "id": "finance-mcp",
+    "name": "Finance MCP",
+    "description_en": "Query Exact Online bookkeeping read-only through a hosted EU MCP endpoint, with more Dutch accounting platforms planned.",
+    "target": [
+      "exact-online"
+    ],
+    "type": "mcp",
+    "origin": "commercial",
+    "status": "live",
+    "publisher": "Productivity Advisors BV",
+    "source_url": "https://financemcp.nl/",
+    "last_checked": "2026-07-19"
   }
 ]

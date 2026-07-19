@@ -1,45 +1,139 @@
 {
-  "adyen": { "name": "Adyen" },
-  "albert-heijn": { "name": "Albert Heijn" },
-  "anwb": { "name": "ANWB" },
-  "belastingdienst": { "name": "Belastingdienst" },
-  "bol": { "name": "bol.com" },
-  "buienradar": { "name": "Buienradar" },
-  "bunq": { "name": "bunq" },
-  "cbs-statline": { "name": "CBS StatLine", "kind": "dataset" },
-  "data-overheid-nl": { "name": "data.overheid.nl", "kind": "dataset" },
-  "e-boekhouden": { "name": "e-Boekhouden" },
-  "energy-regulation": { "name": "Energieregulering (ACM/TenneT/RVO/SodM)", "kind": "dataset" },
-  "exact-online": { "name": "Exact Online" },
-  "funda": { "name": "Funda" },
-  "geonovum": { "name": "Geonovum", "kind": "standard" },
-  "intelligence-group": { "name": "Intelligence Group" },
-  "internet-nl": { "name": "internet.nl", "kind": "standard" },
-  "jumbo": { "name": "Jumbo" },
-  "kadaster": { "name": "Kadaster", "kind": "dataset" },
-  "knmi": { "name": "KNMI" },
-  "kvk": { "name": "KVK" },
-  "logius": { "name": "Logius" },
-  "marktplaats": { "name": "Marktplaats" },
-  "mijnoverheid": { "name": "MijnOverheid" },
-  "mollie": { "name": "Mollie" },
-  "moneybird": { "name": "Moneybird" },
-  "monumenten": { "name": "Monumenten", "kind": "dataset" },
-  "nmbrs": { "name": "Nmbrs" },
-  "ns": { "name": "NS (Nederlandse Spoorwegen)" },
-  "oorlogsbronnen": { "name": "Oorlogsbronnen" },
-  "openarchieven": { "name": "Open Archieven" },
-  "picnic": { "name": "Picnic" },
-  "postcode-eu": { "name": "Postcode.eu" },
-  "postnl": { "name": "PostNL" },
-  "rdw": { "name": "RDW" },
-  "rechtspraak": { "name": "Rechtspraak.nl" },
-  "rijksmuseum": { "name": "Rijksmuseum" },
-  "rijksoverheid": { "name": "Rijksoverheid" },
-  "simplicate": { "name": "Simplicate" },
-  "tweede-kamer": { "name": "Tweede Kamer" },
-  "twinfield": { "name": "Twinfield" },
-  "wefact": { "name": "WeFact" },
-  "wetten-overheid": { "name": "wetten.overheid.nl", "kind": "dataset" },
-  "yuki": { "name": "Yuki" }
+  "adyen": {
+    "name": "Adyen"
+  },
+  "albert-heijn": {
+    "name": "Albert Heijn"
+  },
+  "anwb": {
+    "name": "ANWB"
+  },
+  "belastingdienst": {
+    "name": "Belastingdienst"
+  },
+  "bol": {
+    "name": "bol.com"
+  },
+  "buienradar": {
+    "name": "Buienradar"
+  },
+  "bunq": {
+    "name": "bunq"
+  },
+  "cbs-statline": {
+    "name": "CBS StatLine",
+    "kind": "dataset"
+  },
+  "data-overheid-nl": {
+    "name": "data.overheid.nl",
+    "kind": "dataset"
+  },
+  "e-boekhouden": {
+    "name": "e-Boekhouden"
+  },
+  "energy-regulation": {
+    "name": "Energieregulering (ACM/TenneT/RVO/SodM)",
+    "kind": "dataset"
+  },
+  "exact-online": {
+    "name": "Exact Online"
+  },
+  "funda": {
+    "name": "Funda"
+  },
+  "geonovum": {
+    "name": "Geonovum",
+    "kind": "standard"
+  },
+  "intelligence-group": {
+    "name": "Intelligence Group"
+  },
+  "internet-nl": {
+    "name": "internet.nl",
+    "kind": "standard"
+  },
+  "jumbo": {
+    "name": "Jumbo"
+  },
+  "kadaster": {
+    "name": "Kadaster",
+    "kind": "dataset"
+  },
+  "knmi": {
+    "name": "KNMI"
+  },
+  "kvk": {
+    "name": "KVK"
+  },
+  "logius": {
+    "name": "Logius"
+  },
+  "marktplaats": {
+    "name": "Marktplaats"
+  },
+  "mijnoverheid": {
+    "name": "MijnOverheid"
+  },
+  "mollie": {
+    "name": "Mollie"
+  },
+  "moneybird": {
+    "name": "Moneybird"
+  },
+  "monumenten": {
+    "name": "Monumenten",
+    "kind": "dataset"
+  },
+  "nmbrs": {
+    "name": "Nmbrs"
+  },
+  "ns": {
+    "name": "NS (Nederlandse Spoorwegen)"
+  },
+  "oorlogsbronnen": {
+    "name": "Oorlogsbronnen"
+  },
+  "openarchieven": {
+    "name": "Open Archieven"
+  },
+  "picnic": {
+    "name": "Picnic"
+  },
+  "postcode-eu": {
+    "name": "Postcode.eu"
+  },
+  "postnl": {
+    "name": "PostNL"
+  },
+  "rdw": {
+    "name": "RDW"
+  },
+  "rechtspraak": {
+    "name": "Rechtspraak.nl"
+  },
+  "rijksmuseum": {
+    "name": "Rijksmuseum"
+  },
+  "rijksoverheid": {
+    "name": "Rijksoverheid"
+  },
+  "simplicate": {
+    "name": "Simplicate"
+  },
+  "tweede-kamer": {
+    "name": "Tweede Kamer"
+  },
+  "twinfield": {
+    "name": "Twinfield"
+  },
+  "wefact": {
+    "name": "WeFact"
+  },
+  "wetten-overheid": {
+    "name": "wetten.overheid.nl",
+    "kind": "dataset"
+  },
+  "yuki": {
+    "name": "Yuki"
+  }
 }

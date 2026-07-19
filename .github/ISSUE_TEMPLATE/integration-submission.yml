@@ -21,14 +21,14 @@ body:
     id: target
     attributes:
       label: Dutch target(s)
-      description: The Dutch service(s), data source(s), standard(s), or authority it reaches — separate multiple with commas.
+      description: The Dutch service(s), data source(s), standard(s), or authority it connects to or covers — separate multiple with commas.
     validations:
       required: true
   - type: dropdown
     id: type
     attributes:
       label: Type
-      options: [mcp, skill, plugin, managed]
+      options: [mcp, skill, plugin]
     validations:
       required: true
   - type: input

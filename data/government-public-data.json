@@ -1,19 +1,5 @@
 [
   {
-    "id": "minbzk-nerds",
-    "name": "NeRDS (MinBZK)",
-    "description_en": "Fourteen Agent Skills covering Dutch government guidelines — accessibility, privacy, security, procurement, algorithms, and sustainability.",
-    "target": [
-      "rijksoverheid"
-    ],
-    "type": "plugin",
-    "origin": "official",
-    "status": "live",
-    "publisher": "MinBZK",
-    "source_url": "https://github.com/MinBZK/NeRDS",
-    "last_checked": "2026-07-19"
-  },
-  {
     "id": "minbzk-kvk-connect",
     "name": "kvk-connect (MinBZK)",
     "description_en": "Query a ministry-run mirror of KVK company profiles, history, and search data.",
@@ -129,20 +115,6 @@
     "last_checked": "2026-07-19"
   },
   {
-    "id": "skills-standaarden",
-    "name": "skills-standaarden",
-    "description_en": "Ten skills for Logius standards — API Design Rules, Digikoppeling, OAuth NL, and FSC — with Spectral and WCAG validation.",
-    "target": [
-      "logius"
-    ],
-    "type": "plugin",
-    "origin": "official",
-    "status": "concept",
-    "publisher": "developer-overheid-nl",
-    "source_url": "https://github.com/developer-overheid-nl/skills-standaarden",
-    "last_checked": "2026-07-19"
-  },
-  {
     "id": "kvk-mcp",
     "name": "kvk-mcp",
     "description_en": "Query the KVK Handelsregister for Dutch company profiles and search, across 10 tools.",
@@ -154,76 +126,6 @@
     "status": "live",
     "publisher": "BartWaardenburg",
     "source_url": "https://github.com/BartWaardenburg/kvk-mcp",
-    "last_checked": "2026-07-19"
-  },
-  {
-    "id": "skills-developer-overheid-nl",
-    "name": "skills-developer-overheid-nl",
-    "description_en": "Eight skills applying Dutch government developer guidance — APIs, DigiD/eHerkenning, open source, FSC/Haven, data, and NL Design System.",
-    "target": [
-      "logius"
-    ],
-    "type": "plugin",
-    "origin": "official",
-    "status": "live",
-    "publisher": "developer-overheid-nl",
-    "source_url": "https://github.com/developer-overheid-nl/skills-developer-overheid-nl",
-    "last_checked": "2026-07-19"
-  },
-  {
-    "id": "skills-geo",
-    "name": "skills-geo",
-    "description_en": "Skills for Geonovum geo-standards — OGC API, NEN 3610, INSPIRE, and 3D geo-information.",
-    "target": [
-      "geonovum"
-    ],
-    "type": "plugin",
-    "origin": "official",
-    "status": "live",
-    "publisher": "developer-overheid-nl",
-    "source_url": "https://github.com/developer-overheid-nl/skills-geo",
-    "last_checked": "2026-07-19"
-  },
-  {
-    "id": "skills-internet",
-    "name": "skills-internet",
-    "description_en": "Skills for internet.nl standards — IPv6, DNSSEC, TLS, DMARC/DKIM/SPF, and DANE.",
-    "target": [
-      "internet-nl"
-    ],
-    "type": "plugin",
-    "origin": "official",
-    "status": "live",
-    "publisher": "developer-overheid-nl",
-    "source_url": "https://github.com/developer-overheid-nl/skills-internet",
-    "last_checked": "2026-07-19"
-  },
-  {
-    "id": "skills-open-source-repo",
-    "name": "skills-open-source-repo",
-    "description_en": "Skills that generate publiccode.yml and repository-governance docs for Dutch government open-source projects.",
-    "target": [
-      "rijksoverheid"
-    ],
-    "type": "plugin",
-    "origin": "official",
-    "status": "live",
-    "publisher": "developer-overheid-nl",
-    "source_url": "https://github.com/developer-overheid-nl/skills-open-source-repo",
-    "last_checked": "2026-07-19"
-  },
-  {
-    "id": "zad-actions",
-    "name": "zad-actions",
-    "description_en": "Five skills for the ZAD platform covering Dutch-government deployment, release, and workflow tasks.",
-    "target": [
-      "rijksoverheid"
-    ],
-    "type": "plugin",
-    "origin": "official",
-    "status": "live",
-    "publisher": "RijksICTGilde",
-    "source_url": "https://github.com/RijksICTGilde/zad-actions",
     "last_checked": "2026-07-19"
   },
   {
@@ -252,20 +154,6 @@
     "status": "live",
     "publisher": "dstotijn",
     "source_url": "https://github.com/dstotijn/knmi-mcp",
-    "last_checked": "2026-07-19"
-  },
-  {
-    "id": "overheid-claude-plugins-djimit",
-    "name": "overheid-claude-plugins",
-    "description_en": "Fifty-plus skills spanning Dutch government architecture and standards — NORA, GEMMA Common Ground, ZGW APIs, AVG/DPIA, the Omgevingswet (DSO), and municipal, provincial, and water-board IV.",
-    "target": [
-      "rijksoverheid"
-    ],
-    "type": "plugin",
-    "origin": "community",
-    "status": "live",
-    "publisher": "djimit",
-    "source_url": "https://github.com/djimit/overheid-claude-plugins",
     "last_checked": "2026-07-19"
   },
   {
