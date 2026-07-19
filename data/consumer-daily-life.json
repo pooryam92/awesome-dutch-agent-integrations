@@ -27,5 +27,19 @@
     "publisher": "bartmachielsen",
     "source_url": "https://github.com/bartmachielsen/SupermarktConnector",
     "last_checked": "2026-07-19"
+  },
+  {
+    "id": "mcp-picnic",
+    "name": "mcp-picnic",
+    "description_en": "Lets an AI assistant search Picnic groceries and manage the cart, orders, and deliveries.",
+    "services": [
+      "picnic"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "ivo-toby",
+    "source_url": "https://github.com/ivo-toby/mcp-picnic",
+    "last_checked": "2026-07-19"
   }
 ]

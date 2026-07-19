@@ -32,6 +32,7 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | Name | Description | Service | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---|---|---|---|
 | [ah-mcp](https://github.com/mrserzhan/ah-mcp) | Lets an AI assistant browse Albert Heijn products, Bonus deals, cart, orders, lists, and receipts. | Albert Heijn | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [mcp-picnic](https://github.com/ivo-toby/mcp-picnic) | Lets an AI assistant search Picnic groceries and manage the cart, orders, and deliveries. | Picnic | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [SupermarktConnector](https://github.com/bartmachielsen/SupermarktConnector) | Lets a script or agent query Albert Heijn and Jumbo product and price data via their mobile APIs. | Albert Heijn / Jumbo | ![Script · Community](assets/badges/tags-script-community.svg) |
 
 ## Ecommerce Logistics
@@ -44,7 +45,7 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 
 ## Government Public Data
 
-| Name | Description | Service | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Name | Description | Service | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---|---|---|---|
 | [cbsodata](https://github.com/J535D165/cbsodata) | Lets a script or agent query CBS (Statistics Netherlands) StatLine open data tables. | CBS StatLine | ![Script · Community](assets/badges/tags-script-community.svg) |
 | [knmi-mcp](https://github.com/wolkwork/knmi-mcp) | Lets an AI assistant pull KNMI weather observations and forecasts. | KNMI | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
@@ -56,6 +57,7 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | [OpenTK MCP](https://github.com/r-huijts/opentk-mcp) | Lets an AI assistant query Tweede Kamer (Dutch parliament) debates, motions, and documents. | Tweede Kamer | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [rdw-mcp](https://github.com/rantuma/rdw-mcp) | Lets an AI assistant query RDW vehicle-registration and open data — keyless, no credentials needed. | RDW | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [Rijksmuseum MCP](https://github.com/r-huijts/rijksmuseum-mcp) | Lets an AI assistant search and browse the Rijksmuseum's art collection. | Rijksmuseum | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [skills-standaarden](https://github.com/developer-overheid-nl/skills-standaarden) | Ten skills for Logius standards — API Design Rules, Digikoppeling, OAuth NL, and FSC — with Spectral and WCAG validation. | Logius | ![Plugin · Official · Concept](assets/badges/tags-plugin-official-concept.svg) |
 
 ## Housing Property
 
@@ -72,7 +74,9 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 |---|---|---|---|
 | [Belastingzaken skills](https://github.com/johnhout/knowledge-work-belastingzaken) | Eight commands and eight skills for Dutch income tax, BTW, VPB, payroll tax, deductions, and objections — no filing, professional review required. | Belastingdienst | ![Plugin · Community](assets/badges/tags-plugin-community.svg) |
 | [BSN validator](https://github.com/Cuteminded/bsn-validator) | Validates and generates Dutch BSN (Burgerservicenummer) values. | BSN | ![Script · Community](assets/badges/tags-script-community.svg) |
+| [dutch-energy-regulation-mcp](https://github.com/Ansvar-Systems/dutch-energy-regulation-mcp) | Lets an AI assistant search Dutch energy-regulation records from ACM, TenneT, RVO, and SodM. | Energieregulering (ACM/TenneT/RVO/SodM) | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
 | [Dutch-law MCP](https://github.com/Ansvar-Systems/Dutch-law-mcp) | Lets an AI assistant search wetten.overheid.nl statutes and provisions, with a paid gateway adding Rechtspraak rulings and Kamerstukken. | wetten.overheid.nl / Rechtspraak.nl | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
+| [FALCON / nl-ai-lawyer](https://github.com/FutureAtoms/FALCON-futureatoms-legal-counsel-of-netherlands) | Lets an AI assistant advise on Dutch law — employment/CAO, AVG, tax, real estate, and immigration — via 14 skills and 7 specialist agents. | wetten.overheid.nl / Rechtspraak.nl | ![Plugin · Community](assets/badges/tags-plugin-community.svg) |
 | [legalize-nl](https://github.com/legalize-dev/legalize-nl) | Keeps the full, consolidated Dutch legislation as one Markdown file per law, updated on every real amendment. | wetten.overheid.nl | ![Script · Community](assets/badges/tags-script-community.svg) |
 | [rechtspraak-js](https://github.com/cacfd3a/rechtspraak-js) | Sanitizes and normalizes Dutch court-judgment data from Rechtspraak.nl's official open-data feed. | Rechtspraak.nl | ![Script · Community](assets/badges/tags-script-community.svg) |
 
@@ -84,10 +88,12 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 
 ## Work HR
 
-_No listings yet._
+| Name | Description | Service | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|---|---|---|---|
+| [Intelligence Group Giant MCP](https://intelligence-group.nl/nl/solutions/mcp/) | Lets an AI assistant analyse European (incl. Dutch) salary and recruitment-market data, read-only with per-user access control. | Intelligence Group | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
 
 ---
 
-_Curated — 35 listing(s) across 8 categories._
+_Curated — 40 listing(s) across 8 categories._
 
 <!-- END CATALOGUE -->
