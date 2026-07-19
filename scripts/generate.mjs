@@ -118,8 +118,10 @@ const tagBadge = (r) => {
     color: labels[group]?.[token]?.color ?? FALLBACK_COLOR,
   }));
   const file = `tags-${tokens.map(([, token]) => token).join("-")}.svg`;
-  neededBadges.set(file, stripSvg(parts));
-  return `![${parts.map((p) => p.text).join(" · ")}](assets/badges/${file})`;
+  const svg = stripSvg(parts);
+  neededBadges.set(file, svg);
+  const width = Number(svg.match(/width="(\d+)"/)[1]);
+  return { markdown: `![${parts.map((p) => p.text).join(" · ")}](assets/badges/${file})`, width };
 };
 
 const syncBadgeFiles = () => {
@@ -141,8 +143,16 @@ const syncBadgeFiles = () => {
 
 const serviceNames = (ids) => ids.map((sid) => services[sid]?.name ?? sid).join(" / ");
 
-const TABLE_HEADER = "| Name | Description | Service | Tags |";
 const TABLE_DIVIDER = "|---|---|---|---|";
+
+// GitHub's auto table layout lets the description column starve the Tags
+// column, and its img { max-width: 100% } then scales the strip down. Header
+// text can't shrink, so pad the Tags header with &nbsp; until it is at least
+// as wide as the table's widest strip (~4px per nbsp, "Tags" itself ~30px).
+const tagsHeader = (maxStripWidth) => {
+  const pad = Math.max(0, Math.ceil((maxStripWidth - 30) / 4));
+  return `| Name | Description | Service | Tags${"&nbsp;".repeat(pad)} |`;
+};
 
 const listingRow = (r) => {
   const tags = tagBadge(r);
@@ -150,9 +160,9 @@ const listingRow = (r) => {
     `[${escapeCell(r.name)}](${r.source_url})`,
     escapeCell(r.description_en),
     escapeCell(serviceNames(r.services)),
-    tags,
+    tags.markdown,
   ];
-  return `| ${cells.join(" | ")} |`;
+  return { row: `| ${cells.join(" | ")} |`, tagWidth: tags.width };
 };
 
 // --- build only the catalogue block (between the markers) ---
@@ -169,9 +179,10 @@ for (const file of categoryFiles) {
     block.push("_No listings yet._", "");
     continue;
   }
-  block.push(TABLE_HEADER, TABLE_DIVIDER);
-  for (const r of [...listings].sort((a, b) => a.name.localeCompare(b.name))) {
-    block.push(listingRow(r));
+  const rows = [...listings].sort((a, b) => a.name.localeCompare(b.name)).map(listingRow);
+  block.push(tagsHeader(Math.max(...rows.map((r) => r.tagWidth))), TABLE_DIVIDER);
+  for (const r of rows) {
+    block.push(r.row);
     total++;
   }
   block.push("");

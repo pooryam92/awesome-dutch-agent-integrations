@@ -68,5 +68,75 @@
     "publisher": "Nmbrs",
     "source_url": "https://www.nmbrs.com/ai-connector",
     "last_checked": "2026-07-19"
+  },
+  {
+    "id": "praat-met-je-boekhouding",
+    "name": "Praat met je Boekhouding",
+    "description_en": "Lets an AI assistant work with Exact Online bookkeeping across 86 tools — invoicing, BTW/ICP, and reporting, read-only by default.",
+    "services": [
+      "exact-online"
+    ],
+    "type": "mcp",
+    "origin": "commercial",
+    "status": "live",
+    "publisher": "Praat met je Boekhouding",
+    "source_url": "https://praatmetjeboekhouding.nl/en/exact-online-mcp-server",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "e-boekhouden-mcp",
+    "name": "e-Boekhouden MCP",
+    "description_en": "Lets an AI assistant read and write e-Boekhouden administration using your own API credentials.",
+    "services": [
+      "e-boekhouden"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "CodeMill Solutions",
+    "source_url": "https://github.com/CodeMill-Solutions/e-boekhouden-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "twinfield-mcp",
+    "name": "Twinfield MCP",
+    "description_en": "Lets an AI assistant query and update Twinfield bookkeeping over its SOAP API.",
+    "services": [
+      "twinfield"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "CodeMill Solutions",
+    "source_url": "https://github.com/CodeMill-Solutions/twinfield-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "yuki-mcp",
+    "name": "Yuki MCP",
+    "description_en": "Lets an AI assistant drive Yuki accounting across 102 operations, with write actions gated.",
+    "services": [
+      "yuki"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "Dytto",
+    "source_url": "https://github.com/Dytto-ai/yuki-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "wefact-mcp",
+    "name": "WeFact MCP",
+    "description_en": "Lets an AI assistant manage WeFact debtors, invoices, products, and subscriptions.",
+    "services": [
+      "wefact"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "Nick Aldewereld",
+    "source_url": "https://github.com/NickAldewereld/wefact-mcp",
+    "last_checked": "2026-07-19"
   }
 ]

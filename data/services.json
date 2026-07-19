@@ -6,6 +6,8 @@
   "bsn": { "name": "BSN", "kind": "standard" },
   "bunq": { "name": "bunq" },
   "cbs-statline": { "name": "CBS StatLine", "kind": "dataset" },
+  "e-boekhouden": { "name": "e-Boekhouden" },
+  "exact-online": { "name": "Exact Online" },
   "jumbo": { "name": "Jumbo" },
   "kvk": { "name": "KVK" },
   "marktplaats": { "name": "Marktplaats" },
@@ -19,5 +21,8 @@
   "rijksoverheid": { "name": "Rijksoverheid" },
   "simplicate": { "name": "Simplicate" },
   "tweede-kamer": { "name": "Tweede Kamer" },
-  "wetten-overheid": { "name": "wetten.overheid.nl", "kind": "dataset" }
+  "twinfield": { "name": "Twinfield" },
+  "wefact": { "name": "WeFact" },
+  "wetten-overheid": { "name": "wetten.overheid.nl", "kind": "dataset" },
+  "yuki": { "name": "Yuki" }
 }
