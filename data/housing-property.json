@@ -3,7 +3,7 @@
     "id": "makelaar-mcp",
     "name": "makelaar-mcp",
     "description_en": "Search Funda listings and run NHG, NIBUD, mortgage, and closing-cost calculations.",
-    "services": [
+    "target": [
       "funda"
     ],
     "type": "mcp",
@@ -17,7 +17,7 @@
     "id": "kadaster-mcp",
     "name": "kadaster-mcp",
     "description_en": "Query the Kadaster Knowledge Graph of Dutch land-registry and parcel data.",
-    "services": [
+    "target": [
       "kadaster"
     ],
     "type": "mcp",
@@ -31,7 +31,7 @@
     "id": "mcp-monumenten",
     "name": "mcp-monumenten",
     "description_en": "Look up a Dutch building's monument status from BAG, RCE, and municipal records.",
-    "services": [
+    "target": [
       "monumenten"
     ],
     "type": "mcp",

@@ -22,18 +22,18 @@ const check = process.argv.includes("--check");
 
 const readJson = (p) => JSON.parse(readFileSync(p, "utf8"));
 const labels = readJson(join(dataDir, "labels.json"));
-const services = readJson(join(dataDir, "services.json"));
+const targets = readJson(join(dataDir, "targets.json"));
 
-// labels.json and services.json are registries, not listing files —
+// labels.json and targets.json are registries, not listing files —
 // everything else in /data is a category of listings.
-const REGISTRY_FILES = new Set(["labels.json", "services.json"]);
+const REGISTRY_FILES = new Set(["labels.json", "targets.json"]);
 const categories = readdirSync(dataDir)
   .filter((f) => f.endsWith(".json") && !REGISTRY_FILES.has(f))
   .sort()
   .map((file) => ({ title: titleFromFile(file), listings: readJson(join(dataDir, file)) }));
 
 const badges = createBadges(labels, badgesDir);
-const { block, count } = buildCatalogue(categories, { services, badges });
+const { block, count } = buildCatalogue(categories, { targets, badges });
 
 const readme = readFileSync(readmePath, "utf8");
 let rendered;

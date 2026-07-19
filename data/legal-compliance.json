@@ -3,7 +3,7 @@
     "id": "dutch-law-mcp",
     "name": "Ansvar Gateway (Dutch law)",
     "description_en": "Search Dutch legislation and Rechtspraak rulings through Ansvar's hosted OAuth gateway, every result citing its source (also spans EU and other jurisdictions).",
-    "services": [
+    "target": [
       "wetten-overheid",
       "rechtspraak"
     ],
@@ -18,7 +18,7 @@
     "id": "knowledge-work-belastingzaken",
     "name": "Belastingzaken skills",
     "description_en": "Eight commands and eight skills for Dutch income tax, BTW, VPB, payroll tax, deductions, and objections — no filing, professional review required.",
-    "services": [
+    "target": [
       "belastingdienst"
     ],
     "type": "plugin",
@@ -32,7 +32,7 @@
     "id": "falcon-nl-ai-lawyer",
     "name": "FALCON / nl-ai-lawyer",
     "description_en": "Advise on Dutch law — employment/CAO, AVG, tax, real estate, and immigration — through 14 skills and 7 specialist agents.",
-    "services": [
+    "target": [
       "wetten-overheid",
       "rechtspraak"
     ],
@@ -47,7 +47,7 @@
     "id": "dutch-energy-regulation-mcp",
     "name": "dutch-energy-regulation-mcp",
     "description_en": "Search Dutch energy-regulation records from ACM, TenneT, RVO, and SodM.",
-    "services": [
+    "target": [
       "energy-regulation"
     ],
     "type": "mcp",
@@ -61,7 +61,7 @@
     "id": "rechtspraak-solr-mcp",
     "name": "rechtspraak-solr-mcp-server",
     "description_en": "Full-text search Dutch case law in Solr, with query expansion, legal synonyms, and citation analysis.",
-    "services": [
+    "target": [
       "rechtspraak"
     ],
     "type": "mcp",
@@ -75,7 +75,7 @@
     "id": "nl-eli-mcp",
     "name": "nl-eli-mcp",
     "description_en": "Retrieve versioned Dutch legislation (BWB) and Rechtspraak rulings, keyless.",
-    "services": [
+    "target": [
       "wetten-overheid",
       "rechtspraak"
     ],
@@ -90,7 +90,7 @@
     "id": "ictrecht-skill",
     "name": "ICTRecht skill",
     "description_en": "A Dutch IT-law firm's methodology as a skill — privacy-officer, compliance, and IE-recht role profiles with DPIA and AI Act assessment structures.",
-    "services": [
+    "target": [
       "wetten-overheid"
     ],
     "type": "skill",
@@ -104,7 +104,7 @@
     "id": "aangifte-ib-skill",
     "name": "aangifte-ib-skill",
     "description_en": "A skill that prepares a sourced Dutch personal income-tax return with an adaptive interview and review dossier.",
-    "services": [
+    "target": [
       "belastingdienst"
     ],
     "type": "skill",
@@ -118,7 +118,7 @@
     "id": "rechtspraak-mcp",
     "name": "rechtspraak-mcp",
     "description_en": "Search Rechtspraak open data and resolve legal citations through LiDO, across six tools.",
-    "services": [
+    "target": [
       "rechtspraak"
     ],
     "type": "mcp",
@@ -126,6 +126,20 @@
     "status": "live",
     "publisher": "PrudAI",
     "source_url": "https://github.com/Prudai/rechtspraak-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "openaccountants-plugin",
+    "name": "OpenAccountants Plugin",
+    "description_en": "Classify transactions and apply accountant-verified guidance for Dutch VAT, income tax, and social contributions.",
+    "target": [
+      "belastingdienst"
+    ],
+    "type": "plugin",
+    "origin": "community",
+    "status": "live",
+    "publisher": "OpenAccountants",
+    "source_url": "https://github.com/openaccountants/openaccountants",
     "last_checked": "2026-07-19"
   }
 ]

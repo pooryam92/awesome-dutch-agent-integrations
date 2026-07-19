@@ -1,5 +1,5 @@
 // catalogue.mjs — turns listing data into the Markdown catalogue block.
-// Presentation only; the badge renderer and services registry are injected.
+// Presentation only; the badge renderer and targets registry are injected.
 
 // filename → human category title: "work-hr" -> "Work HR"
 const ACRONYMS = { hr: "HR" };
@@ -28,22 +28,22 @@ const TABLE_DIVIDER = "|---|---|---|---|";
 // as wide as the table's widest strip (~4px per nbsp, "Tags" itself ~30px).
 const tagsHeader = (maxStripWidth) => {
   const pad = Math.max(0, Math.ceil((maxStripWidth - 30) / 4));
-  return `| Name | Description | Service | Tags${"&nbsp;".repeat(pad)} |`;
+  return `| Name | Description | Target | Tags${"&nbsp;".repeat(pad)} |`;
 };
 
-// buildCatalogue(categories, { services, badges }) -> { block, count }
+// buildCatalogue(categories, { targets, badges }) -> { block, count }
 //   categories: [{ title, listings }] — each rendered as its own table.
 //   block:      the Markdown string to splice between the CATALOGUE markers.
 //   count:      total listings rendered (for the CLI summary line).
-export const buildCatalogue = (categories, { services, badges }) => {
-  const serviceNames = (ids) => ids.map((sid) => services[sid]?.name ?? sid).join(" / ");
+export const buildCatalogue = (categories, { targets, badges }) => {
+  const targetNames = (ids) => ids.map((tid) => targets[tid]?.name ?? tid).join(" / ");
 
   const listingRow = (r) => {
     const tags = badges.tagBadge(r);
     const cells = [
       `[${escapeCell(r.name)}](${r.source_url})`,
       escapeCell(r.description_en),
-      escapeCell(serviceNames(r.services)),
+      escapeCell(targetNames(r.target)),
       tags.markdown,
     ];
     return { row: `| ${cells.join(" | ")} |`, tagWidth: tags.width };

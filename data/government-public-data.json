@@ -3,7 +3,7 @@
     "id": "minbzk-nerds",
     "name": "NeRDS (MinBZK)",
     "description_en": "Fourteen Agent Skills covering Dutch government guidelines — accessibility, privacy, security, procurement, algorithms, and sustainability.",
-    "services": [
+    "target": [
       "rijksoverheid"
     ],
     "type": "plugin",
@@ -17,7 +17,7 @@
     "id": "minbzk-kvk-connect",
     "name": "kvk-connect (MinBZK)",
     "description_en": "Query a ministry-run mirror of KVK company profiles, history, and search data.",
-    "services": [
+    "target": [
       "kvk"
     ],
     "type": "mcp",
@@ -31,7 +31,7 @@
     "id": "rijksmuseum-mcp",
     "name": "Rijksmuseum MCP",
     "description_en": "Search and browse the Rijksmuseum's art collection by artist, work, and theme.",
-    "services": [
+    "target": [
       "rijksmuseum"
     ],
     "type": "mcp",
@@ -45,7 +45,7 @@
     "id": "opentk-mcp",
     "name": "OpenTK MCP",
     "description_en": "Query Tweede Kamer (Dutch parliament) debates, motions, and documents.",
-    "services": [
+    "target": [
       "tweede-kamer"
     ],
     "type": "mcp",
@@ -59,7 +59,7 @@
     "id": "nl-gov-mcp",
     "name": "nl-gov-mcp",
     "description_en": "Reach 39 Dutch government data sources through one server — CBS, RDW, KNMI, PDOK, Rechtspraak, DUO, and more.",
-    "services": [
+    "target": [
       "cbs-statline",
       "rdw",
       "knmi",
@@ -76,7 +76,7 @@
     "id": "rdw-mcp",
     "name": "rdw-mcp",
     "description_en": "Query RDW vehicle-registration and open data — keyless, no credentials needed.",
-    "services": [
+    "target": [
       "rdw"
     ],
     "type": "mcp",
@@ -90,7 +90,7 @@
     "id": "knmi-mcp",
     "name": "knmi-mcp",
     "description_en": "Pull KNMI weather observations and forecasts for Dutch locations.",
-    "services": [
+    "target": [
       "knmi"
     ],
     "type": "mcp",
@@ -104,7 +104,7 @@
     "id": "oorlogsbronnen-mcp",
     "name": "oorlogsbronnen-mcp",
     "description_en": "Search Oorlogsbronnen's archive of 12 million Dutch WWII sources.",
-    "services": [
+    "target": [
       "oorlogsbronnen"
     ],
     "type": "mcp",
@@ -118,7 +118,7 @@
     "id": "openarchieven-mcp",
     "name": "openarchieven-mcp",
     "description_en": "Search Open Archieven genealogy records through a no-auth hosted endpoint.",
-    "services": [
+    "target": [
       "openarchieven"
     ],
     "type": "mcp",
@@ -132,7 +132,7 @@
     "id": "skills-standaarden",
     "name": "skills-standaarden",
     "description_en": "Ten skills for Logius standards — API Design Rules, Digikoppeling, OAuth NL, and FSC — with Spectral and WCAG validation.",
-    "services": [
+    "target": [
       "logius"
     ],
     "type": "plugin",
@@ -146,7 +146,7 @@
     "id": "kvk-mcp",
     "name": "kvk-mcp",
     "description_en": "Query the KVK Handelsregister for Dutch company profiles and search, across 10 tools.",
-    "services": [
+    "target": [
       "kvk"
     ],
     "type": "mcp",
@@ -160,7 +160,7 @@
     "id": "skills-developer-overheid-nl",
     "name": "skills-developer-overheid-nl",
     "description_en": "Eight skills applying Dutch government developer guidance — APIs, DigiD/eHerkenning, open source, FSC/Haven, data, and NL Design System.",
-    "services": [
+    "target": [
       "logius"
     ],
     "type": "plugin",
@@ -174,7 +174,7 @@
     "id": "skills-geo",
     "name": "skills-geo",
     "description_en": "Skills for Geonovum geo-standards — OGC API, NEN 3610, INSPIRE, and 3D geo-information.",
-    "services": [
+    "target": [
       "geonovum"
     ],
     "type": "plugin",
@@ -188,7 +188,7 @@
     "id": "skills-internet",
     "name": "skills-internet",
     "description_en": "Skills for internet.nl standards — IPv6, DNSSEC, TLS, DMARC/DKIM/SPF, and DANE.",
-    "services": [
+    "target": [
       "internet-nl"
     ],
     "type": "plugin",
@@ -202,7 +202,7 @@
     "id": "skills-open-source-repo",
     "name": "skills-open-source-repo",
     "description_en": "Skills that generate publiccode.yml and repository-governance docs for Dutch government open-source projects.",
-    "services": [
+    "target": [
       "rijksoverheid"
     ],
     "type": "plugin",
@@ -216,7 +216,7 @@
     "id": "zad-actions",
     "name": "zad-actions",
     "description_en": "Five skills for the ZAD platform covering Dutch-government deployment, release, and workflow tasks.",
-    "services": [
+    "target": [
       "rijksoverheid"
     ],
     "type": "plugin",
@@ -230,7 +230,7 @@
     "id": "mcp-overheid-nl",
     "name": "mcp-overheid-nl",
     "description_en": "Browse the data.overheid.nl open-data catalogue by publishing organisation and dataset theme.",
-    "services": [
+    "target": [
       "data-overheid-nl"
     ],
     "type": "mcp",
@@ -244,7 +244,7 @@
     "id": "knmi-mcp-dstotijn",
     "name": "knmi-mcp (dstotijn)",
     "description_en": "Query KNMI weather observations and forecasts through KNMI's open data API.",
-    "services": [
+    "target": [
       "knmi"
     ],
     "type": "mcp",
@@ -258,7 +258,7 @@
     "id": "overheid-claude-plugins-djimit",
     "name": "overheid-claude-plugins",
     "description_en": "Fifty-plus skills spanning Dutch government architecture and standards — NORA, GEMMA Common Ground, ZGW APIs, AVG/DPIA, the Omgevingswet (DSO), and municipal, provincial, and water-board IV.",
-    "services": [
+    "target": [
       "rijksoverheid"
     ],
     "type": "plugin",
@@ -272,7 +272,7 @@
     "id": "cbs-mcp",
     "name": "cbs-mcp",
     "description_en": "Makes official Dutch statistics from CBS (StatLine) accessible for AI assistants.",
-    "services": [
+    "target": [
       "cbs-statline"
     ],
     "type": "mcp",
@@ -280,6 +280,35 @@
     "status": "live",
     "publisher": "bewijs",
     "source_url": "https://github.com/bewijs/cbs-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "moza-poc-digitale-assistent",
+    "name": "moza-poc-digitale-assistent",
+    "description_en": "Reach MijnOverheid Zakelijk and connected government sources through one MCP-backed digital assistant.",
+    "target": [
+      "mijnoverheid",
+      "kvk"
+    ],
+    "type": "plugin",
+    "origin": "official",
+    "status": "concept",
+    "publisher": "MinBZK",
+    "source_url": "https://github.com/MinBZK/moza-poc-digitale-assistent",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "poc-machine-law",
+    "name": "poc-machine-law",
+    "description_en": "Query Dutch legislation and check benefits eligibility through the RegelRecht machine-law server.",
+    "target": [
+      "wetten-overheid"
+    ],
+    "type": "mcp",
+    "origin": "official",
+    "status": "concept",
+    "publisher": "MinBZK",
+    "source_url": "https://github.com/MinBZK/poc-machine-law",
     "last_checked": "2026-07-19"
   }
 ]

@@ -3,8 +3,8 @@
 // 1. Validate every /data/<category>.json against schema.json.
 // 2. Fail on duplicate `id` across ALL files.
 // 3. Fail on any enum token not present in labels.json (dangling token).
-// 4. Fail on any services id not present in services.json (dangling id),
-//    and on malformed services.json entries.
+// 4. Fail on any target id not present in targets.json (dangling id),
+//    and on malformed targets.json entries.
 // Exits non-zero on any failure so CI blocks the merge.
 
 import { readFileSync, readdirSync } from "node:fs";
@@ -20,11 +20,11 @@ const readJson = (p) => JSON.parse(readFileSync(p, "utf8"));
 
 const schema = readJson(join(root, "schema.json"));
 const labels = readJson(join(dataDir, "labels.json"));
-const services = readJson(join(dataDir, "services.json"));
+const targets = readJson(join(dataDir, "targets.json"));
 
-// labels.json and services.json are registries, not listing files —
+// labels.json and targets.json are registries, not listing files —
 // everything else in /data is data.
-const REGISTRY_FILES = new Set(["labels.json", "services.json"]);
+const REGISTRY_FILES = new Set(["labels.json", "targets.json"]);
 const categoryFiles = readdirSync(dataDir)
   .filter((f) => f.endsWith(".json") && !REGISTRY_FILES.has(f))
   .sort();
@@ -39,13 +39,13 @@ const ENUM_FIELDS = { type: "type", origin: "origin", status: "status" };
 const errors = [];
 const seenIds = new Map(); // id -> first file that used it
 
-// Registry sanity: every services.json entry needs a name; kind is optional
+// Registry sanity: every targets.json entry needs a name; kind is optional
 // but must be a known value when present.
-const SERVICE_KINDS = new Set(["provider", "dataset", "standard"]);
-for (const [sid, entry] of Object.entries(services)) {
-  if (!entry?.name) errors.push(`services.json[${sid}]: missing "name"`);
-  if (entry?.kind != null && !SERVICE_KINDS.has(entry.kind)) {
-    errors.push(`services.json[${sid}]: unknown kind "${entry.kind}"`);
+const TARGET_KINDS = new Set(["provider", "dataset", "standard"]);
+for (const [tid, entry] of Object.entries(targets)) {
+  if (!entry?.name) errors.push(`targets.json[${tid}]: missing "name"`);
+  if (entry?.kind != null && !TARGET_KINDS.has(entry.kind)) {
+    errors.push(`targets.json[${tid}]: unknown kind "${entry.kind}"`);
   }
 }
 
@@ -80,11 +80,11 @@ for (const file of categoryFiles) {
       }
     }
 
-    // Dangling service ids: every id must resolve in services.json.
-    if (Array.isArray(row?.services)) {
-      for (const sid of row.services) {
-        if (!services[sid]) {
-          errors.push(`${where}: services id "${sid}" has no entry in services.json`);
+    // Dangling target ids: every id must resolve in targets.json.
+    if (Array.isArray(row?.target)) {
+      for (const tid of row.target) {
+        if (!targets[tid]) {
+          errors.push(`${where}: target id "${tid}" has no entry in targets.json`);
         }
       }
     }

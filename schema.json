@@ -11,7 +11,7 @@
       "id",
       "name",
       "description_en",
-      "services",
+      "target",
       "type",
       "origin",
       "status",
@@ -35,7 +35,7 @@
         "minLength": 1,
         "description": "One outcome-first sentence."
       },
-      "services": {
+      "target": {
         "type": "array",
         "minItems": 1,
         "uniqueItems": true,
@@ -43,7 +43,7 @@
           "type": "string",
           "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
         },
-        "description": "Ids from data/services.json of the Dutch services or data sources this integration targets; the join key that groups duplicates."
+        "description": "Ids from data/targets.json of the Dutch service, data source, standard, or authority this integration lets an agent reach or work with; the outcome axis listings are grouped and searched by."
       },
       "type": {
         "type": "string",

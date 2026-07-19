@@ -3,7 +3,7 @@
     "id": "postnl-mcp",
     "name": "PostNL MCP",
     "description_en": "Create shipments and track PostNL parcels, barcodes, and pickup-point locations.",
-    "services": [
+    "target": [
       "postnl"
     ],
     "type": "mcp",
@@ -17,7 +17,7 @@
     "id": "bol-mcp",
     "name": "bol-mcp",
     "description_en": "Reach bol.com's Retailer API through 76 tools spanning orders, offers, and product listings.",
-    "services": [
+    "target": [
       "bol"
     ],
     "type": "mcp",
@@ -31,7 +31,7 @@
     "id": "postcode-eu-ai-tools",
     "name": "postcode-eu-ai-tools",
     "description_en": "Validate and autocomplete Dutch addresses through the official Postcode.eu API.",
-    "services": [
+    "target": [
       "postcode-eu"
     ],
     "type": "mcp",
@@ -45,7 +45,7 @@
     "id": "marktplaats-mcp",
     "name": "marktplaats-mcp",
     "description_en": "Search and read listings from Marktplaats.nl.",
-    "services": [
+    "target": [
       "marktplaats"
     ],
     "type": "mcp",
@@ -59,7 +59,7 @@
     "id": "mcp-dutch-postal-codes",
     "name": "mcp-dutch-postal-codes",
     "description_en": "Retrieve Dutch postal codes and validate address information.",
-    "services": [
+    "target": [
       "postcode-eu"
     ],
     "type": "mcp",

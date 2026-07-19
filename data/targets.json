@@ -21,6 +21,7 @@
   "kvk": { "name": "KVK" },
   "logius": { "name": "Logius" },
   "marktplaats": { "name": "Marktplaats" },
+  "mijnoverheid": { "name": "MijnOverheid" },
   "mollie": { "name": "Mollie" },
   "moneybird": { "name": "Moneybird" },
   "monumenten": { "name": "Monumenten", "kind": "dataset" },
@@ -40,6 +41,5 @@
   "twinfield": { "name": "Twinfield" },
   "wefact": { "name": "WeFact" },
   "wetten-overheid": { "name": "wetten.overheid.nl", "kind": "dataset" },
-  "yuki": { "name": "Yuki" },
-  "peppol": { "name": "Peppol", "kind": "standard" }
+  "yuki": { "name": "Yuki" }
 }

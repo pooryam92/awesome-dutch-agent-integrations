@@ -1,6 +1,6 @@
 name: Add an integration
 description: Submit a Dutch agent-integration for the index. No JSON knowledge needed.
-title: "[Add] <service> — <name>"
+title: "[Add] <target> — <name>"
 labels: ["submission"]
 body:
   - type: input
@@ -18,17 +18,17 @@ body:
     validations:
       required: true
   - type: input
-    id: service
+    id: target
     attributes:
-      label: Dutch service(s)
-      description: The Dutch service(s) or data source(s) it targets — separate multiple with commas.
+      label: Dutch target(s)
+      description: The Dutch service(s), data source(s), standard(s), or authority it reaches — separate multiple with commas.
     validations:
       required: true
   - type: dropdown
     id: type
     attributes:
       label: Type
-      options: [mcp, skill, plugin, script, managed]
+      options: [mcp, skill, plugin, managed]
     validations:
       required: true
   - type: input

@@ -3,7 +3,7 @@
     "id": "ns-mcp-server",
     "name": "NS MCP Server",
     "description_en": "Look up NS train departures and disruptions and plan train journeys.",
-    "services": [
+    "target": [
       "ns"
     ],
     "type": "mcp",
@@ -17,7 +17,7 @@
     "id": "ns-travel-mcp",
     "name": "ns-travel-mcp",
     "description_en": "Plan NS journeys and check live departures, disruptions, and station details.",
-    "services": [
+    "target": [
       "ns"
     ],
     "type": "mcp",
@@ -31,7 +31,7 @@
     "id": "anwb-mcp",
     "name": "anwb-mcp",
     "description_en": "Pull ANWB traffic incidents, plan routes with turn-by-turn directions, and search locations.",
-    "services": [
+    "target": [
       "anwb"
     ],
     "type": "mcp",
