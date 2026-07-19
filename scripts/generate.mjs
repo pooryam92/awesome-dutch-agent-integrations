@@ -5,7 +5,7 @@
 //   node scripts/generate.mjs           rewrites the block in README.md
 //   node scripts/generate.mjs --check    exits non-zero if the block is out of sync (CI)
 
-import { readFileSync, writeFileSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -45,17 +45,57 @@ const escapeCell = (s) =>
     .replace(/\]/g, "\\]")
     .replace(/\r?\n/g, " ");
 
-// Tags are shields.io badges colored per value from labels.json, so each
-// dimension is recognizable at a glance. Status is exception-only: "live" is
-// the overwhelming default, so only deviations get a badge.
-// Shields' flat badge format splits on "-", so literal "-"/"_" in the label
-// must be doubled or they get parsed as field separators.
-const escapeBadgeText = (s) => String(s).replace(/-/g, "--").replace(/_/g, "__");
+// Tags are badge SVGs colored per value from labels.json, generated into
+// /assets/badges and committed, so the README makes zero external image
+// requests (shields.io outages left every badge broken via GitHub's camo
+// proxy). Status is exception-only: "live" is the overwhelming default, so
+// only deviations get a badge.
 const FALLBACK_COLOR = "6a737d";
+const badgesDir = join(root, "assets", "badges");
+
+// Shields-style flat badge, single segment. textLength pins the text to the
+// computed width, so rendering is identical regardless of installed fonts.
+const badgeSvg = (text, color) => {
+  const textWidth = Math.round(text.length * 6.5);
+  const width = textWidth + 12;
+  const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const t = esc(text);
+  return (
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="20" role="img" aria-label="${t}">` +
+    `<title>${t}</title>` +
+    `<linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient>` +
+    `<clipPath id="r"><rect width="${width}" height="20" rx="3" fill="#fff"/></clipPath>` +
+    `<g clip-path="url(#r)"><rect width="${width}" height="20" fill="#${color}"/><rect width="${width}" height="20" fill="url(#s)"/></g>` +
+    `<g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">` +
+    `<text aria-hidden="true" x="${width * 5}" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="${textWidth * 10}">${t}</text>` +
+    `<text x="${width * 5}" y="140" transform="scale(.1)" textLength="${textWidth * 10}">${t}</text>` +
+    `</g></svg>\n`
+  );
+};
 
 const badge = (group, token) => {
-  const { en: text = token, color = FALLBACK_COLOR } = labels[group]?.[token] ?? {};
-  return `![${text}](https://img.shields.io/badge/-${encodeURIComponent(escapeBadgeText(text))}-${color})`;
+  const text = labels[group]?.[token]?.en ?? token;
+  return `![${text}](assets/badges/${group}-${token}.svg)`;
+};
+
+// Emit (or, in --check mode, verify) one SVG per labels.json token. Every
+// badge file is derived purely from labels.json, so out-of-date files fail
+// CI the same way an out-of-date README does.
+const syncBadgeFiles = () => {
+  const stale = [];
+  for (const [group, tokens] of Object.entries(labels)) {
+    for (const [token, { en, color }] of Object.entries(tokens)) {
+      const path = join(badgesDir, `${group}-${token}.svg`);
+      const svg = badgeSvg(en ?? token, color ?? FALLBACK_COLOR);
+      if (check) {
+        if (!existsSync(path) || readFileSync(path, "utf8") !== svg) stale.push(`${group}-${token}.svg`);
+      } else {
+        mkdirSync(badgesDir, { recursive: true });
+        writeFileSync(path, svg);
+      }
+    }
+  }
+  return stale;
 };
 
 const serviceNames = (ids) => ids.map((sid) => services[sid]?.name ?? sid).join(" / ");
@@ -114,13 +154,19 @@ const before = readme.slice(0, beginLineEnd + 1);
 const after = readme.slice(endIdx); // keep the END marker line onward
 const rendered = `${before}\n${block.join("\n")}\n\n${after}`;
 
+const staleBadges = syncBadgeFiles();
+
 if (check) {
+  if (staleBadges.length) {
+    console.error(`✖ badge file(s) out of sync with labels.json: ${staleBadges.join(", ")}. Run \`npm run generate\` and commit.`);
+    process.exit(1);
+  }
   if (readme !== rendered) {
     console.error("✖ README.md catalogue is out of sync with /data. Run `npm run generate` and commit.");
     process.exit(1);
   }
-  console.log("✓ README.md catalogue is in sync with /data.");
+  console.log("✓ README.md catalogue and badge files are in sync with /data.");
 } else {
   writeFileSync(readmePath, rendered);
-  console.log(`✓ updated README.md catalogue (${total} listing(s)).`);
+  console.log(`✓ updated README.md catalogue (${total} listing(s)) and assets/badges.`);
 }
