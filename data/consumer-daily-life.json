@@ -55,5 +55,33 @@
     "publisher": "Samvox1",
     "source_url": "https://github.com/Samvox1/nl-supermarkt-mcp",
     "last_checked": "2026-07-19"
+  },
+  {
+    "id": "unofficial-magister-mcp",
+    "name": "unofficial-magister-mcp",
+    "description_en": "Look up Dutch school schedules from Magister — daily and weekly timetables plus drop-off and pick-up times, for student and parent accounts.",
+    "target": [
+      "magister"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "israelroldan",
+    "source_url": "https://github.com/israelroldan/unofficial-magister-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "homewizard-mcp-server",
+    "name": "homewizard-mcp-server",
+    "description_en": "Read live HomeWizard P1 smart-meter data — power, per-phase voltages and currents, cumulative kWh, and gas — over the local API, read-only.",
+    "target": [
+      "homewizard"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "mrksmts",
+    "source_url": "https://github.com/mrksmts/homewizard-mcp-server",
+    "last_checked": "2026-07-19"
   }
 ]

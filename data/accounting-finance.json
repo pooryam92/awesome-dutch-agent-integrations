@@ -194,5 +194,47 @@
     "publisher": "Productivity Advisors BV",
     "source_url": "https://financemcp.nl/",
     "last_checked": "2026-07-19"
+  },
+  {
+    "id": "finance-skills-nl",
+    "name": "finance-skills-nl",
+    "description_en": "Draft month-close packages, reconcile the general ledger, and audit Excel models for Dutch SME finance teams, with every output flagged for human sign-off.",
+    "target": [
+      "rj"
+    ],
+    "type": "plugin",
+    "origin": "community",
+    "status": "live",
+    "publisher": "Start 2 Scale",
+    "source_url": "https://github.com/start2scale/finance-skills-nl",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "visma-mcp-server",
+    "name": "visma-mcp-server",
+    "description_en": "Manage Visma eAccounting invoices, customers, suppliers, vouchers, and orders across 20 tools.",
+    "target": [
+      "visma-eaccounting"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "Proviscale",
+    "source_url": "https://github.com/Proviscale/visma-mcp-server",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "netherlands-invoice-mcp",
+    "name": "netherlands-invoice-mcp",
+    "description_en": "Send Dutch B2B e-facturen over Peppol (BIS 3.0 / EN 16931) via Storecove, with the BTW breakdown computed for you.",
+    "target": [
+      "peppol"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "Wishpool",
+    "source_url": "https://github.com/junter1989k-ai/netherlands-invoice-mcp",
+    "last_checked": "2026-07-19"
   }
 ]

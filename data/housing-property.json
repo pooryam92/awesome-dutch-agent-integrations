@@ -40,5 +40,19 @@
     "publisher": "Woonstad Rotterdam",
     "source_url": "https://github.com/woonstadrotterdam/mcp-monumenten",
     "last_checked": "2026-07-19"
+  },
+  {
+    "id": "kamernet-mcp",
+    "name": "kamernet-mcp",
+    "description_en": "Search Kamernet rooms, studios, and apartments, read full bilingual listings, and monitor new ones against your budget.",
+    "target": [
+      "kamernet"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "jasp-nerd",
+    "source_url": "https://github.com/jasp-nerd/kamernet-mcp",
+    "last_checked": "2026-07-19"
   }
 ]

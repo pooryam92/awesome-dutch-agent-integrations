@@ -14,5 +14,3 @@ Two ways to add an integration:
 - CI validates `/data` against `schema.json` and rejects duplicate `id`s, dangling enum tokens, and target ids missing from `targets.json`.
 
 Submissions are reviewed manually. No accounts, no self-service listings.
-
-<!-- TODO: link the written verification methodology once it exists. -->

@@ -45,6 +45,14 @@
   "funda": {
     "name": "Funda"
   },
+  "gemeente-amsterdam": {
+    "name": "Gemeente Amsterdam",
+    "kind": "dataset"
+  },
+  "gemeente-baarn": {
+    "name": "Gemeente Baarn",
+    "kind": "dataset"
+  },
   "gemeente-utrecht": {
     "name": "Gemeente Utrecht",
     "kind": "dataset"
@@ -52,6 +60,9 @@
   "geonovum": {
     "name": "Geonovum",
     "kind": "standard"
+  },
+  "homewizard": {
+    "name": "HomeWizard"
   },
   "intelligence-group": {
     "name": "Intelligence Group"
@@ -67,6 +78,9 @@
     "name": "Kadaster",
     "kind": "dataset"
   },
+  "kamernet": {
+    "name": "Kamernet"
+  },
   "knmi": {
     "name": "KNMI"
   },
@@ -75,6 +89,9 @@
   },
   "logius": {
     "name": "Logius"
+  },
+  "magister": {
+    "name": "Magister"
   },
   "marktplaats": {
     "name": "Marktplaats"
@@ -104,6 +121,10 @@
   "openarchieven": {
     "name": "Open Archieven"
   },
+  "peppol": {
+    "name": "Peppol (e-factuur)",
+    "kind": "standard"
+  },
   "picnic": {
     "name": "Picnic"
   },
@@ -125,6 +146,14 @@
   "rijksoverheid": {
     "name": "Rijksoverheid"
   },
+  "rj": {
+    "name": "Raad voor de Jaarverslaggeving (RJ)",
+    "kind": "standard"
+  },
+  "security-standards": {
+    "name": "Overheidsbeveiligingsnormen (BIO2/NEN 7510/NCSC-NL/DigiD)",
+    "kind": "standard"
+  },
   "simplicate": {
     "name": "Simplicate"
   },
@@ -133,6 +162,9 @@
   },
   "twinfield": {
     "name": "Twinfield"
+  },
+  "visma-eaccounting": {
+    "name": "Visma eAccounting"
   },
   "wefact": {
     "name": "WeFact"

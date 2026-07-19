@@ -1,7 +1,7 @@
 [
   {
-    "id": "cbs-mcp",
-    "name": "cbs-mcp",
+    "id": "mcp-cbs-cijfers-open-data",
+    "name": "mcp-cbs-cijfers-open-data",
     "description_en": "Makes official Dutch statistics from CBS (StatLine) accessible for AI assistants.",
     "target": [
       "cbs-statline"
@@ -9,8 +9,8 @@
     "type": "mcp",
     "origin": "community",
     "status": "live",
-    "publisher": "bewijs",
-    "source_url": "https://github.com/bewijs/cbs-mcp",
+    "publisher": "dstotijn",
+    "source_url": "https://github.com/dstotijn/mcp-cbs-cijfers-open-data",
     "last_checked": "2026-07-19"
   },
   {
@@ -169,6 +169,34 @@
     "status": "live",
     "publisher": "Intelligence Group",
     "source_url": "https://intelligence-group.nl/nl/solutions/mcp/",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "mcp-gemeente-amsterdam",
+    "name": "mcp-gemeente-amsterdam",
+    "description_en": "Query Amsterdam's open APIs across buildings, WOZ, parking, waste, monuments, permits, soil, and more from one server.",
+    "target": [
+      "gemeente-amsterdam"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "aronmartin",
+    "source_url": "https://github.com/aronmartin/mcp-gemeente-amsterdam",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "baarn-raadsinformatie",
+    "name": "baarn-raadsinformatie",
+    "description_en": "Search Gemeente Baarn council meetings, agendas, and documents via the Notubiz API, with keyword and semantic search.",
+    "target": [
+      "gemeente-baarn"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "tiemenrtuinstra",
+    "source_url": "https://github.com/tiemenrtuinstra/baarn-raadsinformatie",
     "last_checked": "2026-07-19"
   }
 ]

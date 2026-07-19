@@ -31,6 +31,14 @@ const tagsHeader = (maxStripWidth) => {
   return `| Name | Description | Target | Tags${"&nbsp;".repeat(pad)} |`;
 };
 
+// GitHub heading anchor: lowercase, drop punctuation, spaces -> hyphens.
+const anchor = (title) =>
+  title
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-");
+
 // buildCatalogue(categories, { targets, badges }) -> { block, count }
 //   categories: [{ title, listings }] — each rendered as its own table.
 //   block:      the Markdown string to splice between the CATALOGUE markers.
@@ -51,6 +59,8 @@ export const buildCatalogue = (categories, { targets, badges }) => {
 
   const block = [
     "_Every listing is tagged with its type and origin; a status badge appears only when it is **not** live (beta, preview, concept, abandoned)._",
+    "",
+    categories.map(({ title }) => `[${title}](#${anchor(title)})`).join(" · "),
     "",
   ];
 
