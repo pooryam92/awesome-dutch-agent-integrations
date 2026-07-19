@@ -2,7 +2,7 @@
   {
     "id": "postnl-mcp",
     "name": "PostNL MCP",
-    "description_en": "Lets an AI assistant create shipments and track PostNL parcels, barcodes, and pickup points.",
+    "description_en": "Create shipments and track PostNL parcels, barcodes, and pickup-point locations.",
     "services": [
       "postnl"
     ],
@@ -14,23 +14,9 @@
     "last_checked": "2026-07-19"
   },
   {
-    "id": "marktplaats-py",
-    "name": "marktplaats-py",
-    "description_en": "Lets a script or agent search Marktplaats.nl listings and seller data.",
-    "services": [
-      "marktplaats"
-    ],
-    "type": "script",
-    "origin": "community",
-    "status": "live",
-    "publisher": "jensjeflensje",
-    "source_url": "https://github.com/jensjeflensje/marktplaats-py",
-    "last_checked": "2026-07-19"
-  },
-  {
     "id": "bol-mcp",
     "name": "bol-mcp",
-    "description_en": "Lets an AI assistant call bol.com's Retailer API — 76 tools across orders, offers, and products.",
+    "description_en": "Reach bol.com's Retailer API through 76 tools spanning orders, offers, and product listings.",
     "services": [
       "bol"
     ],
@@ -39,6 +25,48 @@
     "status": "live",
     "publisher": "BartWaardenburg",
     "source_url": "https://github.com/BartWaardenburg/bol-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "postcode-eu-ai-tools",
+    "name": "postcode-eu-ai-tools",
+    "description_en": "Validate and autocomplete Dutch addresses through the official Postcode.eu API.",
+    "services": [
+      "postcode-eu"
+    ],
+    "type": "mcp",
+    "origin": "official",
+    "status": "live",
+    "publisher": "Postcode.nl",
+    "source_url": "https://github.com/postcode-nl/postcode-eu-ai-tools-python",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "marktplaats-mcp",
+    "name": "marktplaats-mcp",
+    "description_en": "Search and read listings from Marktplaats.nl.",
+    "services": [
+      "marktplaats"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "PonClick",
+    "source_url": "https://github.com/PonClick/marktplaats-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "mcp-dutch-postal-codes",
+    "name": "mcp-dutch-postal-codes",
+    "description_en": "Retrieve Dutch postal codes and validate address information.",
+    "services": [
+      "postcode-eu"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "dstotijn",
+    "source_url": "https://github.com/dstotijn/mcp-dutch-postal-codes",
     "last_checked": "2026-07-19"
   }
 ]

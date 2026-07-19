@@ -1,11 +1,13 @@
 {
   "adyen": { "name": "Adyen" },
   "albert-heijn": { "name": "Albert Heijn" },
+  "anwb": { "name": "ANWB" },
   "belastingdienst": { "name": "Belastingdienst" },
   "bol": { "name": "bol.com" },
   "buienradar": { "name": "Buienradar" },
   "bunq": { "name": "bunq" },
   "cbs-statline": { "name": "CBS StatLine", "kind": "dataset" },
+  "data-overheid-nl": { "name": "data.overheid.nl", "kind": "dataset" },
   "e-boekhouden": { "name": "e-Boekhouden" },
   "energy-regulation": { "name": "Energieregulering (ACM/TenneT/RVO/SodM)", "kind": "dataset" },
   "exact-online": { "name": "Exact Online" },
@@ -27,6 +29,7 @@
   "oorlogsbronnen": { "name": "Oorlogsbronnen" },
   "openarchieven": { "name": "Open Archieven" },
   "picnic": { "name": "Picnic" },
+  "postcode-eu": { "name": "Postcode.eu" },
   "postnl": { "name": "PostNL" },
   "rdw": { "name": "RDW" },
   "rechtspraak": { "name": "Rechtspraak.nl" },
@@ -37,5 +40,6 @@
   "twinfield": { "name": "Twinfield" },
   "wefact": { "name": "WeFact" },
   "wetten-overheid": { "name": "wetten.overheid.nl", "kind": "dataset" },
-  "yuki": { "name": "Yuki" }
+  "yuki": { "name": "Yuki" },
+  "peppol": { "name": "Peppol", "kind": "standard" }
 }

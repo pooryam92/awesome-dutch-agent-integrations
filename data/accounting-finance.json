@@ -2,7 +2,7 @@
   {
     "id": "adyen-mcp",
     "name": "Adyen MCP",
-    "description_en": "Lets an AI assistant drive Adyen's Checkout and Management APIs — payments, configuration, and account setup.",
+    "description_en": "Create payments and manage merchant configuration and account setup across Adyen's Checkout and Management APIs.",
     "services": [
       "adyen"
     ],
@@ -16,7 +16,7 @@
   {
     "id": "bunq-partner-mcp",
     "name": "bunq Partner MCP",
-    "description_en": "Lets an AI assistant drive the bunq Partner API — onboarding, KYC, accounts, payments, cards, and compliance.",
+    "description_en": "Automate bunq banking through the Partner API — onboarding, KYC, accounts, payments, cards, and compliance.",
     "services": [
       "bunq"
     ],
@@ -30,7 +30,7 @@
   {
     "id": "mollie-mcp",
     "name": "Mollie MCP",
-    "description_en": "Lets an AI assistant manage Mollie payments, customers, invoices, subscriptions, balances, settlements, terminals, and webhooks.",
+    "description_en": "Manage the full Mollie stack — payments, customers, invoices, subscriptions, balances, settlements, terminals, and webhooks.",
     "services": [
       "mollie"
     ],
@@ -44,7 +44,7 @@
   {
     "id": "moneybird-mcp",
     "name": "Moneybird MCP",
-    "description_en": "Lets an AI assistant manage Moneybird bookkeeping — invoices, contacts, and accounting data.",
+    "description_en": "Keep Moneybird bookkeeping up to date — invoices, contacts, and ledger data.",
     "services": [
       "moneybird"
     ],
@@ -58,7 +58,7 @@
   {
     "id": "simplicate-mcp",
     "name": "Simplicate MCP",
-    "description_en": "Lets an AI assistant work with Simplicate's project, CRM, and invoicing data via a per-domain hosted endpoint.",
+    "description_en": "Work with Simplicate project, CRM, and invoicing data through a per-domain hosted endpoint.",
     "services": [
       "simplicate"
     ],
@@ -72,7 +72,7 @@
   {
     "id": "nmbrs-ai-connector",
     "name": "Nmbrs AI Connector",
-    "description_en": "Lets an AI assistant perform Dutch payroll actions in Nmbrs, with confirmation-gated writes.",
+    "description_en": "Run Dutch payroll actions in Nmbrs, with every write gated behind explicit confirmation.",
     "services": [
       "nmbrs"
     ],
@@ -86,7 +86,7 @@
   {
     "id": "praat-met-je-boekhouding",
     "name": "Praat met je Boekhouding",
-    "description_en": "Lets an AI assistant work with Exact Online bookkeeping across 86 tools — invoicing, BTW/ICP, and reporting, read-only by default.",
+    "description_en": "Query Exact Online bookkeeping across 86 tools — invoicing, BTW/ICP, and reporting — read-only by default.",
     "services": [
       "exact-online"
     ],
@@ -100,7 +100,7 @@
   {
     "id": "e-boekhouden-mcp",
     "name": "e-Boekhouden MCP",
-    "description_en": "Lets an AI assistant read and write e-Boekhouden administration using your own API credentials.",
+    "description_en": "Read and write e-Boekhouden administration using your own API credentials.",
     "services": [
       "e-boekhouden"
     ],
@@ -114,7 +114,7 @@
   {
     "id": "twinfield-mcp",
     "name": "Twinfield MCP",
-    "description_en": "Lets an AI assistant query and update Twinfield bookkeeping over its SOAP API.",
+    "description_en": "Query and update Twinfield bookkeeping over its SOAP API.",
     "services": [
       "twinfield"
     ],
@@ -128,7 +128,7 @@
   {
     "id": "yuki-mcp",
     "name": "Yuki MCP",
-    "description_en": "Lets an AI assistant drive Yuki accounting across 102 operations, with write actions gated.",
+    "description_en": "Operate Yuki accounting across 102 actions, with write operations gated for safety.",
     "services": [
       "yuki"
     ],
@@ -142,7 +142,7 @@
   {
     "id": "wefact-mcp",
     "name": "WeFact MCP",
-    "description_en": "Lets an AI assistant manage WeFact debtors, invoices, products, and subscriptions.",
+    "description_en": "Manage WeFact debtors, invoices, products, and subscriptions.",
     "services": [
       "wefact"
     ],
@@ -156,7 +156,7 @@
   {
     "id": "exactmcp-nl",
     "name": "exactmcp.nl",
-    "description_en": "Lets an AI assistant run Exact Online warehouse, serial/batch, purchase, production, and inventory workflows via a certified hosted MCP.",
+    "description_en": "Run Exact Online warehouse, serial/batch, purchase, production, and inventory workflows through a certified hosted MCP.",
     "services": [
       "exact-online"
     ],
@@ -170,7 +170,7 @@
   {
     "id": "ledger-botje",
     "name": "Ledger Botje",
-    "description_en": "Lets an AI assistant manage Exact Online invoices, orders, inventory, and deliveries via a hosted MCP.",
+    "description_en": "Handle Exact Online invoices, orders, inventory, and deliveries through a hosted MCP.",
     "services": [
       "exact-online"
     ],
@@ -179,6 +179,20 @@
     "status": "live",
     "publisher": "Ledger Botje",
     "source_url": "https://ledgerbotje.nl/",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "netherlands-invoice-mcp",
+    "name": "netherlands-invoice-mcp",
+    "description_en": "Integration for sending Dutch B2B electronic invoices (e-factuur) over the Peppol network.",
+    "services": [
+      "peppol"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "netherlands-invoice-mcp",
+    "source_url": "https://github.com/netherlands-invoice-mcp/netherlands-invoice-mcp",
     "last_checked": "2026-07-19"
   }
 ]

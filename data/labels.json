@@ -3,7 +3,6 @@
     "mcp": { "en": "MCP", "color": "3b5998" },
     "skill": { "en": "Skill", "color": "6c3fc9" },
     "plugin": { "en": "Plugin", "color": "9e5b0a" },
-    "script": { "en": "Script", "color": "57606a" },
     "managed": { "en": "Managed", "color": "a15226" }
   },
   "origin": {

@@ -47,7 +47,7 @@
       },
       "type": {
         "type": "string",
-        "enum": ["mcp", "skill", "plugin", "script", "managed"]
+        "enum": ["mcp", "skill", "plugin", "managed"]
       },
       "origin": {
         "type": "string",

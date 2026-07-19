@@ -2,7 +2,7 @@
   {
     "id": "dutch-law-mcp",
     "name": "Ansvar Gateway (Dutch law)",
-    "description_en": "Lets an AI assistant search Dutch legislation and Rechtspraak rulings through Ansvar's hosted OAuth gateway, each result citing its source (also spans EU and other jurisdictions).",
+    "description_en": "Search Dutch legislation and Rechtspraak rulings through Ansvar's hosted OAuth gateway, every result citing its source (also spans EU and other jurisdictions).",
     "services": [
       "wetten-overheid",
       "rechtspraak"
@@ -31,7 +31,7 @@
   {
     "id": "falcon-nl-ai-lawyer",
     "name": "FALCON / nl-ai-lawyer",
-    "description_en": "Lets an AI assistant advise on Dutch law — employment/CAO, AVG, tax, real estate, and immigration — via 14 skills and 7 specialist agents.",
+    "description_en": "Advise on Dutch law — employment/CAO, AVG, tax, real estate, and immigration — through 14 skills and 7 specialist agents.",
     "services": [
       "wetten-overheid",
       "rechtspraak"
@@ -46,7 +46,7 @@
   {
     "id": "dutch-energy-regulation-mcp",
     "name": "dutch-energy-regulation-mcp",
-    "description_en": "Lets an AI assistant search Dutch energy-regulation records from ACM, TenneT, RVO, and SodM.",
+    "description_en": "Search Dutch energy-regulation records from ACM, TenneT, RVO, and SodM.",
     "services": [
       "energy-regulation"
     ],
@@ -60,7 +60,7 @@
   {
     "id": "rechtspraak-solr-mcp",
     "name": "rechtspraak-solr-mcp-server",
-    "description_en": "Lets an AI assistant full-text search Dutch case law in Solr, with query expansion, legal synonyms, and citation analysis.",
+    "description_en": "Full-text search Dutch case law in Solr, with query expansion, legal synonyms, and citation analysis.",
     "services": [
       "rechtspraak"
     ],
@@ -74,7 +74,7 @@
   {
     "id": "nl-eli-mcp",
     "name": "nl-eli-mcp",
-    "description_en": "Lets an AI assistant retrieve versioned Dutch legislation (BWB) and Rechtspraak rulings, keyless.",
+    "description_en": "Retrieve versioned Dutch legislation (BWB) and Rechtspraak rulings, keyless.",
     "services": [
       "wetten-overheid",
       "rechtspraak"
@@ -117,7 +117,7 @@
   {
     "id": "rechtspraak-mcp",
     "name": "rechtspraak-mcp",
-    "description_en": "Lets an AI assistant search Rechtspraak open data and resolve legal citations via LiDO across six tools.",
+    "description_en": "Search Rechtspraak open data and resolve legal citations through LiDO, across six tools.",
     "services": [
       "rechtspraak"
     ],

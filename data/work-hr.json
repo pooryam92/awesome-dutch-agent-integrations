@@ -2,7 +2,7 @@
   {
     "id": "intelligence-group-giant-mcp",
     "name": "Intelligence Group Giant MCP",
-    "description_en": "Lets an AI assistant analyse European (incl. Dutch) salary and recruitment-market data, read-only with per-user access control.",
+    "description_en": "Analyse European (incl. Dutch) salary and recruitment-market data, read-only with per-user access control.",
     "services": [
       "intelligence-group"
     ],
