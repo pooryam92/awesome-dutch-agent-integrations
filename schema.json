@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ai-integratie-nl/schema.json",
+  "title": "Dutch agent-integration listing",
+  "description": "One listing per artifact. Every field is required; no optional fields in v1.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "name",
+      "description_en",
+      "service",
+      "type",
+      "provenance",
+      "status",
+      "publisher",
+      "source_url",
+      "last_checked"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+        "description": "Stable slug; join key for every surface and later usage events."
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Untranslated (MCP/skill/Claude/etc. stay as-is)."
+      },
+      "description_en": {
+        "type": "string",
+        "minLength": 1,
+        "description": "One outcome-first sentence."
+      },
+      "service": {
+        "type": "string",
+        "minLength": 1,
+        "description": "The Dutch service/provider it connects to; groups duplicates."
+      },
+      "type": {
+        "type": "string",
+        "enum": ["mcp", "skill", "plugin", "script", "managed"]
+      },
+      "provenance": {
+        "type": "string",
+        "enum": ["official", "commercial", "community"]
+      },
+      "status": {
+        "type": "string",
+        "enum": ["live", "beta", "preview", "concept", "abandoned"]
+      },
+      "publisher": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Who built it."
+      },
+      "source_url": {
+        "type": "string",
+        "format": "uri",
+        "description": "Canonical repo / vendor / package page."
+      },
+      "last_checked": {
+        "type": "string",
+        "format": "date",
+        "description": "ISO date of last verification."
+      }
+    }
+  }
+}

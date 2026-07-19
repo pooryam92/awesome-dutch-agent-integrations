@@ -1,0 +1,21 @@
+{
+  "type": {
+    "mcp": { "en": "MCP" },
+    "skill": { "en": "Skill" },
+    "plugin": { "en": "Plugin" },
+    "script": { "en": "Script" },
+    "managed": { "en": "Managed" }
+  },
+  "provenance": {
+    "official": { "en": "Official" },
+    "commercial": { "en": "Commercial" },
+    "community": { "en": "Community" }
+  },
+  "status": {
+    "live": { "en": "Live" },
+    "beta": { "en": "Beta" },
+    "preview": { "en": "Preview" },
+    "concept": { "en": "Concept" },
+    "abandoned": { "en": "Abandoned" }
+  }
+}
