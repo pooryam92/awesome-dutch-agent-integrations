@@ -68,5 +68,78 @@
     "publisher": "J535D165",
     "source_url": "https://github.com/J535D165/cbsodata",
     "last_checked": "2026-07-19"
+  },
+  {
+    "id": "nl-gov-mcp",
+    "name": "nl-gov-mcp",
+    "description_en": "Lets an AI assistant reach 39 Dutch government data sources through one server — CBS, RDW, KNMI, PDOK, Rechtspraak, DUO, and more.",
+    "services": [
+      "cbs-statline",
+      "rdw",
+      "knmi",
+      "rechtspraak"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "WAINUT",
+    "source_url": "https://github.com/WAINUTAI/nl-gov-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "rdw-mcp",
+    "name": "rdw-mcp",
+    "description_en": "Lets an AI assistant query RDW vehicle-registration and open data — keyless, no credentials needed.",
+    "services": [
+      "rdw"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "rantuma",
+    "source_url": "https://github.com/rantuma/rdw-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "knmi-mcp",
+    "name": "knmi-mcp",
+    "description_en": "Lets an AI assistant pull KNMI weather observations and forecasts.",
+    "services": [
+      "knmi"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "wolkwork",
+    "source_url": "https://github.com/wolkwork/knmi-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "oorlogsbronnen-mcp",
+    "name": "oorlogsbronnen-mcp",
+    "description_en": "Lets an AI assistant search Oorlogsbronnen's archive of 12 million Dutch WWII sources.",
+    "services": [
+      "oorlogsbronnen"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "r-huijts",
+    "source_url": "https://github.com/r-huijts/oorlogsbronnen-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "openarchieven-mcp",
+    "name": "openarchieven-mcp",
+    "description_en": "Lets an AI assistant search Open Archieven genealogy records via a no-auth hosted endpoint.",
+    "services": [
+      "openarchieven"
+    ],
+    "type": "mcp",
+    "origin": "official",
+    "status": "live",
+    "publisher": "Open Archieven (coret)",
+    "source_url": "https://github.com/coret/openarchieven-mcp-server",
+    "last_checked": "2026-07-19"
   }
 ]

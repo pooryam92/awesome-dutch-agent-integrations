@@ -12,5 +12,47 @@
     "publisher": "digitaldutch",
     "source_url": "https://github.com/digitaldutch/BAG_parser",
     "last_checked": "2026-07-19"
+  },
+  {
+    "id": "makelaar-mcp",
+    "name": "makelaar-mcp",
+    "description_en": "Lets an AI assistant search Funda listings and run NHG, NIBUD, mortgage, and closing-cost calculations.",
+    "services": [
+      "funda"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "spyrosavl",
+    "source_url": "https://github.com/spyrosavl/makelaar-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "kadaster-mcp",
+    "name": "kadaster-mcp",
+    "description_en": "Lets an AI assistant query the Kadaster Knowledge Graph of Dutch land-registry data.",
+    "services": [
+      "kadaster"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "jolietjakeblues",
+    "source_url": "https://github.com/jolietjakeblues/kadaster-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "mcp-monumenten",
+    "name": "mcp-monumenten",
+    "description_en": "Lets an AI assistant look up Dutch monument status from BAG, RCE, and municipal sources.",
+    "services": [
+      "monumenten"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "Woonstad Rotterdam",
+    "source_url": "https://github.com/woonstadrotterdam/mcp-monumenten",
+    "last_checked": "2026-07-19"
   }
 ]

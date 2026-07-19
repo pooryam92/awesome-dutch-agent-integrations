@@ -47,9 +47,14 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | Name | Description | Service | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---|---|---|---|
 | [cbsodata](https://github.com/J535D165/cbsodata) | Lets a script or agent query CBS (Statistics Netherlands) StatLine open data tables. | CBS StatLine | ![Script · Community](assets/badges/tags-script-community.svg) |
+| [knmi-mcp](https://github.com/wolkwork/knmi-mcp) | Lets an AI assistant pull KNMI weather observations and forecasts. | KNMI | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [kvk-connect (MinBZK)](https://github.com/MinBZK/kvk-connect) | Lets an AI assistant query a ministry-run mirror of KVK company profiles, history, and search data. | KVK | ![MCP · Official](assets/badges/tags-mcp-official.svg) |
 | [NeRDS (MinBZK)](https://github.com/MinBZK/NeRDS) | Fourteen Agent Skills covering Dutch government guidelines — accessibility, privacy, security, procurement, algorithms, and sustainability. | Rijksoverheid | ![Plugin · Official](assets/badges/tags-plugin-official.svg) |
+| [nl-gov-mcp](https://github.com/WAINUTAI/nl-gov-mcp) | Lets an AI assistant reach 39 Dutch government data sources through one server — CBS, RDW, KNMI, PDOK, Rechtspraak, DUO, and more. | CBS StatLine / RDW / KNMI / Rechtspraak.nl | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [oorlogsbronnen-mcp](https://github.com/r-huijts/oorlogsbronnen-mcp) | Lets an AI assistant search Oorlogsbronnen's archive of 12 million Dutch WWII sources. | Oorlogsbronnen | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [openarchieven-mcp](https://github.com/coret/openarchieven-mcp-server) | Lets an AI assistant search Open Archieven genealogy records via a no-auth hosted endpoint. | Open Archieven | ![MCP · Official](assets/badges/tags-mcp-official.svg) |
 | [OpenTK MCP](https://github.com/r-huijts/opentk-mcp) | Lets an AI assistant query Tweede Kamer (Dutch parliament) debates, motions, and documents. | Tweede Kamer | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [rdw-mcp](https://github.com/rantuma/rdw-mcp) | Lets an AI assistant query RDW vehicle-registration and open data — keyless, no credentials needed. | RDW | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [Rijksmuseum MCP](https://github.com/r-huijts/rijksmuseum-mcp) | Lets an AI assistant search and browse the Rijksmuseum's art collection. | Rijksmuseum | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 
 ## Housing Property
@@ -57,6 +62,9 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | Name | Description | Service | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---|---|---|---|
 | [BAG_parser](https://github.com/digitaldutch/BAG_parser) | Converts the full Dutch address register (BAG) into a local, queryable SQLite database. | BAG (Kadaster/PDOK) | ![Script · Community](assets/badges/tags-script-community.svg) |
+| [kadaster-mcp](https://github.com/jolietjakeblues/kadaster-mcp) | Lets an AI assistant query the Kadaster Knowledge Graph of Dutch land-registry data. | Kadaster | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [makelaar-mcp](https://github.com/spyrosavl/makelaar-mcp) | Lets an AI assistant search Funda listings and run NHG, NIBUD, mortgage, and closing-cost calculations. | Funda | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [mcp-monumenten](https://github.com/woonstadrotterdam/mcp-monumenten) | Lets an AI assistant look up Dutch monument status from BAG, RCE, and municipal sources. | Monumenten | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 
 ## Legal Compliance
 
@@ -80,6 +88,6 @@ _No listings yet._
 
 ---
 
-_Curated — 27 listing(s) across 8 categories._
+_Curated — 35 listing(s) across 8 categories._
 
 <!-- END CATALOGUE -->
