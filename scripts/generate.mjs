@@ -54,9 +54,22 @@ const FALLBACK_COLOR = "6a737d";
 const badgesDir = join(root, "assets", "badges");
 
 // Shields-style flat badge, single segment. textLength pins the text to the
-// computed width, so rendering is identical regardless of installed fonts.
+// computed width, so rendering is identical regardless of installed fonts —
+// but that only looks right if the computed width matches the text's natural
+// width, so use per-character Verdana 11px advance widths, not a flat average.
+const CHAR_WIDTHS = {
+  A: 7.5, B: 7.5, C: 7.6, D: 8.4, E: 6.9, F: 6.3, G: 8.4, H: 8.2, I: 4.6,
+  J: 5.0, K: 7.5, L: 6.1, M: 9.4, N: 8.2, O: 8.7, P: 7.0, Q: 8.7, R: 7.7,
+  S: 7.5, T: 6.8, U: 8.0, V: 7.5, W: 10.9, X: 7.5, Y: 6.8, Z: 7.5,
+  a: 6.7, b: 6.9, c: 5.9, d: 6.9, e: 6.6, f: 3.9, g: 6.9, h: 6.9, i: 3.0,
+  j: 3.9, k: 6.5, l: 3.0, m: 10.6, n: 6.9, o: 6.7, p: 6.9, q: 6.9, r: 4.8,
+  s: 5.9, t: 4.3, u: 6.9, v: 6.5, w: 9.0, x: 6.5, y: 6.5, z: 5.9,
+  " ": 3.9, ".": 3.9, "-": 4.9,
+};
+const measure = (text) => [...text].reduce((w, ch) => w + (CHAR_WIDTHS[ch] ?? 7), 0);
+
 const badgeSvg = (text, color) => {
-  const textWidth = Math.round(text.length * 6.5);
+  const textWidth = Math.round(measure(text));
   const width = textWidth + 12;
   const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   const t = esc(text);
@@ -106,7 +119,9 @@ const TABLE_DIVIDER = "|---|---|---|---|";
 const listingRow = (r) => {
   const parts = [badge("type", r.type), badge("origin", r.origin)];
   if (r.status !== "live") parts.push(badge("status", r.status));
-  const tags = parts.join(" ");
+  // Non-breaking join: a plain space lets GitHub wrap the badges into a
+  // ragged vertical stack inside the narrow Tags cell.
+  const tags = parts.join("&nbsp;");
   const cells = [
     `[${escapeCell(r.name)}](${r.source_url})`,
     escapeCell(r.description_en),
