@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "id": "minbzk-nerds",
+    "name": "NeRDS (MinBZK)",
+    "description_en": "Fourteen Agent Skills covering Dutch government guidelines — accessibility, privacy, security, procurement, algorithms, and sustainability.",
+    "services": [
+      "rijksoverheid"
+    ],
+    "type": "plugin",
+    "origin": "official",
+    "status": "live",
+    "publisher": "MinBZK",
+    "source_url": "https://github.com/MinBZK/NeRDS",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "minbzk-kvk-connect",
+    "name": "kvk-connect (MinBZK)",
+    "description_en": "Lets an AI assistant query a ministry-run mirror of KVK company profiles, history, and search data.",
+    "services": [
+      "kvk"
+    ],
+    "type": "mcp",
+    "origin": "official",
+    "status": "live",
+    "publisher": "MinBZK",
+    "source_url": "https://github.com/MinBZK/kvk-connect",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "rijksmuseum-mcp",
+    "name": "Rijksmuseum MCP",
+    "description_en": "Lets an AI assistant search and browse the Rijksmuseum's art collection.",
+    "services": [
+      "rijksmuseum"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "r-huijts",
+    "source_url": "https://github.com/r-huijts/rijksmuseum-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "opentk-mcp",
+    "name": "OpenTK MCP",
+    "description_en": "Lets an AI assistant query Tweede Kamer (Dutch parliament) debates, motions, and documents.",
+    "services": [
+      "tweede-kamer"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "r-huijts",
+    "source_url": "https://github.com/r-huijts/opentk-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "cbsodata",
+    "name": "cbsodata",
+    "description_en": "Lets a script or agent query CBS (Statistics Netherlands) StatLine open data tables.",
+    "services": [
+      "cbs-statline"
+    ],
+    "type": "script",
+    "origin": "community",
+    "status": "live",
+    "publisher": "J535D165",
+    "source_url": "https://github.com/J535D165/cbsodata",
+    "last_checked": "2026-07-19"
+  }
+]

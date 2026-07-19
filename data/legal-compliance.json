@@ -1,1 +1,73 @@
-[]
+[
+  {
+    "id": "legalize-nl",
+    "name": "legalize-nl",
+    "description_en": "Keeps the full, consolidated Dutch legislation as one Markdown file per law, updated on every real amendment.",
+    "services": [
+      "wetten-overheid"
+    ],
+    "type": "script",
+    "origin": "community",
+    "status": "live",
+    "publisher": "legalize-dev",
+    "source_url": "https://github.com/legalize-dev/legalize-nl",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "dutch-law-mcp",
+    "name": "Dutch-law MCP",
+    "description_en": "Lets an AI assistant search wetten.overheid.nl statutes and provisions, with a paid gateway adding Rechtspraak rulings and Kamerstukken.",
+    "services": [
+      "wetten-overheid",
+      "rechtspraak"
+    ],
+    "type": "mcp",
+    "origin": "commercial",
+    "status": "live",
+    "publisher": "Ansvar Systems",
+    "source_url": "https://github.com/Ansvar-Systems/Dutch-law-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "rechtspraak-js",
+    "name": "rechtspraak-js",
+    "description_en": "Sanitizes and normalizes Dutch court-judgment data from Rechtspraak.nl's official open-data feed.",
+    "services": [
+      "rechtspraak"
+    ],
+    "type": "script",
+    "origin": "community",
+    "status": "live",
+    "publisher": "cacfd3a",
+    "source_url": "https://github.com/cacfd3a/rechtspraak-js",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "bsn-validator",
+    "name": "BSN validator",
+    "description_en": "Validates and generates Dutch BSN (Burgerservicenummer) values.",
+    "services": [
+      "bsn"
+    ],
+    "type": "script",
+    "origin": "community",
+    "status": "live",
+    "publisher": "Cuteminded",
+    "source_url": "https://github.com/Cuteminded/bsn-validator",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "knowledge-work-belastingzaken",
+    "name": "Belastingzaken skills",
+    "description_en": "Eight commands and eight skills for Dutch income tax, BTW, VPB, payroll tax, deductions, and objections — no filing, professional review required.",
+    "services": [
+      "belastingdienst"
+    ],
+    "type": "plugin",
+    "origin": "community",
+    "status": "live",
+    "publisher": "johnhout",
+    "source_url": "https://github.com/johnhout/knowledge-work-belastingzaken",
+    "last_checked": "2026-07-19"
+  }
+]

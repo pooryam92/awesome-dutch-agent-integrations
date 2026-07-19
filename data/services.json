@@ -1,0 +1,23 @@
+{
+  "albert-heijn": { "name": "Albert Heijn" },
+  "bag": { "name": "BAG (Kadaster/PDOK)", "kind": "dataset" },
+  "belastingdienst": { "name": "Belastingdienst" },
+  "bol": { "name": "bol.com" },
+  "bsn": { "name": "BSN", "kind": "standard" },
+  "bunq": { "name": "bunq" },
+  "cbs-statline": { "name": "CBS StatLine", "kind": "dataset" },
+  "jumbo": { "name": "Jumbo" },
+  "kvk": { "name": "KVK" },
+  "marktplaats": { "name": "Marktplaats" },
+  "mollie": { "name": "Mollie" },
+  "moneybird": { "name": "Moneybird" },
+  "nmbrs": { "name": "Nmbrs" },
+  "ns": { "name": "NS (Nederlandse Spoorwegen)" },
+  "postnl": { "name": "PostNL" },
+  "rechtspraak": { "name": "Rechtspraak.nl" },
+  "rijksmuseum": { "name": "Rijksmuseum" },
+  "rijksoverheid": { "name": "Rijksoverheid" },
+  "simplicate": { "name": "Simplicate" },
+  "tweede-kamer": { "name": "Tweede Kamer" },
+  "wetten-overheid": { "name": "wetten.overheid.nl", "kind": "dataset" }
+}

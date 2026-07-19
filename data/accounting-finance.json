@@ -3,12 +3,70 @@
     "id": "bunq-partner-mcp",
     "name": "bunq Partner MCP",
     "description_en": "Lets an AI assistant drive the bunq Partner API — onboarding, KYC, accounts, payments, cards, and compliance.",
-    "service": "bunq",
+    "services": [
+      "bunq"
+    ],
     "type": "mcp",
-    "provenance": "official",
+    "origin": "official",
     "status": "live",
     "publisher": "bunq",
     "source_url": "https://github.com/bunq/partner-mcp",
     "last_checked": "2026-07-18"
+  },
+  {
+    "id": "mollie-mcp",
+    "name": "Mollie MCP",
+    "description_en": "Lets an AI assistant manage Mollie payments, customers, invoices, subscriptions, balances, settlements, terminals, and webhooks.",
+    "services": [
+      "mollie"
+    ],
+    "type": "mcp",
+    "origin": "official",
+    "status": "live",
+    "publisher": "Mollie",
+    "source_url": "https://docs.mollie.com/docs/mollie-mcp-server",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "moneybird-mcp",
+    "name": "Moneybird MCP",
+    "description_en": "Lets an AI assistant manage Moneybird bookkeeping — invoices, contacts, and accounting data.",
+    "services": [
+      "moneybird"
+    ],
+    "type": "mcp",
+    "origin": "official",
+    "status": "live",
+    "publisher": "Moneybird",
+    "source_url": "https://developer.moneybird.com/tools/mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "simplicate-mcp",
+    "name": "Simplicate MCP",
+    "description_en": "Lets an AI assistant work with Simplicate's project, CRM, and invoicing data via a per-domain hosted endpoint.",
+    "services": [
+      "simplicate"
+    ],
+    "type": "mcp",
+    "origin": "official",
+    "status": "live",
+    "publisher": "Simplicate",
+    "source_url": "https://developer.simplicate.com/docs/mcp/getting_started/",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "nmbrs-ai-connector",
+    "name": "Nmbrs AI Connector",
+    "description_en": "Lets an AI assistant perform Dutch payroll actions in Nmbrs, with confirmation-gated writes.",
+    "services": [
+      "nmbrs"
+    ],
+    "type": "mcp",
+    "origin": "official",
+    "status": "beta",
+    "publisher": "Nmbrs",
+    "source_url": "https://www.nmbrs.com/ai-connector",
+    "last_checked": "2026-07-19"
   }
 ]

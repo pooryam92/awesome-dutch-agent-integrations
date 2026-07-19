@@ -11,9 +11,9 @@
       "id",
       "name",
       "description_en",
-      "service",
+      "services",
       "type",
-      "provenance",
+      "origin",
       "status",
       "publisher",
       "source_url",
@@ -35,16 +35,21 @@
         "minLength": 1,
         "description": "One outcome-first sentence."
       },
-      "service": {
-        "type": "string",
-        "minLength": 1,
-        "description": "The Dutch service/provider it connects to; groups duplicates."
+      "services": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "description": "Ids from data/services.json of the Dutch services or data sources this integration targets; the join key that groups duplicates."
       },
       "type": {
         "type": "string",
         "enum": ["mcp", "skill", "plugin", "script", "managed"]
       },
-      "provenance": {
+      "origin": {
         "type": "string",
         "enum": ["official", "commercial", "community"]
       },

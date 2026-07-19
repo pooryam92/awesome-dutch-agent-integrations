@@ -19,43 +19,68 @@ const END = "<!-- END CATALOGUE -->";
 
 const readJson = (p) => JSON.parse(readFileSync(p, "utf8"));
 const labels = readJson(join(dataDir, "labels.json"));
+const services = readJson(join(dataDir, "services.json"));
 
-const label = (group, token) => labels[group]?.[token]?.en ?? token;
-// filename → human category title: "accounting-finance" -> "Accounting & Finance"
+// filename → human category title: "work-hr" -> "Work HR"
+const ACRONYMS = { hr: "HR" };
 const titleFromFile = (file) =>
   file
     .replace(/\.json$/, "")
     .split("-")
-    .map((w) => w[0].toUpperCase() + w.slice(1))
-    .join(" ")
-    .replace(/ And /g, " & ");
+    .map((w) => ACRONYMS[w] ?? w[0].toUpperCase() + w.slice(1))
+    .join(" ");
 
+const REGISTRY_FILES = new Set(["labels.json", "services.json"]);
 const categoryFiles = readdirSync(dataDir)
-  .filter((f) => f.endsWith(".json") && f !== "labels.json")
+  .filter((f) => f.endsWith(".json") && !REGISTRY_FILES.has(f))
   .sort();
 
-const listingLine = (r) => {
-  const badges = [
-    label("provenance", r.provenance),
-    label("status", r.status),
-    label("type", r.type),
-  ]
-    .map((b) => `\`${b}\``)
-    .join(" ");
-  return `- **[${r.name}](${r.source_url})** — ${r.description_en} ${badges} · _${r.service}_ · checked ${r.last_checked}`;
+// Table cells are pipe-delimited and the Name cell is wrapped in a [text](url)
+// link — escape backslashes, pipes, and link brackets, and collapse newlines.
+const escapeCell = (s) =>
+  String(s)
+    .replace(/\\/g, "\\\\")
+    .replace(/\|/g, "\\|")
+    .replace(/\[/g, "\\[")
+    .replace(/\]/g, "\\]")
+    .replace(/\r?\n/g, " ");
+
+// Tags are shields.io badges colored per value from labels.json, so each
+// dimension is recognizable at a glance. Status is exception-only: "live" is
+// the overwhelming default, so only deviations get a badge.
+// Shields' flat badge format splits on "-", so literal "-"/"_" in the label
+// must be doubled or they get parsed as field separators.
+const escapeBadgeText = (s) => String(s).replace(/-/g, "--").replace(/_/g, "__");
+const FALLBACK_COLOR = "6a737d";
+
+const badge = (group, token) => {
+  const { en: text = token, color = FALLBACK_COLOR } = labels[group]?.[token] ?? {};
+  return `![${text}](https://img.shields.io/badge/-${encodeURIComponent(escapeBadgeText(text))}-${color})`;
+};
+
+const serviceNames = (ids) => ids.map((sid) => services[sid]?.name ?? sid).join(" / ");
+
+const TABLE_HEADER = "| Name | Description | Service | Tags |";
+const TABLE_DIVIDER = "|---|---|---|---|";
+
+const listingRow = (r) => {
+  const parts = [badge("type", r.type), badge("origin", r.origin)];
+  if (r.status !== "live") parts.push(badge("status", r.status));
+  const tags = parts.join(" ");
+  const cells = [
+    `[${escapeCell(r.name)}](${r.source_url})`,
+    escapeCell(r.description_en),
+    escapeCell(serviceNames(r.services)),
+    tags,
+  ];
+  return `| ${cells.join(" | ")} |`;
 };
 
 // --- build only the catalogue block (between the markers) ---
-const block = [];
-
-// Badge legend, straight from labels.json.
-block.push("**Legend** — ");
-const legend = [];
-for (const group of ["provenance", "status", "type"]) {
-  const toks = Object.entries(labels[group]).map(([, v]) => v.en).join(", ");
-  legend.push(`${group}: ${toks}`);
-}
-block.push(legend.map((l) => `\`${l}\``).join(" · "), "");
+const block = [
+  "_Every listing is tagged with its type and origin; a status badge appears only when it is **not** live (beta, preview, concept, abandoned)._",
+  "",
+];
 
 let total = 0;
 for (const file of categoryFiles) {
@@ -65,8 +90,9 @@ for (const file of categoryFiles) {
     block.push("_No listings yet._", "");
     continue;
   }
+  block.push(TABLE_HEADER, TABLE_DIVIDER);
   for (const r of [...listings].sort((a, b) => a.name.localeCompare(b.name))) {
-    block.push(listingLine(r));
+    block.push(listingRow(r));
     total++;
   }
   block.push("");

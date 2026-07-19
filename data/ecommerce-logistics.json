@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": "postnl-mcp",
+    "name": "PostNL MCP",
+    "description_en": "Lets an AI assistant create shipments and track PostNL parcels, barcodes, and pickup points.",
+    "services": [
+      "postnl"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "BartWaardenburg",
+    "source_url": "https://github.com/BartWaardenburg/postnl-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "marktplaats-py",
+    "name": "marktplaats-py",
+    "description_en": "Lets a script or agent search Marktplaats.nl listings and seller data.",
+    "services": [
+      "marktplaats"
+    ],
+    "type": "script",
+    "origin": "community",
+    "status": "live",
+    "publisher": "jensjeflensje",
+    "source_url": "https://github.com/jensjeflensje/marktplaats-py",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "bol-mcp",
+    "name": "bol-mcp",
+    "description_en": "Lets an AI assistant call bol.com's Retailer API — 76 tools across orders, offers, and products.",
+    "services": [
+      "bol"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "BartWaardenburg",
+    "source_url": "https://github.com/BartWaardenburg/bol-mcp",
+    "last_checked": "2026-07-19"
+  }
+]

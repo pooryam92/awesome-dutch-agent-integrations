@@ -3,6 +3,8 @@
 // 1. Validate every /data/<category>.json against schema.json.
 // 2. Fail on duplicate `id` across ALL files.
 // 3. Fail on any enum token not present in labels.json (dangling token).
+// 4. Fail on any services id not present in services.json (dangling id),
+//    and on malformed services.json entries.
 // Exits non-zero on any failure so CI blocks the merge.
 
 import { readFileSync, readdirSync } from "node:fs";
@@ -18,10 +20,13 @@ const readJson = (p) => JSON.parse(readFileSync(p, "utf8"));
 
 const schema = readJson(join(root, "schema.json"));
 const labels = readJson(join(dataDir, "labels.json"));
+const services = readJson(join(dataDir, "services.json"));
 
-// labels.json is config, not a listing file — everything else in /data is data.
+// labels.json and services.json are registries, not listing files —
+// everything else in /data is data.
+const REGISTRY_FILES = new Set(["labels.json", "services.json"]);
 const categoryFiles = readdirSync(dataDir)
-  .filter((f) => f.endsWith(".json") && f !== "labels.json")
+  .filter((f) => f.endsWith(".json") && !REGISTRY_FILES.has(f))
   .sort();
 
 const ajv = new Ajv({ allErrors: true });
@@ -29,10 +34,20 @@ addFormats(ajv);
 const validate = ajv.compile(schema);
 
 // Which fields are label-backed enums, and which labels group backs each.
-const ENUM_FIELDS = { type: "type", provenance: "provenance", status: "status" };
+const ENUM_FIELDS = { type: "type", origin: "origin", status: "status" };
 
 const errors = [];
 const seenIds = new Map(); // id -> first file that used it
+
+// Registry sanity: every services.json entry needs a name; kind is optional
+// but must be a known value when present.
+const SERVICE_KINDS = new Set(["provider", "dataset", "standard"]);
+for (const [sid, entry] of Object.entries(services)) {
+  if (!entry?.name) errors.push(`services.json[${sid}]: missing "name"`);
+  if (entry?.kind != null && !SERVICE_KINDS.has(entry.kind)) {
+    errors.push(`services.json[${sid}]: unknown kind "${entry.kind}"`);
+  }
+}
 
 for (const file of categoryFiles) {
   const listings = readJson(join(dataDir, file));
@@ -62,6 +77,15 @@ for (const file of categoryFiles) {
       const token = row?.[field];
       if (token != null && !(labels[group] && labels[group][token])) {
         errors.push(`${where}: ${field} token "${token}" has no label in labels.json[${group}]`);
+      }
+    }
+
+    // Dangling service ids: every id must resolve in services.json.
+    if (Array.isArray(row?.services)) {
+      for (const sid of row.services) {
+        if (!services[sid]) {
+          errors.push(`${where}: services id "${sid}" has no entry in services.json`);
+        }
       }
     }
   });

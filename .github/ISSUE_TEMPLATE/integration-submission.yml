@@ -20,8 +20,8 @@ body:
   - type: input
     id: service
     attributes:
-      label: Dutch service
-      description: The Dutch service/provider it connects to.
+      label: Dutch service(s)
+      description: The Dutch service(s) or data source(s) it targets — separate multiple with commas.
     validations:
       required: true
   - type: dropdown

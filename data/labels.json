@@ -1,21 +1,21 @@
 {
   "type": {
-    "mcp": { "en": "MCP" },
-    "skill": { "en": "Skill" },
-    "plugin": { "en": "Plugin" },
-    "script": { "en": "Script" },
-    "managed": { "en": "Managed" }
+    "mcp": { "en": "MCP", "color": "3b5998" },
+    "skill": { "en": "Skill", "color": "6c3fc9" },
+    "plugin": { "en": "Plugin", "color": "9e5b0a" },
+    "script": { "en": "Script", "color": "57606a" },
+    "managed": { "en": "Managed", "color": "a15226" }
   },
-  "provenance": {
-    "official": { "en": "Official" },
-    "commercial": { "en": "Commercial" },
-    "community": { "en": "Community" }
+  "origin": {
+    "official": { "en": "Official", "color": "5a32a3" },
+    "commercial": { "en": "Commercial", "color": "bc4c00" },
+    "community": { "en": "Community", "color": "057a8a" }
   },
   "status": {
-    "live": { "en": "Live" },
-    "beta": { "en": "Beta" },
-    "preview": { "en": "Preview" },
-    "concept": { "en": "Concept" },
-    "abandoned": { "en": "Abandoned" }
+    "live": { "en": "Live", "color": "1a7f37" },
+    "beta": { "en": "Beta", "color": "9a6700" },
+    "preview": { "en": "Preview", "color": "0969da" },
+    "concept": { "en": "Concept", "color": "57606a" },
+    "abandoned": { "en": "Abandoned", "color": "cf222e" }
   }
 }

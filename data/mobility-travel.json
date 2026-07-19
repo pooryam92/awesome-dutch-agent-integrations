@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": "ns-mcp-server",
+    "name": "NS MCP Server",
+    "description_en": "Lets an AI assistant look up NS train departures, disruptions, and journey planning.",
+    "services": [
+      "ns"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "r-huijts",
+    "source_url": "https://github.com/r-huijts/ns-mcp-server",
+    "last_checked": "2026-07-19"
+  }
+]
