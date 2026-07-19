@@ -5,7 +5,7 @@
 //   node scripts/generate.mjs           rewrites the block in README.md
 //   node scripts/generate.mjs --check    exits non-zero if the block is out of sync (CI)
 
-import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync, rmSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -68,45 +68,73 @@ const CHAR_WIDTHS = {
 };
 const measure = (text) => [...text].reduce((w, ch) => w + (CHAR_WIDTHS[ch] ?? 7), 0);
 
-const badgeSvg = (text, color) => {
-  const textWidth = Math.round(measure(text));
-  const width = textWidth + 12;
-  const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-  const t = esc(text);
+// One SVG per tag COMBINATION, not per tag: browsers may wrap between
+// separate <img>s in a table cell (even across &nbsp;), which stacked the
+// badges into a ragged column on GitHub. A single strip image cannot wrap.
+const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const PILL_GAP = 4;
+
+const stripSvg = (parts) => {
+  const pills = [];
+  let x = 0;
+  for (const { text, color } of parts) {
+    const textWidth = Math.round(measure(text));
+    const width = textWidth + 12;
+    pills.push({ text: esc(text), color, x, width, textWidth });
+    x += width + PILL_GAP;
+  }
+  const total = x - PILL_GAP;
+  const label = esc(parts.map((p) => p.text).join(" · "));
+  const body = pills
+    .map(
+      (p, i) =>
+        `<clipPath id="r${i}"><rect x="${p.x}" width="${p.width}" height="20" rx="3"/></clipPath>` +
+        `<g clip-path="url(#r${i})"><rect x="${p.x}" width="${p.width}" height="20" fill="#${p.color}"/><rect x="${p.x}" width="${p.width}" height="20" fill="url(#s)"/></g>` +
+        `<g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">` +
+        `<text aria-hidden="true" x="${(p.x + p.width / 2) * 10}" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="${p.textWidth * 10}">${p.text}</text>` +
+        `<text x="${(p.x + p.width / 2) * 10}" y="140" transform="scale(.1)" textLength="${p.textWidth * 10}">${p.text}</text>` +
+        `</g>`
+    )
+    .join("");
   return (
-    `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="20" role="img" aria-label="${t}">` +
-    `<title>${t}</title>` +
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${total}" height="20" role="img" aria-label="${label}">` +
+    `<title>${label}</title>` +
     `<linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient>` +
-    `<clipPath id="r"><rect width="${width}" height="20" rx="3" fill="#fff"/></clipPath>` +
-    `<g clip-path="url(#r)"><rect width="${width}" height="20" fill="#${color}"/><rect width="${width}" height="20" fill="url(#s)"/></g>` +
-    `<g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">` +
-    `<text aria-hidden="true" x="${width * 5}" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="${textWidth * 10}">${t}</text>` +
-    `<text x="${width * 5}" y="140" transform="scale(.1)" textLength="${textWidth * 10}">${t}</text>` +
-    `</g></svg>\n`
+    body +
+    `</svg>\n`
   );
 };
 
-const badge = (group, token) => {
-  const text = labels[group]?.[token]?.en ?? token;
-  return `![${text}](assets/badges/${group}-${token}.svg)`;
+// Strips are collected while rendering rows, then written (or verified in
+// --check mode) against /assets/badges; orphaned files are removed so the
+// directory always mirrors exactly the combinations the catalogue uses.
+const neededBadges = new Map(); // filename -> svg content
+
+const tagBadge = (r) => {
+  const tokens = [["type", r.type], ["origin", r.origin]];
+  if (r.status !== "live") tokens.push(["status", r.status]);
+  const parts = tokens.map(([group, token]) => ({
+    text: labels[group]?.[token]?.en ?? token,
+    color: labels[group]?.[token]?.color ?? FALLBACK_COLOR,
+  }));
+  const file = `tags-${tokens.map(([, token]) => token).join("-")}.svg`;
+  neededBadges.set(file, stripSvg(parts));
+  return `![${parts.map((p) => p.text).join(" · ")}](assets/badges/${file})`;
 };
 
-// Emit (or, in --check mode, verify) one SVG per labels.json token. Every
-// badge file is derived purely from labels.json, so out-of-date files fail
-// CI the same way an out-of-date README does.
 const syncBadgeFiles = () => {
   const stale = [];
-  for (const [group, tokens] of Object.entries(labels)) {
-    for (const [token, { en, color }] of Object.entries(tokens)) {
-      const path = join(badgesDir, `${group}-${token}.svg`);
-      const svg = badgeSvg(en ?? token, color ?? FALLBACK_COLOR);
-      if (check) {
-        if (!existsSync(path) || readFileSync(path, "utf8") !== svg) stale.push(`${group}-${token}.svg`);
-      } else {
-        mkdirSync(badgesDir, { recursive: true });
-        writeFileSync(path, svg);
-      }
+  const existing = existsSync(badgesDir) ? readdirSync(badgesDir) : [];
+  if (check) {
+    for (const [file, svg] of neededBadges) {
+      const path = join(badgesDir, file);
+      if (!existsSync(path) || readFileSync(path, "utf8") !== svg) stale.push(file);
     }
+    for (const file of existing) if (!neededBadges.has(file)) stale.push(`${file} (orphan)`);
+  } else {
+    mkdirSync(badgesDir, { recursive: true });
+    for (const [file, svg] of neededBadges) writeFileSync(join(badgesDir, file), svg);
+    for (const file of existing) if (!neededBadges.has(file)) rmSync(join(badgesDir, file));
   }
   return stale;
 };
@@ -117,11 +145,7 @@ const TABLE_HEADER = "| Name | Description | Service | Tags |";
 const TABLE_DIVIDER = "|---|---|---|---|";
 
 const listingRow = (r) => {
-  const parts = [badge("type", r.type), badge("origin", r.origin)];
-  if (r.status !== "live") parts.push(badge("status", r.status));
-  // Non-breaking join: a plain space lets GitHub wrap the badges into a
-  // ragged vertical stack inside the narrow Tags cell.
-  const tags = parts.join("&nbsp;");
+  const tags = tagBadge(r);
   const cells = [
     `[${escapeCell(r.name)}](${r.source_url})`,
     escapeCell(r.description_en),
