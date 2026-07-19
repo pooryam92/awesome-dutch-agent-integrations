@@ -44,6 +44,7 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 
 | Name | Description | Target | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---|---|---|---|
+| [mcp-developer-overheid-api-register](https://github.com/dstotijn/mcp-developer-overheid-api-register) | Search the Developer Overheid API Register for Dutch government APIs and their source repositories. | Developer Overheid API Register | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [NeRDS (MinBZK)](https://github.com/MinBZK/NeRDS) | Fourteen Agent Skills covering Dutch government guidelines — accessibility, privacy, security, procurement, algorithms, and sustainability. | Rijksoverheid | ![Plugin · Official](assets/badges/tags-plugin-official.svg) |
 | [overheid-claude-plugins](https://github.com/djimit/overheid-claude-plugins) | Fifty-plus skills spanning Dutch government architecture and standards — NORA, GEMMA Common Ground, ZGW APIs, AVG/DPIA, the Omgevingswet (DSO), and municipal, provincial, and water-board IV. | Rijksoverheid | ![Plugin · Community](assets/badges/tags-plugin-community.svg) |
 | [skills-developer-overheid-nl](https://github.com/developer-overheid-nl/skills-developer-overheid-nl) | Eight skills applying Dutch government developer guidance — APIs, DigiD/eHerkenning, open source, FSC/Haven, data, and NL Design System. | Logius | ![Plugin · Official](assets/badges/tags-plugin-official.svg) |
@@ -63,24 +64,15 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | [postcode-eu-ai-tools](https://github.com/postcode-nl/postcode-eu-ai-tools-python) | Validate and autocomplete Dutch addresses through the official Postcode.eu API. | Postcode.eu | ![MCP · Official](assets/badges/tags-mcp-official.svg) |
 | [PostNL MCP](https://github.com/BartWaardenburg/postnl-mcp) | Create shipments and track PostNL parcels, barcodes, and pickup-point locations. | PostNL | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 
-## Government Public Data
+## Government Services
 
 | Name | Description | Target | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---|---|---|---|
-| [cbs-mcp](https://github.com/bewijs/cbs-mcp) | Makes official Dutch statistics from CBS (StatLine) accessible for AI assistants. | CBS StatLine | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
-| [knmi-mcp](https://github.com/wolkwork/knmi-mcp) | Pull KNMI weather observations and forecasts for Dutch locations. | KNMI | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
-| [knmi-mcp (dstotijn)](https://github.com/dstotijn/knmi-mcp) | Query KNMI weather observations and forecasts through KNMI's open data API. | KNMI | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [kvk-connect (MinBZK)](https://github.com/MinBZK/kvk-connect) | Query a ministry-run mirror of KVK company profiles, history, and search data. | KVK | ![MCP · Official](assets/badges/tags-mcp-official.svg) |
 | [kvk-mcp](https://github.com/BartWaardenburg/kvk-mcp) | Query the KVK Handelsregister for Dutch company profiles and search, across 10 tools. | KVK | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
-| [mcp-overheid-nl](https://github.com/pipeworx-io/mcp-overheid-nl) | Browse the data.overheid.nl open-data catalogue by publishing organisation and dataset theme. | data.overheid.nl | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [moza-poc-digitale-assistent](https://github.com/MinBZK/moza-poc-digitale-assistent) | Reach MijnOverheid Zakelijk and connected government sources through one MCP-backed digital assistant. | MijnOverheid / KVK | ![Plugin · Official · Concept](assets/badges/tags-plugin-official-concept.svg) |
-| [nl-gov-mcp](https://github.com/WAINUTAI/nl-gov-mcp) | Reach 39 Dutch government data sources through one server — CBS, RDW, KNMI, PDOK, Rechtspraak, DUO, and more. | CBS StatLine / RDW / KNMI / Rechtspraak.nl | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
-| [oorlogsbronnen-mcp](https://github.com/r-huijts/oorlogsbronnen-mcp) | Search Oorlogsbronnen's archive of 12 million Dutch WWII sources. | Oorlogsbronnen | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
-| [openarchieven-mcp](https://github.com/coret/openarchieven-mcp-server) | Search Open Archieven genealogy records through a no-auth hosted endpoint. | Open Archieven | ![MCP · Official](assets/badges/tags-mcp-official.svg) |
-| [OpenTK MCP](https://github.com/r-huijts/opentk-mcp) | Query Tweede Kamer (Dutch parliament) debates, motions, and documents. | Tweede Kamer | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [poc-machine-law](https://github.com/MinBZK/poc-machine-law) | Query Dutch legislation and check benefits eligibility through the RegelRecht machine-law server. | wetten.overheid.nl | ![MCP · Official · Concept](assets/badges/tags-mcp-official-concept.svg) |
 | [rdw-mcp](https://github.com/rantuma/rdw-mcp) | Query RDW vehicle-registration and open data — keyless, no credentials needed. | RDW | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
-| [Rijksmuseum MCP](https://github.com/r-huijts/rijksmuseum-mcp) | Search and browse the Rijksmuseum's art collection by artist, work, and theme. | Rijksmuseum | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 
 ## Housing Property
 
@@ -100,10 +92,12 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | [dutch-energy-regulation-mcp](https://github.com/Ansvar-Systems/dutch-energy-regulation-mcp) | Search Dutch energy-regulation records from ACM, TenneT, RVO, and SodM. | Energieregulering (ACM/TenneT/RVO/SodM) | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
 | [FALCON / nl-ai-lawyer](https://github.com/FutureAtoms/FALCON-futureatoms-legal-counsel-of-netherlands) | Advise on Dutch law — employment/CAO, AVG, tax, real estate, and immigration — through 14 skills and 7 specialist agents. | wetten.overheid.nl / Rechtspraak.nl | ![Plugin · Community](assets/badges/tags-plugin-community.svg) |
 | [ICTRecht skill](https://www.ictrecht.nl/ictrecht-skill-voor-claude) | A Dutch IT-law firm's methodology as a skill — privacy-officer, compliance, and IE-recht role profiles with DPIA and AI Act assessment structures. | wetten.overheid.nl | ![Skill · Commercial](assets/badges/tags-skill-commercial.svg) |
+| [Moonlit Legal Research MCP](https://www.moonlit.ai/docs/) | Research Dutch and European legislation, case law, and regulatory sources through seven read-only tools over a hosted OAuth endpoint. | wetten.overheid.nl / Rechtspraak.nl | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
 | [nl-eli-mcp](https://github.com/matematicsolutions/nl-eli-mcp) | Retrieve versioned Dutch legislation (BWB) and Rechtspraak rulings, keyless. | wetten.overheid.nl / Rechtspraak.nl | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [OpenAccountants Plugin](https://github.com/openaccountants/openaccountants) | Classify transactions and apply accountant-verified guidance for Dutch VAT, income tax, and social contributions. | Belastingdienst | ![Plugin · Community](assets/badges/tags-plugin-community.svg) |
 | [rechtspraak-mcp](https://github.com/Prudai/rechtspraak-mcp) | Search Rechtspraak open data and resolve legal citations through LiDO, across six tools. | Rechtspraak.nl | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [rechtspraak-solr-mcp-server](https://github.com/axyr/rechtspraak-solr-mcp-server) | Full-text search Dutch case law in Solr, with query expansion, legal synonyms, and citation analysis. | Rechtspraak.nl | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [wetten-overheid-tools](https://github.com/palmw01/wetten-overheid-tools) | Search Dutch legislation on wetten.overheid.nl and retrieve its structure, articles, and terms. | wetten.overheid.nl | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 
 ## Mobility Travel
 
@@ -113,14 +107,25 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | [NS MCP Server](https://github.com/r-huijts/ns-mcp-server) | Look up NS train departures and disruptions and plan train journeys. | NS (Nederlandse Spoorwegen) | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [ns-travel-mcp](https://github.com/lauragift21/ns-travel-mcp) | Plan NS journeys and check live departures, disruptions, and station details. | NS (Nederlandse Spoorwegen) | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 
-## Work HR
+## Open Data Culture
 
-| Name | Description | Target | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Name | Description | Target | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---|---|---|---|
+| [cbs-mcp](https://github.com/bewijs/cbs-mcp) | Makes official Dutch statistics from CBS (StatLine) accessible for AI assistants. | CBS StatLine | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [Intelligence Group Giant MCP](https://intelligence-group.nl/nl/solutions/mcp/) | Analyse European (incl. Dutch) salary and recruitment-market data, read-only with per-user access control. | Intelligence Group | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
+| [knmi-mcp](https://github.com/wolkwork/knmi-mcp) | Pull KNMI weather observations and forecasts for Dutch locations. | KNMI | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [knmi-mcp (dstotijn)](https://github.com/dstotijn/knmi-mcp) | Query KNMI weather observations and forecasts through KNMI's open data API. | KNMI | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [mcp-overheid-nl](https://github.com/pipeworx-io/mcp-overheid-nl) | Browse the data.overheid.nl open-data catalogue by publishing organisation and dataset theme. | data.overheid.nl | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [nl-gov-mcp](https://github.com/WAINUTAI/nl-gov-mcp) | Reach 39 Dutch government data sources through one server — CBS, RDW, KNMI, PDOK, Rechtspraak, DUO, and more. | CBS StatLine / RDW / KNMI / Rechtspraak.nl | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [nl-opendata-mcp](https://github.com/soulnai/nl-opendata-mcp) | Search, query, download, and locally analyse CBS StatLine and data.overheid.nl datasets in CSV or Parquet. | CBS StatLine / data.overheid.nl | ![MCP · Community · Beta](assets/badges/tags-mcp-community-beta.svg) |
+| [oorlogsbronnen-mcp](https://github.com/r-huijts/oorlogsbronnen-mcp) | Search Oorlogsbronnen's archive of 12 million Dutch WWII sources. | Oorlogsbronnen | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [open-utrecht-datasets](https://github.com/Terminal-WOO/open-utrecht-datasets) | Search, explore, and download Municipality of Utrecht open datasets and Woo documents through six tools. | Gemeente Utrecht | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [openarchieven-mcp](https://github.com/coret/openarchieven-mcp-server) | Search Open Archieven genealogy records through a no-auth hosted endpoint. | Open Archieven | ![MCP · Official](assets/badges/tags-mcp-official.svg) |
+| [OpenTK MCP](https://github.com/r-huijts/opentk-mcp) | Query Tweede Kamer (Dutch parliament) debates, motions, and documents. | Tweede Kamer | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [Rijksmuseum MCP](https://github.com/r-huijts/rijksmuseum-mcp) | Search and browse the Rijksmuseum's art collection by artist, work, and theme. | Rijksmuseum | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 
 ---
 
-_Curated — 62 listing(s) across 9 categories._
+_Curated — 67 listing(s) across 9 categories._
 
 <!-- END CATALOGUE -->

@@ -141,5 +141,34 @@
     "publisher": "OpenAccountants",
     "source_url": "https://github.com/openaccountants/openaccountants",
     "last_checked": "2026-07-19"
+  },
+  {
+    "id": "moonlit-legal-mcp",
+    "name": "Moonlit Legal Research MCP",
+    "description_en": "Research Dutch and European legislation, case law, and regulatory sources through seven read-only tools over a hosted OAuth endpoint.",
+    "target": [
+      "wetten-overheid",
+      "rechtspraak"
+    ],
+    "type": "mcp",
+    "origin": "commercial",
+    "status": "live",
+    "publisher": "Moonlit Legal Technologies",
+    "source_url": "https://www.moonlit.ai/docs/",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "wetten-overheid-tools",
+    "name": "wetten-overheid-tools",
+    "description_en": "Search Dutch legislation on wetten.overheid.nl and retrieve its structure, articles, and terms.",
+    "target": [
+      "wetten-overheid"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "palmw01",
+    "source_url": "https://github.com/palmw01/wetten-overheid-tools",
+    "last_checked": "2026-07-19"
   }
 ]

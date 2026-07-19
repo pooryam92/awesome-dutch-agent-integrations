@@ -1,0 +1,73 @@
+[
+  {
+    "id": "minbzk-kvk-connect",
+    "name": "kvk-connect (MinBZK)",
+    "description_en": "Query a ministry-run mirror of KVK company profiles, history, and search data.",
+    "target": [
+      "kvk"
+    ],
+    "type": "mcp",
+    "origin": "official",
+    "status": "live",
+    "publisher": "MinBZK",
+    "source_url": "https://github.com/MinBZK/kvk-connect",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "kvk-mcp",
+    "name": "kvk-mcp",
+    "description_en": "Query the KVK Handelsregister for Dutch company profiles and search, across 10 tools.",
+    "target": [
+      "kvk"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "BartWaardenburg",
+    "source_url": "https://github.com/BartWaardenburg/kvk-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "rdw-mcp",
+    "name": "rdw-mcp",
+    "description_en": "Query RDW vehicle-registration and open data — keyless, no credentials needed.",
+    "target": [
+      "rdw"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "rantuma",
+    "source_url": "https://github.com/rantuma/rdw-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "moza-poc-digitale-assistent",
+    "name": "moza-poc-digitale-assistent",
+    "description_en": "Reach MijnOverheid Zakelijk and connected government sources through one MCP-backed digital assistant.",
+    "target": [
+      "mijnoverheid",
+      "kvk"
+    ],
+    "type": "plugin",
+    "origin": "official",
+    "status": "concept",
+    "publisher": "MinBZK",
+    "source_url": "https://github.com/MinBZK/moza-poc-digitale-assistent",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "poc-machine-law",
+    "name": "poc-machine-law",
+    "description_en": "Query Dutch legislation and check benefits eligibility through the RegelRecht machine-law server.",
+    "target": [
+      "wetten-overheid"
+    ],
+    "type": "mcp",
+    "origin": "official",
+    "status": "concept",
+    "publisher": "MinBZK",
+    "source_url": "https://github.com/MinBZK/poc-machine-law",
+    "last_checked": "2026-07-19"
+  }
+]

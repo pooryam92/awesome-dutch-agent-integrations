@@ -28,6 +28,10 @@
     "name": "data.overheid.nl",
     "kind": "dataset"
   },
+  "developer-overheid-register": {
+    "name": "Developer Overheid API Register",
+    "kind": "dataset"
+  },
   "e-boekhouden": {
     "name": "e-Boekhouden"
   },
@@ -40,6 +44,10 @@
   },
   "funda": {
     "name": "Funda"
+  },
+  "gemeente-utrecht": {
+    "name": "Gemeente Utrecht",
+    "kind": "dataset"
   },
   "geonovum": {
     "name": "Geonovum",

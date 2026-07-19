@@ -1,0 +1,174 @@
+[
+  {
+    "id": "cbs-mcp",
+    "name": "cbs-mcp",
+    "description_en": "Makes official Dutch statistics from CBS (StatLine) accessible for AI assistants.",
+    "target": [
+      "cbs-statline"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "bewijs",
+    "source_url": "https://github.com/bewijs/cbs-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "nl-opendata-mcp",
+    "name": "nl-opendata-mcp",
+    "description_en": "Search, query, download, and locally analyse CBS StatLine and data.overheid.nl datasets in CSV or Parquet.",
+    "target": [
+      "cbs-statline",
+      "data-overheid-nl"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "beta",
+    "publisher": "soulnai",
+    "source_url": "https://github.com/soulnai/nl-opendata-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "mcp-overheid-nl",
+    "name": "mcp-overheid-nl",
+    "description_en": "Browse the data.overheid.nl open-data catalogue by publishing organisation and dataset theme.",
+    "target": [
+      "data-overheid-nl"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "Pipeworx",
+    "source_url": "https://github.com/pipeworx-io/mcp-overheid-nl",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "open-utrecht-datasets",
+    "name": "open-utrecht-datasets",
+    "description_en": "Search, explore, and download Municipality of Utrecht open datasets and Woo documents through six tools.",
+    "target": [
+      "gemeente-utrecht"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "Terminal-WOO",
+    "source_url": "https://github.com/Terminal-WOO/open-utrecht-datasets",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "nl-gov-mcp",
+    "name": "nl-gov-mcp",
+    "description_en": "Reach 39 Dutch government data sources through one server — CBS, RDW, KNMI, PDOK, Rechtspraak, DUO, and more.",
+    "target": [
+      "cbs-statline",
+      "rdw",
+      "knmi",
+      "rechtspraak"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "WAINUT",
+    "source_url": "https://github.com/WAINUTAI/nl-gov-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "knmi-mcp",
+    "name": "knmi-mcp",
+    "description_en": "Pull KNMI weather observations and forecasts for Dutch locations.",
+    "target": [
+      "knmi"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "wolkwork",
+    "source_url": "https://github.com/wolkwork/knmi-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "knmi-mcp-dstotijn",
+    "name": "knmi-mcp (dstotijn)",
+    "description_en": "Query KNMI weather observations and forecasts through KNMI's open data API.",
+    "target": [
+      "knmi"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "dstotijn",
+    "source_url": "https://github.com/dstotijn/knmi-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "opentk-mcp",
+    "name": "OpenTK MCP",
+    "description_en": "Query Tweede Kamer (Dutch parliament) debates, motions, and documents.",
+    "target": [
+      "tweede-kamer"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "r-huijts",
+    "source_url": "https://github.com/r-huijts/opentk-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "rijksmuseum-mcp",
+    "name": "Rijksmuseum MCP",
+    "description_en": "Search and browse the Rijksmuseum's art collection by artist, work, and theme.",
+    "target": [
+      "rijksmuseum"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "r-huijts",
+    "source_url": "https://github.com/r-huijts/rijksmuseum-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "oorlogsbronnen-mcp",
+    "name": "oorlogsbronnen-mcp",
+    "description_en": "Search Oorlogsbronnen's archive of 12 million Dutch WWII sources.",
+    "target": [
+      "oorlogsbronnen"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "r-huijts",
+    "source_url": "https://github.com/r-huijts/oorlogsbronnen-mcp",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "openarchieven-mcp",
+    "name": "openarchieven-mcp",
+    "description_en": "Search Open Archieven genealogy records through a no-auth hosted endpoint.",
+    "target": [
+      "openarchieven"
+    ],
+    "type": "mcp",
+    "origin": "official",
+    "status": "live",
+    "publisher": "Open Archieven (coret)",
+    "source_url": "https://github.com/coret/openarchieven-mcp-server",
+    "last_checked": "2026-07-19"
+  },
+  {
+    "id": "intelligence-group-giant-mcp",
+    "name": "Intelligence Group Giant MCP",
+    "description_en": "Analyse European (incl. Dutch) salary and recruitment-market data, read-only with per-user access control.",
+    "target": [
+      "intelligence-group"
+    ],
+    "type": "mcp",
+    "origin": "commercial",
+    "status": "live",
+    "publisher": "Intelligence Group",
+    "source_url": "https://intelligence-group.nl/nl/solutions/mcp/",
+    "last_checked": "2026-07-19"
+  }
+]

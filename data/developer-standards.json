@@ -110,5 +110,19 @@
     "publisher": "djimit",
     "source_url": "https://github.com/djimit/overheid-claude-plugins",
     "last_checked": "2026-07-19"
+  },
+  {
+    "id": "mcp-developer-overheid-api-register",
+    "name": "mcp-developer-overheid-api-register",
+    "description_en": "Search the Developer Overheid API Register for Dutch government APIs and their source repositories.",
+    "target": [
+      "developer-overheid-register"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "David Stotijn",
+    "source_url": "https://github.com/dstotijn/mcp-developer-overheid-api-register",
+    "last_checked": "2026-07-19"
   }
 ]
