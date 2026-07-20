@@ -176,6 +176,9 @@
     "name": "Raad voor de Jaarverslaggeving (RJ)",
     "kind": "standard"
   },
+  "schiphol": {
+    "name": "Schiphol"
+  },
   "security-standards": {
     "name": "Overheidsbeveiligingsnormen (BIO2/NEN 7510/NCSC-NL/DigiD)",
     "kind": "standard"

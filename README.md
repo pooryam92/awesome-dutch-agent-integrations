@@ -21,7 +21,7 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | [Government Services](#government-services) |        4 | KVK, RDW, wetten.overheid.nl                                  |
 | [Housing Property](#housing-property)       |        4 | Funda, Kadaster, Kamernet, Monumenten                         |
 | [Legal Compliance](#legal-compliance)       |       12 | wetten.overheid.nl, Rechtspraak.nl, Belastingdienst, …        |
-| [Mobility Travel](#mobility-travel)         |        3 | NS, ANWB                                                      |
+| [Mobility Travel](#mobility-travel)         |        4 | NS, ANWB, Schiphol                                            |
 | [Open Data Culture](#open-data-culture)     |       12 | CBS StatLine, KNMI, data.overheid.nl, Gemeente Amsterdam, …   |
 
 ## Accounting Finance
@@ -117,11 +117,12 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 
 ## Mobility Travel
 
-| Name | Description | Target | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Name | Description | Target | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---|---|---|---|
 | [anwb-mcp](https://github.com/BartWaardenburg/anwb-mcp) | Pull ANWB traffic incidents, plan routes with turn-by-turn directions, and search locations. | ANWB | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [NS MCP Server](https://github.com/r-huijts/ns-mcp-server) | Look up NS train departures and disruptions and plan train journeys. | NS (Nederlandse Spoorwegen) | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [ns-travel-mcp](https://github.com/lauragift21/ns-travel-mcp) | Plan NS journeys and check real-time train data and disruption alerts. | NS (Nederlandse Spoorwegen) | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [schiphol-flights-mcp](https://github.com/mochow13/schiphol-flights-mcp) | Search Schiphol flights by date, route, airline, and time window through the official Flight API — a single endpoint, returning one page of results. | Schiphol | ![MCP · Community · Abandoned](assets/badges/tags-mcp-community-abandoned.svg) |
 
 ## Open Data Culture
 
@@ -142,6 +143,6 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 
 ---
 
-_Curated — 71 listing(s) across 9 categories._
+_Curated — 72 listing(s) across 9 categories._
 
 <!-- END CATALOGUE -->

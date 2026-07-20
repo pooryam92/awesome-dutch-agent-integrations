@@ -40,5 +40,19 @@
     "publisher": "BartWaardenburg",
     "source_url": "https://github.com/BartWaardenburg/anwb-mcp",
     "last_checked": "2026-07-19"
+  },
+  {
+    "id": "schiphol-flights-mcp",
+    "name": "schiphol-flights-mcp",
+    "description_en": "Search Schiphol flights by date, route, airline, and time window through the official Flight API — a single endpoint, returning one page of results.",
+    "target": [
+      "schiphol"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "abandoned",
+    "publisher": "mochow13",
+    "source_url": "https://github.com/mochow13/schiphol-flights-mcp",
+    "last_checked": "2026-07-20"
   }
 ]
