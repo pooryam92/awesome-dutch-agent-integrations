@@ -1,5 +1,35 @@
 [
   {
+    "id": "data-cleaning-dutch",
+    "name": "data-cleaning-dutch",
+    "description_en": "Clean Dutch government CSV and Excel exports in pandas — semicolon separators with comma decimals, encoding detection, Dutch missing-value markers, day-first dates, postcode validation, and merged cells.",
+    "target": [
+      "cbs-statline",
+      "kadaster"
+    ],
+    "type": "skill",
+    "origin": "community",
+    "status": "live",
+    "publisher": "linksmith",
+    "source_url": "https://github.com/linksmith/data-cleaning-dutch",
+    "last_checked": "2026-07-20"
+  },
+  {
+    "id": "dutch-choropleth-maps",
+    "name": "dutch-choropleth-maps",
+    "description_en": "Build choropleth maps of Dutch regions — detect gemeente, wijk, or buurt level from CBS region codes, fetch PDOK boundaries, reproject from RD to WGS84, and render with geopandas, Folium, or Plotly.",
+    "target": [
+      "pdok",
+      "cbs-statline"
+    ],
+    "type": "skill",
+    "origin": "community",
+    "status": "live",
+    "publisher": "linksmith",
+    "source_url": "https://github.com/linksmith/dutch-choropleth-maps",
+    "last_checked": "2026-07-20"
+  },
+  {
     "id": "rce-cho-mcp",
     "name": "rce-cho-mcp",
     "description_en": "Query the RCE Cultuurhistorische Objecten linked-data set over SPARQL, with ontology inspection, thesaurus label lookup, and query validation.",

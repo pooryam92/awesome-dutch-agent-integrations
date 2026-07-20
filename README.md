@@ -22,7 +22,7 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | [Housing Property](#housing-property)       |        4 | Funda, Kadaster, Kamernet, Monumenten                         |
 | [Legal Compliance](#legal-compliance)       |       12 | wetten.overheid.nl, Rechtspraak.nl, Belastingdienst, …        |
 | [Mobility Travel](#mobility-travel)         |        6 | NS, ANWB, CBS ODiN, OVapi, Schiphol                           |
-| [Open Data Culture](#open-data-culture)     |       13 | CBS StatLine, KNMI, data.overheid.nl, Gemeente Amsterdam, …   |
+| [Open Data Culture](#open-data-culture)     |       15 | CBS StatLine, KNMI, data.overheid.nl, Gemeente Amsterdam, …   |
 
 ## Accounting Finance
 
@@ -131,6 +131,8 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | Name | Description | Target | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---|---|---|---|
 | [baarn-raadsinformatie](https://github.com/tiemenrtuinstra/baarn-raadsinformatie) | Search Gemeente Baarn council meetings, agendas, and documents via the Notubiz API, with keyword and semantic search. | Gemeente Baarn | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [data-cleaning-dutch](https://github.com/linksmith/data-cleaning-dutch) | Clean Dutch government CSV and Excel exports in pandas — semicolon separators with comma decimals, encoding detection, Dutch missing-value markers, day-first dates, postcode validation, and merged cells. | CBS StatLine / Kadaster | ![Skill · Community](assets/badges/tags-skill-community.svg) |
+| [dutch-choropleth-maps](https://github.com/linksmith/dutch-choropleth-maps) | Build choropleth maps of Dutch regions — detect gemeente, wijk, or buurt level from CBS region codes, fetch PDOK boundaries, reproject from RD to WGS84, and render with geopandas, Folium, or Plotly. | PDOK / CBS StatLine | ![Skill · Community](assets/badges/tags-skill-community.svg) |
 | [knmi-mcp](https://github.com/wolkwork/knmi-mcp) | Pull KNMI real-time weather observations (10-minute measurements) for Dutch locations. | KNMI | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [knmi-mcp (dstotijn)](https://github.com/dstotijn/knmi-mcp) | Query KNMI weather observations and forecasts through KNMI's open data API. | KNMI | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [mcp-cbs-cijfers-open-data](https://github.com/dstotijn/mcp-cbs-cijfers-open-data) | Makes official Dutch statistics from CBS (StatLine) accessible for AI assistants. | CBS StatLine | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
@@ -146,6 +148,6 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 
 ---
 
-_Curated — 75 listing(s) across 9 categories._
+_Curated — 77 listing(s) across 9 categories._
 
 <!-- END CATALOGUE -->
