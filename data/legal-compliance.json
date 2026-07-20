@@ -1,18 +1,20 @@
 [
   {
-    "id": "dutch-law-mcp",
-    "name": "Ansvar Gateway (Dutch law)",
-    "description_en": "Search Dutch legislation and Rechtspraak rulings — alongside EU and other national frameworks — through Ansvar's hosted OAuth gateway, every result citing its source.",
+    "id": "ansvar-gateway",
+    "name": "Ansvar Gateway",
+    "description_en": "Search Dutch legislation, Rechtspraak rulings, energy-regulation records (ACM/TenneT/RVO/SodM), and government security standards (BIO2/NEN 7510/NCSC-NL/DigiD) — alongside EU and other national frameworks — through Ansvar's hosted OAuth gateway, every result citing its source.",
     "target": [
       "wetten-overheid",
-      "rechtspraak"
+      "rechtspraak",
+      "energy-regulation",
+      "security-standards"
     ],
     "type": "mcp",
     "origin": "commercial",
     "status": "live",
     "publisher": "Ansvar Systems",
     "source_url": "https://ansvar.eu/docs/quickstart",
-    "last_checked": "2026-07-19"
+    "last_checked": "2026-07-20"
   },
   {
     "id": "knowledge-work-belastingzaken",
@@ -42,34 +44,6 @@
     "publisher": "FutureAtoms",
     "source_url": "https://github.com/FutureAtoms/FALCON-futureatoms-legal-counsel-of-netherlands",
     "last_checked": "2026-07-19"
-  },
-  {
-    "id": "dutch-energy-regulation-mcp",
-    "name": "dutch-energy-regulation-mcp",
-    "description_en": "Search Dutch energy-regulation records from ACM, TenneT, RVO, and SodM.",
-    "target": [
-      "energy-regulation"
-    ],
-    "type": "mcp",
-    "origin": "commercial",
-    "status": "live",
-    "publisher": "Ansvar Systems",
-    "source_url": "https://github.com/Ansvar-Systems/dutch-energy-regulation-mcp",
-    "last_checked": "2026-07-19"
-  },
-  {
-    "id": "rechtspraak-solr-mcp",
-    "name": "rechtspraak-solr-mcp-server",
-    "description_en": "Full-text search Dutch case law in Solr, with query expansion, legal synonyms, and citation analysis.",
-    "target": [
-      "rechtspraak"
-    ],
-    "type": "mcp",
-    "origin": "community",
-    "status": "abandoned",
-    "publisher": "axyr",
-    "source_url": "https://github.com/axyr/rechtspraak-solr-mcp-server",
-    "last_checked": "2026-07-20"
   },
   {
     "id": "nl-eli-mcp",
@@ -117,7 +91,7 @@
   {
     "id": "openaccountants-plugin",
     "name": "OpenAccountants Plugin",
-    "description_en": "Classify transactions and apply accountant-verified tax guidance for Dutch VAT, income tax, and social contributions — part of a multi-jurisdiction, CPA-reviewed tax-guide platform.",
+    "description_en": "Classify transactions and apply Dutch tax guidance — VAT, income tax, payroll, and zzp deductions — sourced to Wet IB 2001; the Dutch package is not yet accountant-signed off.",
     "target": [
       "belastingdienst"
     ],
@@ -199,20 +173,6 @@
     "status": "live",
     "publisher": "palmw01",
     "source_url": "https://github.com/palmw01/wetsanalyse-ai",
-    "last_checked": "2026-07-19"
-  },
-  {
-    "id": "dutch-standards-mcp",
-    "name": "Dutch Standards MCP",
-    "description_en": "Search Dutch government security and compliance standards — BIO2, NEN 7510, NCSC-NL, DigiD Normenkader, and Logius API Design Rules — with ISO 27002 cross-references.",
-    "target": [
-      "security-standards"
-    ],
-    "type": "mcp",
-    "origin": "commercial",
-    "status": "live",
-    "publisher": "Ansvar Systems",
-    "source_url": "https://www.npmjs.com/package/@ansvar/dutch-standards-mcp",
     "last_checked": "2026-07-19"
   }
 ]

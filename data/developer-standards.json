@@ -84,20 +84,6 @@
     "last_checked": "2026-07-19"
   },
   {
-    "id": "zad-actions",
-    "name": "zad-actions",
-    "description_en": "Claude Code skills to generate, lint, validate, release, and debug GitHub Actions-based deployments to the Rijk's ZAD (Zelfservice voor Applicatie Deployment) platform.",
-    "target": [
-      "rijksoverheid"
-    ],
-    "type": "plugin",
-    "origin": "official",
-    "status": "live",
-    "publisher": "RijksICTGilde",
-    "source_url": "https://github.com/RijksICTGilde/zad-actions",
-    "last_checked": "2026-07-20"
-  },
-  {
     "id": "overheid-claude-plugins-djimit",
     "name": "overheid-plugins",
     "description_en": "Fifty-plus skills spanning Dutch government architecture and standards — NORA, GEMMA Common Ground, ZGW APIs, AVG/DPIA, the Omgevingswet (DSO), and municipal, provincial, and water-board IV.",

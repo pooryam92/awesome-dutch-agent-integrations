@@ -2,7 +2,7 @@
   {
     "id": "minbzk-kvk-connect",
     "name": "kvk-connect (MinBZK)",
-    "description_en": "Query a ministry-run mirror of KVK company profiles, history, and search data.",
+    "description_en": "Query and track KVK Handelsregister company data — profiles, history, search, and change notifications — from a self-hosted store you run with your own KVK API key.",
     "target": [
       "kvk"
     ],
@@ -40,21 +40,6 @@
     "publisher": "rantuma",
     "source_url": "https://github.com/rantuma/rdw-mcp",
     "last_checked": "2026-07-19"
-  },
-  {
-    "id": "moza-poc-digitale-assistent",
-    "name": "moza-poc-digitale-assistent",
-    "description_en": "Reach MijnOverheid Zakelijk and connected government sources through one MCP-backed digital assistant.",
-    "target": [
-      "mijnoverheid",
-      "kvk"
-    ],
-    "type": "mcp",
-    "origin": "official",
-    "status": "concept",
-    "publisher": "MinBZK",
-    "source_url": "https://github.com/MinBZK/moza-poc-digitale-assistent",
-    "last_checked": "2026-07-20"
   },
   {
     "id": "poc-machine-law",

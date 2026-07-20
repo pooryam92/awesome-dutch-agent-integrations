@@ -16,11 +16,11 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | ------------------------------------------- | -------: | ------------------------------------------------------------- |
 | [Accounting Finance](#accounting-finance)   |       16 | Exact Online, Adyen, bunq, e-Boekhouden, Mollie, Moneybird, … |
 | [Consumer Daily Life](#consumer-daily-life) |        6 | Albert Heijn, Picnic, Aldi, Buienradar, DA, …                 |
-| [Developer Standards](#developer-standards) |        9 | Rijksoverheid, Logius, Developer Overheid API Register, …     |
+| [Developer Standards](#developer-standards) |        8 | Rijksoverheid, Logius, Developer Overheid API Register, …     |
 | [Ecommerce Logistics](#ecommerce-logistics) |        5 | Marktplaats, bol.com, Postcode.eu, PostNL                     |
-| [Government Services](#government-services) |        5 | KVK, MijnOverheid, RDW, wetten.overheid.nl                    |
+| [Government Services](#government-services) |        4 | KVK, RDW, wetten.overheid.nl                                  |
 | [Housing Property](#housing-property)       |        4 | Funda, Kadaster, Kamernet, Monumenten                         |
-| [Legal Compliance](#legal-compliance)       |       15 | Rechtspraak.nl, wetten.overheid.nl, Belastingdienst, …        |
+| [Legal Compliance](#legal-compliance)       |       12 | wetten.overheid.nl, Rechtspraak.nl, Belastingdienst, …        |
 | [Mobility Travel](#mobility-travel)         |        3 | NS, ANWB                                                      |
 | [Open Data Culture](#open-data-culture)     |       12 | CBS StatLine, KNMI, data.overheid.nl, Gemeente Amsterdam, …   |
 
@@ -68,7 +68,6 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | [skills-internet](https://github.com/developer-overheid-nl/skills-internet) | Skills for internet.nl standards — IPv6, DNSSEC, TLS, DMARC/DKIM/SPF, and DANE. | internet.nl | ![Plugin · Official](assets/badges/tags-plugin-official.svg) |
 | [skills-open-source-repo](https://github.com/developer-overheid-nl/skills-open-source-repo) | Skills that generate publiccode.yml and repository-governance docs for Dutch government open-source projects. | Rijksoverheid | ![Plugin · Official](assets/badges/tags-plugin-official.svg) |
 | [skills-standaarden](https://github.com/developer-overheid-nl/skills-standaarden) | Ten skills for Logius standards — API Design Rules, Digikoppeling, OAuth NL, and FSC — with Spectral and WCAG validation. | Logius | ![Plugin · Official · Concept](assets/badges/tags-plugin-official-concept.svg) |
-| [zad-actions](https://github.com/RijksICTGilde/zad-actions) | Claude Code skills to generate, lint, validate, release, and debug GitHub Actions-based deployments to the Rijk's ZAD (Zelfservice voor Applicatie Deployment) platform. | Rijksoverheid | ![Plugin · Official](assets/badges/tags-plugin-official.svg) |
 
 ## Ecommerce Logistics
 
@@ -82,11 +81,10 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 
 ## Government Services
 
-| Name | Description | Target | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Name | Description | Target | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---|---|---|---|
-| [kvk-connect (MinBZK)](https://github.com/MinBZK/kvk-connect) | Query a ministry-run mirror of KVK company profiles, history, and search data. | KVK | ![MCP · Official](assets/badges/tags-mcp-official.svg) |
+| [kvk-connect (MinBZK)](https://github.com/MinBZK/kvk-connect) | Query and track KVK Handelsregister company data — profiles, history, search, and change notifications — from a self-hosted store you run with your own KVK API key. | KVK | ![MCP · Official](assets/badges/tags-mcp-official.svg) |
 | [kvk-mcp](https://github.com/BartWaardenburg/kvk-mcp) | Query the KVK Handelsregister for Dutch company profiles and search, across 10 tools. | KVK | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
-| [moza-poc-digitale-assistent](https://github.com/MinBZK/moza-poc-digitale-assistent) | Reach MijnOverheid Zakelijk and connected government sources through one MCP-backed digital assistant. | MijnOverheid / KVK | ![MCP · Official · Concept](assets/badges/tags-mcp-official-concept.svg) |
 | [poc-machine-law](https://github.com/MinBZK/poc-machine-law) | Query Dutch legislation and check benefits eligibility through the RegelRecht machine-law server. | wetten.overheid.nl | ![MCP · Official · Beta](assets/badges/tags-mcp-official-beta.svg) |
 | [rdw-mcp](https://github.com/rantuma/rdw-mcp) | Query RDW vehicle-registration and open data — keyless, no credentials needed. | RDW | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 
@@ -101,21 +99,18 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 
 ## Legal Compliance
 
-| Name | Description | Target | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Name | Description | Target | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---|---|---|---|
 | [aangifte-ib-skill](https://github.com/mischacoster/aangifte-ib-skill) | A skill that prepares a sourced Dutch personal income-tax return with an adaptive interview and review dossier. | Belastingdienst | ![Skill · Community](assets/badges/tags-skill-community.svg) |
-| [Ansvar Gateway (Dutch law)](https://ansvar.eu/docs/quickstart) | Search Dutch legislation and Rechtspraak rulings — alongside EU and other national frameworks — through Ansvar's hosted OAuth gateway, every result citing its source. | wetten.overheid.nl / Rechtspraak.nl | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
+| [Ansvar Gateway](https://ansvar.eu/docs/quickstart) | Search Dutch legislation, Rechtspraak rulings, energy-regulation records (ACM/TenneT/RVO/SodM), and government security standards (BIO2/NEN 7510/NCSC-NL/DigiD) — alongside EU and other national frameworks — through Ansvar's hosted OAuth gateway, every result citing its source. | wetten.overheid.nl / Rechtspraak.nl / Energieregulering (ACM/TenneT/RVO/SodM) / Overheidsbeveiligingsnormen (BIO2/NEN 7510/NCSC-NL/DigiD) | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
 | [Belastingzaken skills](https://github.com/johnhout/knowledge-work-belastingzaken) | Eight commands and eight skills for Dutch income tax, BTW, VPB, payroll tax, deductions, and objections — no filing, professional review required. | Belastingdienst | ![Plugin · Community](assets/badges/tags-plugin-community.svg) |
-| [Dutch Standards MCP](https://www.npmjs.com/package/@ansvar/dutch-standards-mcp) | Search Dutch government security and compliance standards — BIO2, NEN 7510, NCSC-NL, DigiD Normenkader, and Logius API Design Rules — with ISO 27002 cross-references. | Overheidsbeveiligingsnormen (BIO2/NEN 7510/NCSC-NL/DigiD) | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
-| [dutch-energy-regulation-mcp](https://github.com/Ansvar-Systems/dutch-energy-regulation-mcp) | Search Dutch energy-regulation records from ACM, TenneT, RVO, and SodM. | Energieregulering (ACM/TenneT/RVO/SodM) | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
 | [dutch-finance-planner-skill](https://github.com/jonnekleijer/dutch-finance-planner-skill) | Coach personal finances for the Netherlands through a guided interview — box 1/2/3, toeslagen, AOW/pension, mortgage/HRA, the 30% ruling, and gift/inheritance tax. | Belastingdienst | ![Skill · Community](assets/badges/tags-skill-community.svg) |
 | [FALCON / nl-ai-lawyer](https://github.com/FutureAtoms/FALCON-futureatoms-legal-counsel-of-netherlands) | Advise on Dutch law — employment/CAO, AVG, tax, real estate, and immigration — through 14 skills and 7 specialist agents. | wetten.overheid.nl / Rechtspraak.nl | ![Plugin · Community](assets/badges/tags-plugin-community.svg) |
 | [IURA (iura-nl)](https://github.com/iura-ai/IURA-Plugins) | Draft and review Dutch legal documents — contracts, NDAs, juridische notities, and conclusie van antwoord — grounded in Dutch jurisprudence via the IURA MCP. | wetten.overheid.nl / Rechtspraak.nl | ![Plugin · Commercial · Preview](assets/badges/tags-plugin-commercial-preview.svg) |
 | [Moonlit Legal Research MCP](https://www.moonlit.ai/docs/) | Research Dutch and European legislation, case law, and regulatory sources through seven read-only tools over a hosted OAuth endpoint. | wetten.overheid.nl / Rechtspraak.nl | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
 | [nl-eli-mcp](https://github.com/matematicsolutions/nl-eli-mcp) | Retrieve versioned Dutch legislation (BWB) and Rechtspraak rulings, keyless. | wetten.overheid.nl / Rechtspraak.nl | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
-| [OpenAccountants Plugin](https://github.com/openaccountants/openaccountants) | Classify transactions and apply accountant-verified tax guidance for Dutch VAT, income tax, and social contributions — part of a multi-jurisdiction, CPA-reviewed tax-guide platform. | Belastingdienst | ![Plugin · Community](assets/badges/tags-plugin-community.svg) |
+| [OpenAccountants Plugin](https://github.com/openaccountants/openaccountants) | Classify transactions and apply Dutch tax guidance — VAT, income tax, payroll, and zzp deductions — sourced to Wet IB 2001; the Dutch package is not yet accountant-signed off. | Belastingdienst | ![Plugin · Community](assets/badges/tags-plugin-community.svg) |
 | [rechtspraak-mcp](https://github.com/Prudai/rechtspraak-mcp) | Search Rechtspraak open data and resolve legal citations through LiDO, across six tools. | Rechtspraak.nl | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
-| [rechtspraak-solr-mcp-server](https://github.com/axyr/rechtspraak-solr-mcp-server) | Full-text search Dutch case law in Solr, with query expansion, legal synonyms, and citation analysis. | Rechtspraak.nl | ![MCP · Community · Abandoned](assets/badges/tags-mcp-community-abandoned.svg) |
 | [Wetsanalyse AI](https://github.com/palmw01/wetsanalyse-ai) | Produce source-traceable analyses of Dutch legislation with the JAS method and formalise them into Belastingdienst RegelSpraak, through a skill plus a bundled wettenbank MCP with human-review checkpoints. | wetten.overheid.nl / Belastingdienst | ![Plugin · Community](assets/badges/tags-plugin-community.svg) |
 | [wetten-overheid-tools](https://github.com/palmw01/wetten-overheid-tools) | Search Dutch legislation on wetten.overheid.nl and retrieve its structure, articles, and terms. | wetten.overheid.nl | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 
@@ -146,6 +141,6 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 
 ---
 
-_Curated — 75 listing(s) across 9 categories._
+_Curated — 70 listing(s) across 9 categories._
 
 <!-- END CATALOGUE -->
