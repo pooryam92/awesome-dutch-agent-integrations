@@ -42,13 +42,14 @@ const anchor = (title) =>
 // The index is a scan-first table: each category links to its section, shows how
 // many listings it holds, and names the services it covers. The "Covers" cell is
 // derived from the listings' targets — most-listed first, so the biggest names in
-// a category surface — capped so the row stays readable.
-const COVERS_SHOWN = 5;
+// a category surface. Capped by width, not name count: a count cap lets a row of
+// long names (Legal Compliance) balloon to double the width of its neighbours.
+const COVERS_MAX_CHARS = 60;
 
 // Several targets carry a disambiguating parenthetical ("NS (Nederlandse
 // Spoorwegen)", "Energieregulering (ACM/TenneT/RVO/SodM)"). It earns its place in
 // the Target column but overruns a summary cell — drop it here.
-const shortTarget = (name) => name.replace(/\s*\(.*\)\s*$/, "");
+const shortTarget = (name) => name.replace(/\s*\([^)]*\)$/, "");
 
 const coversFor = (listings, targets) => {
   const freq = new Map();
@@ -61,18 +62,48 @@ const coversFor = (listings, targets) => {
   const ranked = [...freq.entries()]
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
     .map(([name]) => name);
-  const shown = ranked.slice(0, COVERS_SHOWN).join(", ");
-  return ranked.length > COVERS_SHOWN ? `${shown}, …` : shown;
+  // Greedy fill: take names in rank order while they fit the budget. The top
+  // name always goes in, however long, so no cell is ever just "…".
+  const shown = [];
+  let width = 0;
+  for (const name of ranked) {
+    const added = (shown.length ? 2 : 0) + name.length; // ", " separator
+    if (shown.length && width + added > COVERS_MAX_CHARS) break;
+    shown.push(name);
+    width += added;
+  }
+  return shown.join(", ") + (shown.length < ranked.length ? ", …" : "");
 };
 
-const indexTable = (categories, targets) => [
-  "| Category | Listings | Covers |",
-  "|---|---:|---|",
-  ...categories.map(
-    ({ title, listings }) =>
-      `| [${title}](#${anchor(title)}) | ${listings.length} | ${escapeCell(coversFor(listings, targets))} |`,
-  ),
-];
+// The index is short enough to pad into aligned columns, which keeps the raw
+// Markdown readable in a diff or an editor. (The listing tables are left ragged:
+// their badge and description cells are far too wide for this to pay off.)
+// Counts read best right-aligned; the two text columns left. Every header here is
+// at least 4 characters, so a padded column is always wide enough for its divider
+// ("---" or "--:") without a minimum-width guard.
+const padRow = (cells, widths, aligns) =>
+  `| ${cells.map((c, i) => (aligns[i] === "right" ? c.padStart(widths[i]) : c.padEnd(widths[i]))).join(" | ")} |`;
+
+const indexTable = (categories, targets) => {
+  const columns = [
+    { header: "Category", align: "left", cell: (c) => `[${c.title}](#${anchor(c.title)})` },
+    { header: "Listings", align: "right", cell: (c) => String(c.listings.length) },
+    { header: "Covers", align: "left", cell: (c) => escapeCell(coversFor(c.listings, targets)) },
+  ];
+  const aligns = columns.map((col) => col.align);
+  const rows = categories.map((c) => columns.map((col) => col.cell(c)));
+  const widths = columns.map((col, i) =>
+    Math.max(col.header.length, ...rows.map((r) => r[i].length)),
+  );
+  const divider = columns.map((col, i) =>
+    col.align === "right" ? "-".repeat(widths[i] - 1) + ":" : "-".repeat(widths[i]),
+  );
+  return [
+    padRow(columns.map((col) => col.header), widths, aligns),
+    padRow(divider, widths, aligns),
+    ...rows.map((r) => padRow(r, widths, aligns)),
+  ];
+};
 
 // buildCatalogue(categories, { targets, badges }) -> { block, count }
 //   categories: [{ title, listings }] — each rendered as its own table.

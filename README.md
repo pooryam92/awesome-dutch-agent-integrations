@@ -12,17 +12,17 @@ To add an integration, see [CONTRIBUTING.md](CONTRIBUTING.md). Only ever edit th
 
 _Every listing is tagged with its type and origin; a status badge appears only when it is **not** live (beta, preview, concept, abandoned)._
 
-| Category | Listings | Covers |
-|---|---:|---|
-| [Accounting Finance](#accounting-finance) | 17 | Exact Online, Adyen, bunq, e-Boekhouden, Mollie, … |
-| [Consumer Daily Life](#consumer-daily-life) | 6 | Albert Heijn, Buienradar, HomeWizard, Jumbo, Magister, … |
-| [Developer Standards](#developer-standards) | 9 | Rijksoverheid, Logius, Developer Overheid API Register, Geonovum, internet.nl |
-| [Ecommerce Logistics](#ecommerce-logistics) | 6 | Marktplaats, Postcode.eu, bol.com, PostNL |
-| [Government Services](#government-services) | 5 | KVK, MijnOverheid, RDW, wetten.overheid.nl |
-| [Housing Property](#housing-property) | 4 | Funda, Kadaster, Kamernet, Monumenten |
-| [Legal Compliance](#legal-compliance) | 16 | wetten.overheid.nl, Rechtspraak.nl, Belastingdienst, Energieregulering, Overheidsbeveiligingsnormen |
-| [Mobility Travel](#mobility-travel) | 3 | NS, ANWB |
-| [Open Data Culture](#open-data-culture) | 14 | CBS StatLine, KNMI, data.overheid.nl, Gemeente Amsterdam, Gemeente Baarn, … |
+| Category                                    | Listings | Covers                                                        |
+| ------------------------------------------- | -------: | ------------------------------------------------------------- |
+| [Accounting Finance](#accounting-finance)   |       17 | Exact Online, Adyen, bunq, e-Boekhouden, Mollie, Moneybird, … |
+| [Consumer Daily Life](#consumer-daily-life) |        6 | Albert Heijn, Buienradar, HomeWizard, Jumbo, Magister, …      |
+| [Developer Standards](#developer-standards) |        9 | Rijksoverheid, Logius, Developer Overheid API Register, …     |
+| [Ecommerce Logistics](#ecommerce-logistics) |        6 | Marktplaats, Postcode.eu, bol.com, PostNL                     |
+| [Government Services](#government-services) |        5 | KVK, MijnOverheid, RDW, wetten.overheid.nl                    |
+| [Housing Property](#housing-property)       |        4 | Funda, Kadaster, Kamernet, Monumenten                         |
+| [Legal Compliance](#legal-compliance)       |       16 | wetten.overheid.nl, Rechtspraak.nl, Belastingdienst, …        |
+| [Mobility Travel](#mobility-travel)         |        3 | NS, ANWB                                                      |
+| [Open Data Culture](#open-data-culture)     |       14 | CBS StatLine, KNMI, data.overheid.nl, Gemeente Amsterdam, …   |
 
 ## Accounting Finance
 
