@@ -86,7 +86,7 @@
   {
     "id": "zad-actions",
     "name": "zad-actions",
-    "description_en": "Five skills for the ZAD platform covering Dutch-government deployment, release, and workflow tasks.",
+    "description_en": "Reusable GitHub Actions to deploy, clean up, and schedule cleanup of container deployments on the Rijk's ZAD (Zelfservice voor Applicatie Deployment) platform.",
     "target": [
       "rijksoverheid"
     ],
@@ -99,7 +99,7 @@
   },
   {
     "id": "overheid-claude-plugins-djimit",
-    "name": "overheid-claude-plugins",
+    "name": "overheid-plugins",
     "description_en": "Fifty-plus skills spanning Dutch government architecture and standards — NORA, GEMMA Common Ground, ZGW APIs, AVG/DPIA, the Omgevingswet (DSO), and municipal, provincial, and water-board IV.",
     "target": [
       "rijksoverheid"
@@ -108,7 +108,7 @@
     "origin": "community",
     "status": "live",
     "publisher": "djimit",
-    "source_url": "https://github.com/djimit/overheid-claude-plugins",
+    "source_url": "https://github.com/djimit/overheid-plugins",
     "last_checked": "2026-07-19"
   },
   {

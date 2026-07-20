@@ -2,7 +2,7 @@
   {
     "id": "dutch-law-mcp",
     "name": "Ansvar Gateway (Dutch law)",
-    "description_en": "Search Dutch legislation and Rechtspraak rulings through Ansvar's hosted OAuth gateway, every result citing its source (also spans EU and other jurisdictions).",
+    "description_en": "Search Dutch legislation and Rechtspraak rulings — alongside EU and other national frameworks — through Ansvar's hosted OAuth gateway, every result citing its source.",
     "target": [
       "wetten-overheid",
       "rechtspraak"
@@ -131,7 +131,7 @@
   {
     "id": "openaccountants-plugin",
     "name": "OpenAccountants Plugin",
-    "description_en": "Classify transactions and apply accountant-verified guidance for Dutch VAT, income tax, and social contributions.",
+    "description_en": "Classify transactions and apply accountant-verified tax guidance for Dutch VAT, income tax, and social contributions — part of a multi-jurisdiction, CPA-reviewed tax-guide platform.",
     "target": [
       "belastingdienst"
     ],

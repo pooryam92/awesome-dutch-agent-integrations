@@ -16,7 +16,7 @@
   {
     "id": "ns-travel-mcp",
     "name": "ns-travel-mcp",
-    "description_en": "Plan NS journeys and check live departures, disruptions, and station details.",
+    "description_en": "Plan NS journeys and check real-time train data and disruption alerts.",
     "target": [
       "ns"
     ],

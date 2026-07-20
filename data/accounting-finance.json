@@ -184,7 +184,7 @@
   {
     "id": "finance-mcp",
     "name": "Finance MCP",
-    "description_en": "Query Exact Online bookkeeping read-only through a hosted EU MCP endpoint, with more Dutch accounting platforms planned.",
+    "description_en": "Query Dutch bookkeeping read-only through a hosted EU MCP endpoint, spanning eight accounting packages (Exact Online, Business Central, e-Boekhouden, SnelStart, AFAS, Twinfield, Dynamics 365, Moneybird) via one canonical data model.",
     "target": [
       "exact-online"
     ],
