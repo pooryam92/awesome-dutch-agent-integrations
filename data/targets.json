@@ -91,9 +91,6 @@
   "hoogvliet": {
     "name": "Hoogvliet"
   },
-  "intelligence-group": {
-    "name": "Intelligence Group"
-  },
   "internet-nl": {
     "name": "internet.nl",
     "kind": "standard"
@@ -153,10 +150,6 @@
   },
   "openarchieven": {
     "name": "Open Archieven"
-  },
-  "peppol": {
-    "name": "Peppol (e-factuur)",
-    "kind": "standard"
   },
   "picnic": {
     "name": "Picnic"
