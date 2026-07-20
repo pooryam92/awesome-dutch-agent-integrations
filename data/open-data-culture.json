@@ -29,23 +29,9 @@
     "last_checked": "2026-07-19"
   },
   {
-    "id": "mcp-overheid-nl",
-    "name": "mcp-overheid-nl",
-    "description_en": "Browse the data.overheid.nl open-data catalogue by publishing organisation and dataset theme.",
-    "target": [
-      "data-overheid-nl"
-    ],
-    "type": "mcp",
-    "origin": "community",
-    "status": "live",
-    "publisher": "Pipeworx",
-    "source_url": "https://github.com/pipeworx-io/mcp-overheid-nl",
-    "last_checked": "2026-07-19"
-  },
-  {
     "id": "open-utrecht-datasets",
     "name": "open-utrecht-datasets",
-    "description_en": "Search, explore, and download Municipality of Utrecht open datasets and Woo documents through six tools.",
+    "description_en": "Search, explore, and download Municipality of Utrecht open datasets across six tools, with experimental Woo-relevance tagging (full Woo-document search is planned).",
     "target": [
       "gemeente-utrecht"
     ],
@@ -54,7 +40,7 @@
     "status": "live",
     "publisher": "Terminal-WOO",
     "source_url": "https://github.com/Terminal-WOO/open-utrecht-datasets",
-    "last_checked": "2026-07-19"
+    "last_checked": "2026-07-20"
   },
   {
     "id": "nl-gov-mcp",
@@ -155,20 +141,6 @@
     "status": "live",
     "publisher": "Open Archieven (coret)",
     "source_url": "https://github.com/coret/openarchieven-mcp-server",
-    "last_checked": "2026-07-19"
-  },
-  {
-    "id": "intelligence-group-giant-mcp",
-    "name": "Intelligence Group Giant MCP",
-    "description_en": "Analyse European (incl. Dutch) salary and recruitment-market data, read-only with per-user access control.",
-    "target": [
-      "intelligence-group"
-    ],
-    "type": "mcp",
-    "origin": "commercial",
-    "status": "live",
-    "publisher": "Intelligence Group",
-    "source_url": "https://intelligence-group.nl/nl/solutions/mcp/",
     "last_checked": "2026-07-19"
   },
   {

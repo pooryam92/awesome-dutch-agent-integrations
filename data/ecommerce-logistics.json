@@ -56,20 +56,6 @@
     "last_checked": "2026-07-19"
   },
   {
-    "id": "mcp-dutch-postal-codes",
-    "name": "mcp-dutch-postal-codes",
-    "description_en": "Retrieve Dutch postal codes and validate address information.",
-    "target": [
-      "postcode-eu"
-    ],
-    "type": "mcp",
-    "origin": "community",
-    "status": "live",
-    "publisher": "dstotijn",
-    "source_url": "https://github.com/dstotijn/mcp-dutch-postal-codes",
-    "last_checked": "2026-07-19"
-  },
-  {
     "id": "marktplaats-mcp-jasp-nerd",
     "name": "marktplaats-mcp (jasp-nerd)",
     "description_en": "Search Marktplaats and 2dehands classifieds with seller-trust signals and new-listing monitoring, no account needed.",

@@ -86,7 +86,7 @@
   {
     "id": "zad-actions",
     "name": "zad-actions",
-    "description_en": "Reusable GitHub Actions to deploy, clean up, and schedule cleanup of container deployments on the Rijk's ZAD (Zelfservice voor Applicatie Deployment) platform.",
+    "description_en": "Claude Code skills to generate, lint, validate, release, and debug GitHub Actions-based deployments to the Rijk's ZAD (Zelfservice voor Applicatie Deployment) platform.",
     "target": [
       "rijksoverheid"
     ],
@@ -95,7 +95,7 @@
     "status": "live",
     "publisher": "RijksICTGilde",
     "source_url": "https://github.com/RijksICTGilde/zad-actions",
-    "last_checked": "2026-07-19"
+    "last_checked": "2026-07-20"
   },
   {
     "id": "overheid-claude-plugins-djimit",

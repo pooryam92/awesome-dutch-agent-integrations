@@ -30,7 +30,7 @@
   {
     "id": "buienradar-mcp",
     "name": "buienradar-mcp-server",
-    "description_en": "Pull Buienradar rain nowcasts and current Dutch weather readings.",
+    "description_en": "Pull a Buienradar rain nowcast — a 2-hour precipitation forecast by coordinates.",
     "target": [
       "buienradar"
     ],
@@ -39,7 +39,7 @@
     "status": "live",
     "publisher": "wpnbos",
     "source_url": "https://github.com/wpnbos/buienradar-mcp-server",
-    "last_checked": "2026-07-19"
+    "last_checked": "2026-07-20"
   },
   {
     "id": "nl-supermarkt-mcp",
@@ -47,14 +47,31 @@
     "description_en": "Search products, compare prices, and plan groceries across Dutch supermarkets and drugstores.",
     "target": [
       "albert-heijn",
-      "jumbo"
+      "jumbo",
+      "lidl",
+      "aldi",
+      "plus",
+      "dekamarkt",
+      "dirk",
+      "vomar",
+      "hoogvliet",
+      "spar",
+      "picnic",
+      "poiesz",
+      "kruidvat",
+      "etos",
+      "trekpleister",
+      "da",
+      "holland-barrett",
+      "douglas",
+      "de-online-drogist"
     ],
     "type": "mcp",
     "origin": "community",
     "status": "live",
     "publisher": "Samvox1",
     "source_url": "https://github.com/Samvox1/nl-supermarkt-mcp",
-    "last_checked": "2026-07-19"
+    "last_checked": "2026-07-20"
   },
   {
     "id": "unofficial-magister-mcp",

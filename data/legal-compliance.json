@@ -66,10 +66,10 @@
     ],
     "type": "mcp",
     "origin": "community",
-    "status": "live",
+    "status": "abandoned",
     "publisher": "axyr",
     "source_url": "https://github.com/axyr/rechtspraak-solr-mcp-server",
-    "last_checked": "2026-07-19"
+    "last_checked": "2026-07-20"
   },
   {
     "id": "nl-eli-mcp",
@@ -84,20 +84,6 @@
     "status": "live",
     "publisher": "matematicsolutions",
     "source_url": "https://github.com/matematicsolutions/nl-eli-mcp",
-    "last_checked": "2026-07-19"
-  },
-  {
-    "id": "ictrecht-skill",
-    "name": "ICTRecht skill",
-    "description_en": "A Dutch IT-law firm's methodology as a skill — privacy-officer, compliance, and IE-recht role profiles with DPIA and AI Act assessment structures.",
-    "target": [
-      "wetten-overheid"
-    ],
-    "type": "skill",
-    "origin": "commercial",
-    "status": "live",
-    "publisher": "ICTRecht",
-    "source_url": "https://www.ictrecht.nl/ictrecht-skill-voor-claude",
     "last_checked": "2026-07-19"
   },
   {
@@ -181,10 +167,10 @@
     ],
     "type": "plugin",
     "origin": "commercial",
-    "status": "live",
+    "status": "preview",
     "publisher": "iura.ai",
     "source_url": "https://github.com/iura-ai/IURA-Plugins",
-    "last_checked": "2026-07-19"
+    "last_checked": "2026-07-20"
   },
   {
     "id": "dutch-finance-planner-skill",

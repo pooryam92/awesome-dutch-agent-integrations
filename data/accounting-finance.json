@@ -22,10 +22,10 @@
     ],
     "type": "mcp",
     "origin": "official",
-    "status": "live",
+    "status": "beta",
     "publisher": "bunq",
     "source_url": "https://github.com/bunq/partner-mcp",
-    "last_checked": "2026-07-18"
+    "last_checked": "2026-07-20"
   },
   {
     "id": "mollie-mcp",
@@ -156,7 +156,7 @@
   {
     "id": "exactmcp-nl",
     "name": "exactmcp.nl",
-    "description_en": "Run Exact Online warehouse, serial/batch, purchase, production, and inventory workflows through a certified hosted MCP.",
+    "description_en": "Run Exact Online warehouse, serial/batch, purchase, production, and inventory workflows through a hosted MCP built on the official Exact Online API.",
     "target": [
       "exact-online"
     ],
@@ -165,7 +165,7 @@
     "status": "live",
     "publisher": "exactmcp.nl",
     "source_url": "https://exactmcp.nl/",
-    "last_checked": "2026-07-19"
+    "last_checked": "2026-07-20"
   },
   {
     "id": "ledger-botje",
@@ -184,7 +184,7 @@
   {
     "id": "finance-mcp",
     "name": "Finance MCP",
-    "description_en": "Query Dutch bookkeeping read-only through a hosted EU MCP endpoint, spanning eight accounting packages (Exact Online, Business Central, e-Boekhouden, SnelStart, AFAS, Twinfield, Dynamics 365, Moneybird) via one canonical data model.",
+    "description_en": "Query Exact Online bookkeeping read-only through a hosted EU MCP endpoint, with more Dutch accounting platforms planned.",
     "target": [
       "exact-online"
     ],
@@ -193,7 +193,7 @@
     "status": "live",
     "publisher": "Productivity Advisors BV",
     "source_url": "https://financemcp.nl/",
-    "last_checked": "2026-07-19"
+    "last_checked": "2026-07-20"
   },
   {
     "id": "finance-skills-nl",
@@ -204,10 +204,10 @@
     ],
     "type": "plugin",
     "origin": "community",
-    "status": "live",
+    "status": "beta",
     "publisher": "Start 2 Scale",
     "source_url": "https://github.com/start2scale/finance-skills-nl",
-    "last_checked": "2026-07-19"
+    "last_checked": "2026-07-20"
   },
   {
     "id": "visma-mcp-server",
@@ -221,20 +221,6 @@
     "status": "live",
     "publisher": "Proviscale",
     "source_url": "https://github.com/Proviscale/visma-mcp-server",
-    "last_checked": "2026-07-19"
-  },
-  {
-    "id": "netherlands-invoice-mcp",
-    "name": "netherlands-invoice-mcp",
-    "description_en": "Send Dutch B2B e-facturen over Peppol (BIS 3.0 / EN 16931) via Storecove, with the BTW breakdown computed for you.",
-    "target": [
-      "peppol"
-    ],
-    "type": "mcp",
-    "origin": "community",
-    "status": "live",
-    "publisher": "Wishpool",
-    "source_url": "https://github.com/junter1989k-ai/netherlands-invoice-mcp",
     "last_checked": "2026-07-19"
   }
 ]

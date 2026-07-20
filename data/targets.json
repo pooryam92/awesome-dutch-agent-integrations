@@ -5,6 +5,9 @@
   "albert-heijn": {
     "name": "Albert Heijn"
   },
+  "aldi": {
+    "name": "Aldi"
+  },
   "anwb": {
     "name": "ANWB"
   },
@@ -24,13 +27,28 @@
     "name": "CBS StatLine",
     "kind": "dataset"
   },
+  "da": {
+    "name": "DA"
+  },
   "data-overheid-nl": {
     "name": "data.overheid.nl",
     "kind": "dataset"
   },
+  "de-online-drogist": {
+    "name": "De Online Drogist"
+  },
+  "dekamarkt": {
+    "name": "DekaMarkt"
+  },
   "developer-overheid-register": {
     "name": "Developer Overheid API Register",
     "kind": "dataset"
+  },
+  "dirk": {
+    "name": "Dirk"
+  },
+  "douglas": {
+    "name": "Douglas"
   },
   "e-boekhouden": {
     "name": "e-Boekhouden"
@@ -38,6 +56,9 @@
   "energy-regulation": {
     "name": "Energieregulering (ACM/TenneT/RVO/SodM)",
     "kind": "dataset"
+  },
+  "etos": {
+    "name": "Etos"
   },
   "exact-online": {
     "name": "Exact Online"
@@ -61,8 +82,14 @@
     "name": "Geonovum",
     "kind": "standard"
   },
+  "holland-barrett": {
+    "name": "Holland & Barrett"
+  },
   "homewizard": {
     "name": "HomeWizard"
+  },
+  "hoogvliet": {
+    "name": "Hoogvliet"
   },
   "intelligence-group": {
     "name": "Intelligence Group"
@@ -84,8 +111,14 @@
   "knmi": {
     "name": "KNMI"
   },
+  "kruidvat": {
+    "name": "Kruidvat"
+  },
   "kvk": {
     "name": "KVK"
+  },
+  "lidl": {
+    "name": "Lidl"
   },
   "logius": {
     "name": "Logius"
@@ -128,6 +161,12 @@
   "picnic": {
     "name": "Picnic"
   },
+  "plus": {
+    "name": "Plus"
+  },
+  "poiesz": {
+    "name": "Poiesz"
+  },
   "postcode-eu": {
     "name": "Postcode.eu"
   },
@@ -157,6 +196,12 @@
   "simplicate": {
     "name": "Simplicate"
   },
+  "spar": {
+    "name": "Spar"
+  },
+  "trekpleister": {
+    "name": "Trekpleister"
+  },
   "tweede-kamer": {
     "name": "Tweede Kamer"
   },
@@ -165,6 +210,9 @@
   },
   "visma-eaccounting": {
     "name": "Visma eAccounting"
+  },
+  "vomar": {
+    "name": "Vomar"
   },
   "wefact": {
     "name": "WeFact"
