@@ -21,8 +21,8 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | [Government Services](#government-services) |        4 | KVK, RDW, wetten.overheid.nl                                  |
 | [Housing Property](#housing-property)       |        4 | Funda, Kadaster, Kamernet, Monumenten                         |
 | [Legal Compliance](#legal-compliance)       |       12 | wetten.overheid.nl, Rechtspraak.nl, Belastingdienst, …        |
-| [Mobility Travel](#mobility-travel)         |        4 | NS, ANWB, Schiphol                                            |
-| [Open Data Culture](#open-data-culture)     |       12 | CBS StatLine, KNMI, data.overheid.nl, Gemeente Amsterdam, …   |
+| [Mobility Travel](#mobility-travel)         |        6 | NS, ANWB, CBS ODiN, OVapi, Schiphol                           |
+| [Open Data Culture](#open-data-culture)     |       13 | CBS StatLine, KNMI, data.overheid.nl, Gemeente Amsterdam, …   |
 
 ## Accounting Finance
 
@@ -122,6 +122,8 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | [anwb-mcp](https://github.com/BartWaardenburg/anwb-mcp) | Pull ANWB traffic incidents, plan routes with turn-by-turn directions, and search locations. | ANWB | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [NS MCP Server](https://github.com/r-huijts/ns-mcp-server) | Look up NS train departures and disruptions and plan train journeys. | NS (Nederlandse Spoorwegen) | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [ns-travel-mcp](https://github.com/lauragift21/ns-travel-mcp) | Plan NS journeys and check real-time train data and disruption alerts. | NS (Nederlandse Spoorwegen) | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [ovapi-mcp-server](https://github.com/henrrrik/ovapi-mcp-server) | Look up Dutch bus, tram, metro, and ferry departures from the OVapi real-time feed — search stops, find stops nearby, and inspect lines and journeys. | OVapi | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [SB OGC MCP](https://github.com/Studio-Bereikbaar/sb-ogc-mcp) | Query Dutch mobility data through Studio Bereikbaar's OGC API — the CBS ODiN travel survey, national traffic-model networks, administrative boundaries, and accessibility maps. | CBS ODiN | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
 | [schiphol-flights-mcp](https://github.com/mochow13/schiphol-flights-mcp) | Search Schiphol flights by date, route, airline, and time window through the official Flight API — a single endpoint, returning one page of results. | Schiphol | ![MCP · Community · Abandoned](assets/badges/tags-mcp-community-abandoned.svg) |
 
 ## Open Data Culture
@@ -139,10 +141,11 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | [open-utrecht-datasets](https://github.com/Terminal-WOO/open-utrecht-datasets) | Search, explore, and download Municipality of Utrecht open datasets across six tools, with experimental Woo-relevance tagging (full Woo-document search is planned). | Gemeente Utrecht | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [openarchieven-mcp](https://github.com/coret/openarchieven-mcp-server) | Search Open Archieven genealogy records through a no-auth hosted endpoint. | Open Archieven | ![MCP · Official](assets/badges/tags-mcp-official.svg) |
 | [OpenTK MCP](https://github.com/r-huijts/opentk-mcp) | Query Tweede Kamer (Dutch parliament) debates, motions, and documents. | Tweede Kamer | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [rce-cho-mcp](https://github.com/jolietjakeblues/rce-cho-mcp) | Query the RCE Cultuurhistorische Objecten linked-data set over SPARQL, with ontology inspection, thesaurus label lookup, and query validation. | Rijksdienst voor het Cultureel Erfgoed (RCE) | ![MCP · Community · Beta](assets/badges/tags-mcp-community-beta.svg) |
 | [Rijksmuseum MCP](https://github.com/r-huijts/rijksmuseum-mcp) | Search and browse the Rijksmuseum's art collection by artist, work, and theme. | Rijksmuseum | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 
 ---
 
-_Curated — 72 listing(s) across 9 categories._
+_Curated — 75 listing(s) across 9 categories._
 
 <!-- END CATALOGUE -->

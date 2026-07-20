@@ -1,5 +1,19 @@
 [
   {
+    "id": "rce-cho-mcp",
+    "name": "rce-cho-mcp",
+    "description_en": "Query the RCE Cultuurhistorische Objecten linked-data set over SPARQL, with ontology inspection, thesaurus label lookup, and query validation.",
+    "target": [
+      "rce"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "beta",
+    "publisher": "jolietjakeblues",
+    "source_url": "https://github.com/jolietjakeblues/rce-cho-mcp",
+    "last_checked": "2026-07-20"
+  },
+  {
     "id": "mcp-cbs-cijfers-open-data",
     "name": "mcp-cbs-cijfers-open-data",
     "description_en": "Makes official Dutch statistics from CBS (StatLine) accessible for AI assistants.",

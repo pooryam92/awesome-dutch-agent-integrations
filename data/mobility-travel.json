@@ -42,6 +42,34 @@
     "last_checked": "2026-07-19"
   },
   {
+    "id": "sb-ogc-mcp",
+    "name": "SB OGC MCP",
+    "description_en": "Query Dutch mobility data through Studio Bereikbaar's OGC API — the CBS ODiN travel survey, national traffic-model networks, administrative boundaries, and accessibility maps.",
+    "target": [
+      "cbs-odin"
+    ],
+    "type": "mcp",
+    "origin": "commercial",
+    "status": "live",
+    "publisher": "Studio Bereikbaar",
+    "source_url": "https://github.com/Studio-Bereikbaar/sb-ogc-mcp",
+    "last_checked": "2026-07-20"
+  },
+  {
+    "id": "ovapi-mcp-server",
+    "description_en": "Look up Dutch bus, tram, metro, and ferry departures from the OVapi real-time feed — search stops, find stops nearby, and inspect lines and journeys.",
+    "name": "ovapi-mcp-server",
+    "target": [
+      "ovapi"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "henrrrik",
+    "source_url": "https://github.com/henrrrik/ovapi-mcp-server",
+    "last_checked": "2026-07-20"
+  },
+  {
     "id": "schiphol-flights-mcp",
     "name": "schiphol-flights-mcp",
     "description_en": "Search Schiphol flights by date, route, airline, and time window through the official Flight API — a single endpoint, returning one page of results.",

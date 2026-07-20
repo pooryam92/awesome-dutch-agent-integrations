@@ -20,6 +20,10 @@
   "bunq": {
     "name": "bunq"
   },
+  "cbs-odin": {
+    "name": "CBS ODiN",
+    "kind": "dataset"
+  },
   "cbs-statline": {
     "name": "CBS StatLine",
     "kind": "dataset"
@@ -145,6 +149,10 @@
   "openarchieven": {
     "name": "Open Archieven"
   },
+  "ovapi": {
+    "name": "OVapi",
+    "kind": "dataset"
+  },
   "picnic": {
     "name": "Picnic"
   },
@@ -159,6 +167,10 @@
   },
   "postnl": {
     "name": "PostNL"
+  },
+  "rce": {
+    "name": "Rijksdienst voor het Cultureel Erfgoed (RCE)",
+    "kind": "dataset"
   },
   "rdw": {
     "name": "RDW"
