@@ -14,7 +14,7 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 
 | Category                                    | Listings | Covers                                                        |
 | ------------------------------------------- | -------: | ------------------------------------------------------------- |
-| [Accounting Finance](#accounting-finance)   |       17 | Exact Online, Moneybird, Adyen, bunq, e-Boekhouden, Mollie, … |
+| [Accounting Finance](#accounting-finance)   |       16 | Exact Online, Moneybird, bunq, e-Boekhouden, Mollie, Nmbrs, … |
 | [Consumer Daily Life](#consumer-daily-life) |        6 | Albert Heijn, Picnic, Aldi, Buienradar, DA, …                 |
 | [Developer Standards](#developer-standards) |        8 | Rijksoverheid, Logius, Developer Overheid API Register, …     |
 | [Ecommerce Logistics](#ecommerce-logistics) |        6 | Marktplaats, bol.com, Postcode.eu, PostNL                     |
@@ -28,7 +28,6 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 
 | Name | Description | Target | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---|---|---|---|
-| [Adyen MCP](https://github.com/Adyen/adyen-mcp) | Create payments and manage merchant configuration and account setup across Adyen's Checkout and Management APIs. | Adyen | ![MCP · Official · Preview](assets/badges/tags-mcp-official-preview.svg) |
 | [bunq Partner MCP](https://github.com/bunq/partner-mcp) | Automate bunq banking through the Partner API — onboarding, KYC, accounts, payments, cards, and compliance. | bunq | ![MCP · Official · Beta](assets/badges/tags-mcp-official-beta.svg) |
 | [e-Boekhouden MCP](https://github.com/CodeMill-Solutions/e-boekhouden-mcp) | Read and write e-Boekhouden administration using your own API credentials. | e-Boekhouden | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [exactmcp.nl](https://exactmcp.nl/) | Run Exact Online warehouse, serial/batch, purchase, production, and inventory workflows through a hosted MCP built on the official Exact Online API. | Exact Online | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
@@ -143,6 +142,6 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 
 ---
 
-_Curated — 72 listing(s) across 9 categories._
+_Curated — 71 listing(s) across 9 categories._
 
 <!-- END CATALOGUE -->

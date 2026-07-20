@@ -1,19 +1,5 @@
 [
   {
-    "id": "adyen-mcp",
-    "name": "Adyen MCP",
-    "description_en": "Create payments and manage merchant configuration and account setup across Adyen's Checkout and Management APIs.",
-    "target": [
-      "adyen"
-    ],
-    "type": "mcp",
-    "origin": "official",
-    "status": "preview",
-    "publisher": "Adyen",
-    "source_url": "https://github.com/Adyen/adyen-mcp",
-    "last_checked": "2026-07-19"
-  },
-  {
     "id": "bunq-partner-mcp",
     "name": "bunq Partner MCP",
     "description_en": "Automate bunq banking through the Partner API — onboarding, KYC, accounts, payments, cards, and compliance.",
