@@ -14,10 +14,10 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 
 | Category                                    | Listings | Covers                                                        |
 | ------------------------------------------- | -------: | ------------------------------------------------------------- |
-| [Accounting Finance](#accounting-finance)   |       16 | Exact Online, Adyen, bunq, e-Boekhouden, Mollie, Moneybird, … |
+| [Accounting Finance](#accounting-finance)   |       17 | Exact Online, Moneybird, Adyen, bunq, e-Boekhouden, Mollie, … |
 | [Consumer Daily Life](#consumer-daily-life) |        6 | Albert Heijn, Picnic, Aldi, Buienradar, DA, …                 |
 | [Developer Standards](#developer-standards) |        8 | Rijksoverheid, Logius, Developer Overheid API Register, …     |
-| [Ecommerce Logistics](#ecommerce-logistics) |        5 | Marktplaats, bol.com, Postcode.eu, PostNL                     |
+| [Ecommerce Logistics](#ecommerce-logistics) |        6 | Marktplaats, bol.com, Postcode.eu, PostNL                     |
 | [Government Services](#government-services) |        4 | KVK, RDW, wetten.overheid.nl                                  |
 | [Housing Property](#housing-property)       |        4 | Funda, Kadaster, Kamernet, Monumenten                         |
 | [Legal Compliance](#legal-compliance)       |       12 | wetten.overheid.nl, Rechtspraak.nl, Belastingdienst, …        |
@@ -37,6 +37,7 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | [Ledger Botje](https://ledgerbotje.nl/) | Handle Exact Online invoices, orders, inventory, and deliveries through a hosted MCP. | Exact Online | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
 | [Mollie MCP](https://docs.mollie.com/docs/mollie-mcp-server) | Manage the full Mollie stack — payments, customers, invoices, subscriptions, balances, settlements, terminals, and webhooks. | Mollie | ![MCP · Official](assets/badges/tags-mcp-official.svg) |
 | [Moneybird MCP](https://developer.moneybird.com/tools/mcp) | Keep Moneybird bookkeeping up to date — invoices, contacts, and ledger data. | Moneybird | ![MCP · Official](assets/badges/tags-mcp-official.svg) |
+| [moneybird-mcp-server](https://github.com/vanderheijden86/moneybird-mcp-server) | Work with Moneybird contacts, sales invoices, financial accounts, payments, products, projects, and time entries, with custom API requests for the rest. | Moneybird | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [Nmbrs AI Connector](https://www.nmbrs.com/ai-connector) | Run Dutch payroll actions in Nmbrs, with every write gated behind explicit confirmation. | Nmbrs | ![MCP · Official · Beta](assets/badges/tags-mcp-official-beta.svg) |
 | [Praat met je Boekhouding](https://praatmetjeboekhouding.nl/en/exact-online-mcp-server) | Query Exact Online bookkeeping across 86 tools — invoicing, BTW/ICP, and reporting — read-only by default. | Exact Online | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
 | [Simplicate MCP](https://developer.simplicate.com/docs/mcp/getting_started/) | Work with Simplicate project, CRM, and invoicing data through a per-domain hosted endpoint. | Simplicate | ![MCP · Official](assets/badges/tags-mcp-official.svg) |
@@ -74,6 +75,7 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | Name | Description | Target | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---|---|---|---|
 | [bol-mcp](https://github.com/BartWaardenburg/bol-mcp) | Reach bol.com's Retailer API through 76 tools spanning orders, offers, and product listings. | bol.com | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [marktplaats-2dehands-mcp](https://github.com/gjoris/marktplaats-2dehands-mcp) | Search Marktplaats and 2dehands listings, categories, and sellers, with saved searches that return only what is new; an optional login adds your own messages, ads, favourites, and bids. | Marktplaats | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [marktplaats-mcp](https://github.com/PonClick/marktplaats-mcp) | Search and read listings from Marktplaats.nl. | Marktplaats | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [marktplaats-mcp (jasp-nerd)](https://github.com/jasp-nerd/marktplaats-mcp) | Search Marktplaats and 2dehands classifieds with seller-trust signals and new-listing monitoring, no account needed. | Marktplaats | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [postcode-eu-ai-tools](https://github.com/postcode-nl/postcode-eu-ai-tools-python) | Validate and autocomplete Dutch addresses through the official Postcode.eu API. | Postcode.eu | ![MCP · Official](assets/badges/tags-mcp-official.svg) |
@@ -141,6 +143,6 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 
 ---
 
-_Curated — 70 listing(s) across 9 categories._
+_Curated — 72 listing(s) across 9 categories._
 
 <!-- END CATALOGUE -->

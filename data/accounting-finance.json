@@ -222,5 +222,19 @@
     "publisher": "Proviscale",
     "source_url": "https://github.com/Proviscale/visma-mcp-server",
     "last_checked": "2026-07-19"
+  },
+  {
+    "id": "moneybird-mcp-server",
+    "name": "moneybird-mcp-server",
+    "description_en": "Work with Moneybird contacts, sales invoices, financial accounts, payments, products, projects, and time entries, with custom API requests for the rest.",
+    "target": [
+      "moneybird"
+    ],
+    "type": "mcp",
+    "origin": "community",
+    "status": "live",
+    "publisher": "vanderheijden86",
+    "source_url": "https://github.com/vanderheijden86/moneybird-mcp-server",
+    "last_checked": "2026-07-20"
   }
 ]
