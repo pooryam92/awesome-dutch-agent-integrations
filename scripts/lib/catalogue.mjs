@@ -39,6 +39,41 @@ const anchor = (title) =>
     .trim()
     .replace(/\s+/g, "-");
 
+// The index is a scan-first table: each category links to its section, shows how
+// many listings it holds, and names the services it covers. The "Covers" cell is
+// derived from the listings' targets — most-listed first, so the biggest names in
+// a category surface — capped so the row stays readable.
+const COVERS_SHOWN = 5;
+
+// Several targets carry a disambiguating parenthetical ("NS (Nederlandse
+// Spoorwegen)", "Energieregulering (ACM/TenneT/RVO/SodM)"). It earns its place in
+// the Target column but overruns a summary cell — drop it here.
+const shortTarget = (name) => name.replace(/\s*\(.*\)\s*$/, "");
+
+const coversFor = (listings, targets) => {
+  const freq = new Map();
+  for (const r of listings) {
+    for (const tid of r.target) {
+      const name = shortTarget(targets[tid]?.name ?? tid);
+      freq.set(name, (freq.get(name) ?? 0) + 1);
+    }
+  }
+  const ranked = [...freq.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([name]) => name);
+  const shown = ranked.slice(0, COVERS_SHOWN).join(", ");
+  return ranked.length > COVERS_SHOWN ? `${shown}, …` : shown;
+};
+
+const indexTable = (categories, targets) => [
+  "| Category | Listings | Covers |",
+  "|---|---:|---|",
+  ...categories.map(
+    ({ title, listings }) =>
+      `| [${title}](#${anchor(title)}) | ${listings.length} | ${escapeCell(coversFor(listings, targets))} |`,
+  ),
+];
+
 // buildCatalogue(categories, { targets, badges }) -> { block, count }
 //   categories: [{ title, listings }] — each rendered as its own table.
 //   block:      the Markdown string to splice between the CATALOGUE markers.
@@ -60,7 +95,7 @@ export const buildCatalogue = (categories, { targets, badges }) => {
   const block = [
     "_Every listing is tagged with its type and origin; a status badge appears only when it is **not** live (beta, preview, concept, abandoned)._",
     "",
-    categories.map(({ title }) => `[${title}](#${anchor(title)})`).join(" · "),
+    ...indexTable(categories, targets),
     "",
   ];
 
