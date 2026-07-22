@@ -15,13 +15,13 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | Category                                    | Listings | Covers                                                        |
 | ------------------------------------------- | -------: | ------------------------------------------------------------- |
 | [Accounting Finance](#accounting-finance)   |       16 | Exact Online, Moneybird, bunq, e-Boekhouden, Mollie, Nmbrs, … |
-| [Consumer Daily Life](#consumer-daily-life) |        6 | Albert Heijn, Picnic, Aldi, Buienradar, DA, …                 |
+| [Consumer Daily Life](#consumer-daily-life) |        7 | Albert Heijn, Picnic, Aldi, Buienradar, DA, …                 |
 | [Developer Standards](#developer-standards) |        8 | Rijksoverheid, Logius, Developer Overheid API Register, …     |
 | [Ecommerce Logistics](#ecommerce-logistics) |        6 | Marktplaats, bol.com, Postcode.eu, PostNL                     |
 | [Government Services](#government-services) |        4 | KVK, RDW, wetten.overheid.nl                                  |
 | [Housing Property](#housing-property)       |        4 | Funda, Kadaster, Kamernet, Monumenten                         |
-| [Legal Compliance](#legal-compliance)       |       12 | wetten.overheid.nl, Rechtspraak.nl, Belastingdienst, …        |
-| [Mobility Travel](#mobility-travel)         |        6 | NS, ANWB, CBS ODiN, OVapi, Schiphol                           |
+| [Legal Compliance](#legal-compliance)       |       13 | wetten.overheid.nl, Belastingdienst, Rechtspraak.nl, …        |
+| [Mobility Travel](#mobility-travel)         |        7 | NS, OVapi, ANWB, CBS ODiN, Schiphol                           |
 | [Open Data Culture](#open-data-culture)     |       15 | CBS StatLine, KNMI, data.overheid.nl, Gemeente Amsterdam, …   |
 
 ## Accounting Finance
@@ -47,13 +47,14 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 
 ## Consumer Daily Life
 
-| Name | Description | Target | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| Name | Description | Target | Tags&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |---|---|---|---|
 | [ah-mcp](https://github.com/mrserzhan/ah-mcp) | Browse Albert Heijn products and Bonus deals, and manage your cart, orders, lists, and receipts. | Albert Heijn | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [buienradar-mcp-server](https://github.com/wpnbos/buienradar-mcp-server) | Pull a Buienradar rain nowcast — a 2-hour precipitation forecast by coordinates. | Buienradar | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [homewizard-mcp-server](https://github.com/mrksmts/homewizard-mcp-server) | Read live HomeWizard P1 smart-meter data — power, per-phase voltages and currents, cumulative kWh, and gas — over the local API, read-only. | HomeWizard | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [mcp-picnic](https://github.com/ivo-toby/mcp-picnic) | Shop Picnic groceries — search products and manage the cart, orders, and deliveries. | Picnic | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [nl-supermarkt-mcp](https://github.com/Samvox1/nl-supermarkt-mcp) | Search products, compare prices, and plan groceries across Dutch supermarkets and drugstores. | Albert Heijn / Jumbo / Lidl / Aldi / Plus / DekaMarkt / Dirk / Vomar / Hoogvliet / Spar / Picnic / Poiesz / Kruidvat / Etos / Trekpleister / DA / Holland & Barrett / Douglas / De Online Drogist | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [orderfood](https://github.com/henkas/orderfood) | Search Thuisbezorgd.nl restaurants, read menus, and build a cart — placing the order is not supported, because checkout needs a browser payment flow. | Thuisbezorgd.nl | ![MCP · Community · Beta](assets/badges/tags-mcp-community-beta.svg) |
 | [unofficial-magister-mcp](https://github.com/israelroldan/unofficial-magister-mcp) | Look up Dutch school schedules from Magister — daily and weekly timetables plus drop-off and pick-up times, for student and parent accounts. | Magister | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 
 ## Developer Standards
@@ -110,6 +111,7 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | [IURA (iura-nl)](https://github.com/iura-ai/IURA-Plugins) | Draft and review Dutch legal documents — contracts, NDAs, juridische notities, and conclusie van antwoord — grounded in Dutch jurisprudence via the IURA MCP. | wetten.overheid.nl / Rechtspraak.nl | ![Plugin · Commercial · Preview](assets/badges/tags-plugin-commercial-preview.svg) |
 | [Moonlit Legal Research MCP](https://www.moonlit.ai/docs/) | Research Dutch and European legislation, case law, and regulatory sources through seven read-only tools over a hosted OAuth endpoint. | wetten.overheid.nl / Rechtspraak.nl | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
 | [nl-eli-mcp](https://github.com/matematicsolutions/nl-eli-mcp) | Retrieve versioned Dutch legislation (BWB) and Rechtspraak rulings, keyless. | wetten.overheid.nl / Rechtspraak.nl | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [nl-tax-agent-skills](https://github.com/cyanxxy/nl-tax-agent-skills) | Turn your own tax documents into a source-cited workpack mapped to Mijn Belastingdienst fields for the income-tax return and voorlopige aanslag — you still enter the figures yourself. | Belastingdienst | ![Plugin · Community](assets/badges/tags-plugin-community.svg) |
 | [OpenAccountants Plugin](https://github.com/openaccountants/openaccountants) | Classify transactions and apply Dutch tax guidance — VAT, income tax, payroll, and zzp deductions — sourced to Wet IB 2001; the Dutch package is not yet accountant-signed off. | Belastingdienst | ![Plugin · Community](assets/badges/tags-plugin-community.svg) |
 | [rechtspraak-mcp](https://github.com/Prudai/rechtspraak-mcp) | Search Rechtspraak open data and resolve legal citations through LiDO, across six tools. | Rechtspraak.nl | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [Wetsanalyse AI](https://github.com/palmw01/wetsanalyse-ai) | Produce source-traceable analyses of Dutch legislation with the JAS method and formalise them into Belastingdienst RegelSpraak, through a skill plus a bundled wettenbank MCP with human-review checkpoints. | wetten.overheid.nl / Belastingdienst | ![Plugin · Community](assets/badges/tags-plugin-community.svg) |
@@ -122,6 +124,7 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 | [anwb-mcp](https://github.com/BartWaardenburg/anwb-mcp) | Pull ANWB traffic incidents, plan routes with turn-by-turn directions, and search locations. | ANWB | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [NS MCP Server](https://github.com/r-huijts/ns-mcp-server) | Look up NS train departures and disruptions and plan train journeys. | NS (Nederlandse Spoorwegen) | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [ns-travel-mcp](https://github.com/lauragift21/ns-travel-mcp) | Plan NS journeys and check real-time train data and disruption alerts. | NS (Nederlandse Spoorwegen) | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
+| [ov-mcp](https://github.com/laulauland/ov-mcp) | Search Dutch public-transport stops, find stops near a coordinate, and look up routes across every operator from the national GTFS feed, without an API key. | OVapi | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [ovapi-mcp-server](https://github.com/henrrrik/ovapi-mcp-server) | Look up Dutch bus, tram, metro, and ferry departures from the OVapi real-time feed — search stops, find stops nearby, and inspect lines and journeys. | OVapi | ![MCP · Community](assets/badges/tags-mcp-community.svg) |
 | [SB OGC MCP](https://github.com/Studio-Bereikbaar/sb-ogc-mcp) | Query Dutch mobility data through Studio Bereikbaar's OGC API — the CBS ODiN travel survey, national traffic-model networks, administrative boundaries, and accessibility maps. | CBS ODiN | ![MCP · Commercial](assets/badges/tags-mcp-commercial.svg) |
 | [schiphol-flights-mcp](https://github.com/mochow13/schiphol-flights-mcp) | Search Schiphol flights by date, route, airline, and time window through the official Flight API — a single endpoint, returning one page of results. | Schiphol | ![MCP · Community · Abandoned](assets/badges/tags-mcp-community-abandoned.svg) |
@@ -148,6 +151,6 @@ _Every listing is tagged with its type and origin; a status badge appears only w
 
 ---
 
-_Curated — 77 listing(s) across 9 categories._
+_Curated — 80 listing(s) across 9 categories._
 
 <!-- END CATALOGUE -->

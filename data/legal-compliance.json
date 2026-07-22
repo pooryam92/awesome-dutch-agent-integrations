@@ -174,5 +174,19 @@
     "publisher": "palmw01",
     "source_url": "https://github.com/palmw01/wetsanalyse-ai",
     "last_checked": "2026-07-19"
+  },
+  {
+    "id": "nl-tax-agent-skills",
+    "name": "nl-tax-agent-skills",
+    "description_en": "Turn your own tax documents into a source-cited workpack mapped to Mijn Belastingdienst fields for the income-tax return and voorlopige aanslag — you still enter the figures yourself.",
+    "target": [
+      "belastingdienst"
+    ],
+    "type": "plugin",
+    "origin": "community",
+    "status": "live",
+    "publisher": "cyanxxy",
+    "source_url": "https://github.com/cyanxxy/nl-tax-agent-skills",
+    "last_checked": "2026-07-22"
   }
 ]
