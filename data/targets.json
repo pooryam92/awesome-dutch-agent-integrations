@@ -118,9 +118,6 @@
   "lidl": {
     "name": "Lidl"
   },
-  "logius": {
-    "name": "Logius"
-  },
   "magister": {
     "name": "Magister"
   },
@@ -184,9 +181,6 @@
   },
   "rijksmuseum": {
     "name": "Rijksmuseum"
-  },
-  "rijksoverheid": {
-    "name": "Rijksoverheid"
   },
   "rj": {
     "name": "Raad voor de Jaarverslaggeving (RJ)",
