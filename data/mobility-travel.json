@@ -70,20 +70,6 @@
     "last_checked": "2026-07-20"
   },
   {
-    "id": "schiphol-flights-mcp",
-    "name": "schiphol-flights-mcp",
-    "description_en": "Search Schiphol flights by date, route, airline, and time window through the official Flight API — a single endpoint, returning one page of results.",
-    "target": [
-      "schiphol"
-    ],
-    "type": "mcp",
-    "origin": "community",
-    "status": "abandoned",
-    "publisher": "mochow13",
-    "source_url": "https://github.com/mochow13/schiphol-flights-mcp",
-    "last_checked": "2026-07-20"
-  },
-  {
     "id": "ov-mcp",
     "name": "ov-mcp",
     "description_en": "Search Dutch public-transport stops, find stops near a coordinate, and look up routes across every operator from the national GTFS feed, without an API key.",
